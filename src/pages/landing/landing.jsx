@@ -4,7 +4,6 @@ import Status from './status/status'
 import Adventures_Brief from '../adventures/adventures_brief'
 import NextButton from '../../components/nextbutton'
 
-
 import '../../index.css'
 import './landing.css'
 
@@ -13,9 +12,9 @@ export default function Landing() {
     const [count, setCount] = useState(0)
 
     return (
-        <div className="drop-shadow-lg">
+        <div className="">
             {/* #3b2b16  #704009 */}
-            <div className="bg-[#ffc846] dark:bg-[#51320a] h-[32rem] sm:h-[26rem] md:h-[40rem] lg:h-[32rem] flex flex-col sm:flex-row justify-between duration-200">
+            <div className="bg-[#ffc846] dark:bg-[#0c0b09] h-[32rem] sm:h-[26rem] md:h-[40rem] lg:h-[32rem] flex flex-col sm:flex-row justify-between duration-200">
                 <div className="hidden sm:block"></div>
                 <div className="relative w-auto md:w-2/4 m-20">
                     <div className="relative mb-4">
@@ -42,15 +41,12 @@ export default function Landing() {
             </div>
             <div className="p-10 pl-24 pr-24 bg-neutral-50 dark:bg-[#211e1d] md:text-lg mb-2 dark:text-white duration-500">
                 <p className="text-md text-amber-500 mb-4">C:/landing/hi-there.txt</p>
-                <p className="md:text-lg mb-2 dark:text-white duration-500">Hi, my name is Casey Pei :)</p>
+                <p className="md:text-lg mb-2 dark:text-white duration-500">Thanks for visiting my little corner of the internet</p>
                 <p className="md:text-lg mb-2 dark:text-white duration-500">I'm currently a <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 dark:text-lime-200">junior Honors CS + Stats major @ Texas A&M 🎓</a></p>
                 <p className="md:text-lg mb-2 dark:text-white duration-500">Previously I've been at <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 dark:text-lime-200">Institute of Biosciences and Technology</a></p>
                 <p className="md:text-lg mb-2 dark:text-white duration-500">Always love to have a chat, so if any of that interests you, reach me here: <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 dark:text-lime-200">Institute of Biosciences and Technology</a></p>
             </div>
-            <div className="p-16">
-                <NextButton link={'/adventures'} page_name={'Adventures'} />
-                <Adventures_Brief />
-            </div>
+            
             <div>
 
             </div>
@@ -71,6 +67,13 @@ export default function Landing() {
                 <p className="read-the-docs">
                     Click on the Vite and React logos to learn more
                 </p>
+            </div>
+            <div className="p-16 ">
+                <div className="flex justify-between">
+                    <p className="text-lg font-bold dark:text-white">What I've been up to!</p>
+                    <NextButton link={'/adventures'} page_name={'more'} />
+                </div>
+                <Adventures_Brief />
             </div>
         </div>
     )

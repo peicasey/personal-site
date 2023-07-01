@@ -31,7 +31,7 @@ const adventures = [
   },
   {
     description: 'Ruined my sleep schedule @ TAMUHack',
-    link: 'https://tagdigda.wixsite.com/gamedev/copy-of-fall-2021',
+    link: 'https://tamuhack.org/th',
     date: 'Jan 2023',
     symbol: '⚡',
     important: true,
@@ -51,6 +51,13 @@ const adventures = [
     important: true,
   },
   {
+    description: 'Became Projects Chair @ Aggie Coding Club',
+    link: 'https://aggiecodingclub.com/',
+    date: 'Jan 2023',
+    symbol: '🧑‍💻',
+    important: true,
+  },
+  {
     description: 'Made a virtual sequential processor (I cried)',
     link: 'https://csce312-final-project.readthedocs.io/en/main/index.html',
     date: 'Dec 2023',
@@ -58,7 +65,7 @@ const adventures = [
     important: true,
   },
   {
-    description: 'Became Projects Chair @ Aggie Coding Club',
+    description: 'Became Vice President @ Aggie Coding Club',
     link: 'https://aggiecodingclub.com/',
     date: 'Dec 2022',
     symbol: '🧑‍💻',
@@ -148,6 +155,8 @@ const adventures = [
   
 export default function Adventures() {
 
+  window.scrollTo(0, 0);
+
   const handleClick = (myLink) => () => {
     window.open(myLink, '_blank');
   }
@@ -173,7 +182,7 @@ export default function Adventures() {
                       <li onClick={handleClick(adventure.link)} className="flex justify-between items-center gap-4 p-2 hover:rounded-md hover:cursor-pointer hover:bg-[#f4f2ec] dark:hover:bg-[#25241e]">
                           
                           <div className="flex items-center flex-grow-0">
-                            <div className="text-lg mr-2">{adventure.symbol}</div>
+                            <div className="aria-hidden select-none text-lg mr-2">{adventure.symbol}</div>
                             <span className="text-sm sm:text-md lg:text-md lg:max-w-[40em] md:max-w-[20em] sm:max-w-[15em]">{adventure.description}</span>
                           </div>
                           <div className="flex-grow h-[1px] min-w-[25px] bg-neutral-200 dark:bg-neutral-700"></div>

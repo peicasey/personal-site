@@ -7,6 +7,9 @@ import ToggleTheme from './toggleTheme/ToggleTheme'
 
 import '../index.css'
 
+// context
+import './context'
+
 const navigation = [
   { name: 'landing', href: '/', current: true },
   { name: 'projects', href: '/projects', current: false },
@@ -20,6 +23,8 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
+    <DarkThemeContext.Consumer>
+      {({ isDarkMode, toggleDarkMode }) =>
     <Disclosure as="nav" className="fixed top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 supports-backdrop-blur:bg-teal-100/60 dark:bg-transparent">
       {({ open }) => (
         <>
@@ -68,7 +73,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <ToggleTheme />
+                <ToggleTheme toggleDarkMode={toggleDarkMode}/>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
@@ -150,5 +155,7 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
+    }
+    </DarkThemeContext.Consumer>
   )
 }

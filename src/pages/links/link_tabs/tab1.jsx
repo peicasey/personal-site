@@ -1,175 +1,111 @@
-const adventures = [
+import './tab.css'
+
+const roles = [
   {
-    description: 'Started as a SWE Internship @ Arbin Instruments',
+    title: 'Arbin Instruments',
+    description: 'SWE intern here',
     link: 'https://arbin.com/about-us/',
-    date: 'May 2023',
+    link_display: 'arbin.com',
     symbol: '💼',
-    important: true,
   },
   {
-    description: 'Survived CSCE 313H.',
-    link: 'http://irl.cse.tamu.edu/courses/313/',
-    date: 'May 2023',
-    symbol: '🥹',
-    important: true,
-  },
-  {
-    description: 'Best in Sound @ TAGD Game Jam',
-    link: 'https://itch.io/jam/tagd-fall-2021-semester-game-jam',
-    date: 'May 2023',
-    symbol: '🏆',
-    important: true,
-  },
-  {
-    description: 'Best in Visuals @ Chillenium Game Jam',
-    link: 'https://chillennium.com/chillenium2023.html',
-    date: 'Feb 2023',
-    symbol: '🏆',
-    important: true,
-  },
-  {
-    description: 'Ruined my sleep schedule @ TAMUHack',
-    link: 'https://tagdigda.wixsite.com/gamedev/copy-of-fall-2021',
-    date: 'Jan 2023',
-    symbol: '⚡',
-    important: true,
-  },
-  {
-    description: 'saw my first Rainforest Cafe in San Antonio :O',
-    link: 'https://www.rainforestcafe.com/location/rainforest-cafe-san-antonio-tx/',
-    date: 'Jan 2023',
-    symbol: '🦜',
-    important: false,
-  },
-  {
-    description: 'Added a Statistics minor o-o',
-    link: 'https://catalog.tamu.edu/undergraduate/arts-and-sciences/statistics/minor/#text',
-    date: 'Jan 2023',
-    symbol: '📚',
-    important: true,
-  },
-  {
-    description: 'Made a virtual sequential processor (I cried)',
-    link: 'https://csce312-final-project.readthedocs.io/en/main/index.html',
-    date: 'Dec 2023',
-    symbol: '🥹',
-    important: true,
-  },
-  {
-    description: 'Became Projects Chair @ Aggie Coding Club',
+    title: 'Aggie Coding Club (ACC)',
+    description: 'VP here',
     link: 'https://aggiecodingclub.com/',
-    date: 'Dec 2022',
-    symbol: '🧑‍💻',
-    important: true,
+    link_display: 'aggiecodingclub.com',
+    symbol: '💻',
   },
   {
-    description: 'Drank overpriced boba @ HowdyHack',
-    link: 'https://tamuhack.org/hh/',
-    date: 'Oct 2022',
-    symbol: '⚡',
-    important: true,
-  },
-  {
-    description: 'Became Vice President @ ENGR TA Org',
+    title: 'ENGR TA Org (TAO)',
+    description: 'VP here also',
     link: 'https://tx.ag/engr102dc',
-    date: 'Oct 2022',
-    symbol: '🧑‍💻',
-    important: true,
+    link_display: 'tx.ag/engr102dc',
+    symbol: '🧑‍🏫',
   },
   {
-    description: 'Started as a Hamill Research Intern @ Institute of Bioscience & Technology',
-    link: 'https://ibt.tamu.edu/education/biotech-graduate-track/summer-research-program.html',
-    date: 'May 2022',
-    symbol: '💼',
-    important: true,
-  },
-  {
-    description: '1st Overall and Best in Design @ TAGD Game Jam',
-    link: 'https://tagdigda.wixsite.com/gamedev/copy-of-fall-2021',
-    date: 'May 2022',
-    symbol: '🏆',
-    important: true,
-  },
-  {
-    description: 'Started breast cancer research using biostatistics w/ Dr. Zhang :D',
+    title: 'Biostats Research',
+    description: "link to my PI's page :]",
     link: 'https://ibt.tamu.edu/faculty/kurt-zhang.html',
-    date: 'Apr 2022',
+    link_display: 'ibt.tamu.edu/facult/kurt-zhang',
     symbol: '🧬',
-    important: true,
   },
   {
-    description: 'Ate lots of pasta',
-    link: 'https://conway-fitzhugh.tamu.edu/',
-    date: 'March 2022',
-    symbol: '🇮🇹',
-    important: false,
+    title: 'AI4ALL',
+    description: "changemaker",
+    link: 'https://ai-4-all.org/',
+    link_display: 'ai-4-all.org',
+    symbol: '🤖',
   },
   {
-    description: 'Best in Programming @ TAGD Game Jam',
-    link: 'https://itch.io/jam/tagd-fall-2021-semester-game-jam',
-    date: 'Dec 2021',
-    symbol: '🏆',
-    important: true,
-  },
-  {
-    description: 'Became Projects Officer @ Aggie Coding Club',
-    link: 'https://aggiecodingclub.com/',
-    date: 'Nov 2021',
+    title: 'Aggie Competitive Coding Club (ACPC)',
+    description: 'competitor',
+    link: 'https://tamuacpc.com/home',
+    link_display: 'tamuacpc.com',
     symbol: '🧑‍💻',
-    important: true,
   },
   {
-    description: 'Watched epic yo-yo tricks @ TAMU Datathon',
-    link: 'https://2021.tamudatathon.com/',
-    date: 'Oct 2021',
-    symbol: '⚡',
-    important: true,
-
+    title: 'Texas A&M Game Developer (TAGD)',
+    description: "game jammer",
+    link: 'https://tagdigda.wixsite.com/gamedev',
+    link_display: 'tagdigda.wixsite.com/gamedev',
+    symbol: '🎮',
   },
   {
-    description: 'Started as an Honors Computer Science student @ Texas A&M!',
-    link: 'https://engineering.tamu.edu/cse/academics/index.html',
-    date: 'Aug 2021',
-    symbol: '📚',
-    important: true,
-
+    title: 'Itch.io',
+    description: 'my games',
+    link: 'https://pengso0o.itch.io/',
+    link_display: 'pengso0o/itch.io',
+    symbol: '👾',
   },
   {
-    description: 'Graduated Valedictorian from HS! >:)',
-    link: 'https://www.aps.edu/schools/graduation/class-of-2021/la-cueva-high-school',
-    date: 'May 2021',
-    symbol: '🎓',
-    important: true,
-
+    title: 'Devpost',
+    description: 'my other projects',
+    link: 'https://devpost.com/peicasey',
+    link_display: 'devpost/peicasey',
+    symbol: '💡',
+  },
+  {
+    title: 'Github',
+    description: 'git-ing good',
+    link: 'https://github.com/peicasey',
+    link_display: 'github/peicasey',
+    symbol: '🐙',
+  },
+  {
+    title: 'LinkedIn',
+    description: 'job hunting grounds >:)',
+    link: 'https://www.linkedin.com/in/casey-pei/',
+    link_display: 'linkedin/in/casey-pei',
+    symbol: '👔',
   },
 ]
-  
+
+
 export default function Tab1() {
 
-  const handleClick = (myLink) => () => {
-    window.open(myLink, '_blank');
-  }
-
     return (
-        <div>
-            <p className=" mb-4 text-neutral-500">Some things that I've done!</p>
-            <div>
-              <ul role="list" className="divide-y divide-neutral-100 dark:divide-neutral-800">
-                {adventures.map((adventure) => (
-                <li onClick={handleClick(adventure.link)} className="dark:text-white flex justify-between items-center gap-4 p-2 hover:rounded-md hover:cursor-pointer hover:bg-[#f4f2ec] dark:hover:bg-[#25241e]">
+      <div>
+        <p className=" mb-4 text-neutral-500 dark:text-neutral-200">Some things that I've done!</p>
+         <div>
+          <ul role="list" className="divide-y divide-neutral-100 dark:divide-neutral-800">
+            {roles.map((role) => (
+            <li className="dark:text-white flex justify-between items-center gap-2 sm:gap-4 p-2 hover:rounded-md hover:bg-[#f4f2ec] dark:hover:bg-[#25241e]">
+                  
+                <div className="overflow-hidden text-ellipsis flex items-center flex-grow-0">
+                  <div className="aria-hidden select-none sm:text-lg mr-2">{role.symbol}</div>
+                  <div className="flex items-center gap-2 justify-normal">
+                    <span className="truncate text-xs sm:text-md lg:text-md font-bold">{role.title}</span>
+                    <a href={role.link} target="_blank" rel="noopener noreferrer" className="overflow-hidden text-ellipsis text-sm sm:text-md lg:text-md underlined text-lime-700 dark:text-lime-200 hover:text-lime-500 dark:hover:text-lime-500">{role.link_display}</a>
+                  </div>
+                </div>
+                <div className="flex-grow h-[1px] min-w-[0px] bg-neutral-200 dark:bg-neutral-700"></div>
+                <div className="text-sm text-neutral-500 dark:text-neutral-200 hidden lg:block">{role.description}</div>
                     
-                    <div className="flex items-center flex-grow-0">
-                      <div className="text-lg mr-2">{adventure.symbol}</div>
-                      <span className="text-sm sm:text-md lg:text-md lg:max-w-[40em] md:max-w-[20em] sm:max-w-[15em]">{adventure.description}</span>
-                    </div>
-                    <div className="flex-grow h-[1px] min-w-[25px] bg-neutral-200 dark:bg-neutral-700"></div>
-                    <div className="text-sm sm:text-md font-bold min-w-[5em]">{adventure.date}</div>
-                      
-                </li>
-                ))}
-            </ul>
-            </div>
-            
+            </li>
+            ))}
+          </ul>
         </div>
+          
+      </div>
     )
   }
