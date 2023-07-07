@@ -16,6 +16,20 @@ const adventures = [
     important: true,
   },
   {
+    description: 'Became Vice President @ Aggie Coding Club',
+    link: 'https://aggiecodingclub.com/',
+    date: 'May 2023',
+    symbol: '🧑‍💻',
+    important: true,
+  },
+  {
+    description: 'Won 20$ for best site in my CSCE 315 class',
+    link: 'https://people.tamu.edu/~caseypei/#',
+    date: 'May 2023',
+    symbol: '😳',
+    important: true,
+  },
+  {
     description: 'Best in Sound @ TAGD Game Jam',
     link: 'https://tagdigda.wixsite.com/gamedev/copy-of-fall-2022',
     date: 'May 2023',
@@ -51,13 +65,6 @@ const adventures = [
     important: true,
   },
   {
-    description: 'Became Projects Chair @ Aggie Coding Club',
-    link: 'https://aggiecodingclub.com/',
-    date: 'Jan 2023',
-    symbol: '🧑‍💻',
-    important: true,
-  },
-  {
     description: 'Made a virtual sequential processor (I cried)',
     link: 'https://csce312-final-project.readthedocs.io/en/main/index.html',
     date: 'Dec 2023',
@@ -65,14 +72,14 @@ const adventures = [
     important: true,
   },
   {
-    description: 'Became Vice President @ Aggie Coding Club',
+    description: 'Became Projects Chair @ Aggie Coding Club',
     link: 'https://aggiecodingclub.com/',
     date: 'Dec 2022',
     symbol: '🧑‍💻',
     important: true,
   },
   {
-    description: 'Drank overpriced boba @ HowdyHack',
+    description: "Witness Jad's scooter break @ HowdyHack",
     link: 'https://tamuhack.org/hh/',
     date: 'Oct 2022',
     symbol: '⚡',

@@ -45,7 +45,7 @@ export default function Adventures_Brief() {
   }
 
   return (
-    <div className="fade-out-mask bg-neutral-50 dark:bg-neutral-800 dark:text-white rounded-lg p-8 pb-16">
+    <div className="fade-out-mask bg-neutral-50 dark:bg-neutral-800 dark:text-white rounded-lg sm:p-8 p-4 pb-16">
         <div>
           <ul role="list" className="divide-y divide-neutral-200 dark:divide-neutral-800">
             {adventures.map((adventure) => (
@@ -55,8 +55,8 @@ export default function Adventures_Brief() {
                   <div className="aria-hidden select-none text-lg mr-2">{adventure.symbol}</div>
                   <span className="text-sm sm:text-md lg:text-md lg:max-w-[40em] md:max-w-[20em] sm:max-w-[15em]">{adventure.description}</span>
                 </div>
-                <div className="flex-grow h-[1px] min-w-[25px] bg-neutral-400 dark:bg-neutral-700"></div>
-                <div className="text-sm sm:text-md font-bold min-w-[5em]">{adventure.date}</div>
+                <div className="flex-grow h-[1px] min-w-[4px] sm:min-w-[25px] bg-neutral-400 dark:bg-neutral-700"></div>
+                <div className="text-xs sm:text-md font-bold min-w-[5em] ">{adventure.date}</div>
                   
             </li>
             ))}

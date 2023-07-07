@@ -9,6 +9,8 @@ import './landing.css'
 
 export default function Landing() {
 
+    const link_style = "underline decoration-dotted text-lime-700 hover:text-[#a9b11b] dark:text-lime-200 dark:hover:text-lime-300"
+
     const [count, setCount] = useState(0)
 
     return (
@@ -19,8 +21,8 @@ export default function Landing() {
                 <div className="relative w-auto md:w-2/4 m-20">
                     <div className="relative mb-4">
                         <div >
-                            <h1 className="text-6xl dark:text-black md:text-8xl drop-shadow-lg font-bold mr-3">HI! IT'S</h1>
-                            <h1 className="text-7xl dark:text-black md:text-8xl drop-shadow-lg font-bold mr-3">CASEY PEI</h1>
+                            <h1 className="text-6xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-3">HI! IT'S</h1>
+                            <h1 className="text-7xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-3">CASEY PEI</h1>
                         </div>
                         <div className="absolute top-0 left-2 aria-hidden select-none">
                             <h1 className="text-6xl md:text-8xl font-bold text-amber-200 text-stroke mr-1">HI! IT'S</h1>
@@ -32,7 +34,7 @@ export default function Landing() {
                         </div>
                     </div>
                     
-                    <p className="text-md md:text-xl mb-4 text-black dark:text-white duration-500">Welcome to my site! I'm Casey, currently a <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 hover:text-lime-200 dark:text-lime-200 dark:hover:text-lime-500 duration-500">junior Honors CS + Stats major @ Texas A&M 🎓</a> interested in all things software dev :)</p>
+                    <p className="text-md md:text-xl mb-4 text-black dark:text-white duration-500">Welcome to my site! I'm Casey, currently a <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 hover:text-[#a9b11b] dark:text-lime-200 dark:hover:text-lime-500 duration-500">junior Honors CS + Stats major @ Texas A&M 🎓</a> interested in all things software dev :)</p>
                     <Status />
                 </div>
                 
@@ -41,34 +43,22 @@ export default function Landing() {
             </div>
             <div className="p-10 pl-24 pr-24 bg-neutral-50 dark:bg-[#211e1d] md:text-lg mb-2 dark:text-white duration-500">
                 <p className="text-md text-amber-500 mb-4">C:/landing/hi-there.txt</p>
-                <p className="md:text-lg mb-2 dark:text-white duration-500">Thanks for visiting my little corner of the internet</p>
-                <p className="md:text-lg mb-2 dark:text-white duration-500">I'm currently a <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 dark:text-lime-200">junior Honors CS + Stats major @ Texas A&M 🎓</a></p>
-                <p className="md:text-lg mb-2 dark:text-white duration-500">Previously I've been at <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 dark:text-lime-200">Institute of Biosciences and Technology</a></p>
-                <p className="md:text-lg mb-2 dark:text-white duration-500">Always love to have a chat, so if any of that interests you, reach me here: <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 dark:text-lime-200">Institute of Biosciences and Technology</a></p>
+                <p className="text-md mb-2 dark:text-white duration-500">
+                    Thanks for visiting my little corner of the internet / portfolio / project storage / blog / cry into the void!
+                </p>
+                <p className="md:text-lg mb-2 dark:text-white duration-500">
+                    Feel free to poke around on this landing page for an overview of everything I've put into this site or use the menu to find out more details about everything.
+                </p>
+                <p className="text-md md:text-lg mb-2 dark:text-white duration-500">
+                    With that said, I'm always down to have a chat -- so if anything here interests you, reach me at <a href="mailto:peicasey@gmail.com" target="_blank" rel="noopener noreferrer" className={link_style}>peicasey@gmail</a> or at my <a href="https://linkedin.com/in/casey-pei" target="_blank" rel="noopener noreferrer" className={link_style}>linkedin</a> :D
+                </p>
             </div>
             
             <div>
 
             </div>
-            <div className="bg-[#e6e4e3] dark:bg-[#131211]">
-                <h1 className="text-3xl font-bold underline">
-                    Hello world!
-                </h1>
-                <h1>Vite + React + Casey's site for now :D</h1>
-                <h2>Dev change</h2>
-                <div className="card">
-                    <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                    </button>
-                    <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                    </p>
-                </div>
-                <p className="read-the-docs">
-                    Click on the Vite and React logos to learn more
-                </p>
-            </div>
-            <div className="p-16 ">
+            
+            <div className="pt-16 pb-16 pr-8 pl-8 sm:pr-16 sm:pl-16 md:pr-24 md:pl-24 md:pb-24">
                 <div className="flex justify-between">
                     <p className="text-lg font-bold dark:text-white">What I've been up to!</p>
                     <NextButton link={'/adventures'} page_name={'more'} />

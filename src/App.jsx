@@ -2,9 +2,10 @@ import { Route, Routes } from "react-router-dom";
 
 // components
 import Navbar from'./components/navbar'
-import Footer from'./components/footer'
+import Footer from'./components/footer/footer'
 
 // pages
+import NotFound from'./pages/notfound/notfound'
 import Landing from'./pages/landing/landing'
 import Projects from'./pages/projects/projects'
 import About from'./pages/about/about'
@@ -22,6 +23,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path="/" element={<Landing />} />
+        <Route path="*" element={<NotFound />} />
         <Route exact path="/projects" element={<Projects/>} />
         <Route exact path="/about" element={<About/>} />
         <Route exact path="/experience" element={<Experience/>} />

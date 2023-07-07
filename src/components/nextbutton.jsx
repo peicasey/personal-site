@@ -4,10 +4,6 @@ import { useNavigate } from "react-router-dom"
 
 export default function NextButton ({ link, page_name }) {
     
-    const handleClick = (myLink) => () => {
-        window.location.href = myLink;
-    }
-    
     const navigate = useNavigate();
 
     return (

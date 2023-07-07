@@ -16,8 +16,8 @@ import './status.css'
 
 // ]
 
-const SPEED = 20; /* The speed/duration of the effect in milliseconds */
-const START_DELAY = 2500;
+const SPEED = 30; /* The speed/duration of the effect in milliseconds */
+// const START_DELAY = 27500;
 
 export default class Status extends Component {
 
@@ -27,13 +27,13 @@ export default class Status extends Component {
         return (
             <div>
                 <p className="text-md md:text-xl text-black dark:text-white duration-500">You can catch me <a id="status-update" href="/links" className="underline decoration-dotted text-lime-700 dark:text-lime-100">
-                    <TypeIt className="hover:text-lime-200 dark:text-lime-200 dark:hover:text-lime-500 duration-500"
+                    <TypeIt className="hover:text-[#a9b11b] dark:text-lime-200 dark:hover:text-lime-500 duration-500"
                         options={{
                         loop: true,
                         breakLines: false,
                         cursorChar: '|',
                         lifeLike: true,
-                        loopDelay: [0, START_DELAY],
+                        loopDelay: [0, 0],
                         startDelay: 0,
                         cursorSpeed: 500,
                         speed: SPEED,

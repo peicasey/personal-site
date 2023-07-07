@@ -34,7 +34,12 @@ const Project_Cards = () => (
     dataSource={data}
     renderItem={(item) => (
       <List.Item>
-        <Card title={item.title}>Card content</Card>
+        <Card 
+          title={item.title}
+          hoverable={true}
+        >
+          Card content
+        </Card>
       </List.Item>
     )}
   />

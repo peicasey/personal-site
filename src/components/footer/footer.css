@@ -1,3 +1,7 @@
 .inset-shadow {
-    box-shadow: inset 0em 1em 2em 0em rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0em 1em 2em 0em rgba(224, 115, 6, 0.2);
+}
+
+.dark .inset-shadow {
+    box-shadow: inset 0em 1em 2em 0em rgba(113, 57, 1, 0.4);
 }

@@ -1,0 +1,7 @@
+.hover-shadow:hover {
+    box-shadow: 0em 0em 1em 0.5em rgba(224, 115, 6, 0.25);
+}
+
+.dark .hover-shadow:hover {
+    box-shadow: 0em 0em 2em 0.5em rgba(64, 34, 3, 0.5);
+}
