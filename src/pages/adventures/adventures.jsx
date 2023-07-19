@@ -26,7 +26,7 @@ const adventures = [
     description: 'Won 20$ for best site in my CSCE 315 class',
     link: 'https://people.tamu.edu/~caseypei/#',
     date: 'May 2023',
-    symbol: '😳',
+    symbol: '💸',
     important: true,
   },
   {

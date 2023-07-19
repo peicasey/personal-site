@@ -6,6 +6,8 @@ import Footer from'./components/footer/footer'
 
 // pages
 import NotFound from'./pages/notfound/notfound'
+import Construction from'./pages/construction/construction'
+
 import Landing from'./pages/landing/landing'
 import Projects from'./pages/projects/projects'
 import About from'./pages/about/about'
@@ -29,6 +31,7 @@ function App() {
         <Route exact path="/experience" element={<Experience/>} />
         <Route exact path="/links" element={<Links/>} />
         <Route exact path="/adventures" element={<Adventures/>} />
+        <Route exact path="/construction" element={<Construction/>} />
 
         {/* <Route exact path="/groups" element={<Groups server={s}/>} />
         <Route exact path="/explore" element={<Explore server={s}/>} /> */}

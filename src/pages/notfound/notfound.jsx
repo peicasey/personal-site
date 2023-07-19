@@ -1,14 +1,14 @@
-// import { ArrowTrendingDownIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingDownIcon } from '@heroicons/react/24/outline'
 import NextButton from '../../components/nextbutton'
 // import SadDuck from '../../assets/notfound/not_found.png'
 
 export default function NotFound() {
     return (
         <div className="p-24 flex gap-8">
-            <img
+            {/* <img
                 src={SadDuck}
                 className='w-2/4 h-auto hidden'
-            />
+            /> */}
             <div >
                 <div className="relative mb-2 lg:block hidden">
                     <div >

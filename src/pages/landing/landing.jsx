@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import Status from './status/status'
+import QuickStats from './quickstats'
 import Adventures_Brief from '../adventures/adventures_brief'
 import NextButton from '../../components/nextbutton'
 
@@ -55,7 +56,7 @@ export default function Landing() {
             </div>
             
             <div>
-
+                <QuickStats />
             </div>
             
             <div className="pt-16 pb-16 pr-8 pl-8 sm:pr-16 sm:pl-16 md:pr-24 md:pl-24 md:pb-24">

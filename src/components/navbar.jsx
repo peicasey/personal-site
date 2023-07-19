@@ -24,12 +24,12 @@ const Navbar = () => {
         </IconButton>
       </div>
       
-      <NavigationMenu.List className="right shadow-blackA7 m-0 flex items-center list-none rounded-[6px] backdrop-blur-2xl p-1">
+      <NavigationMenu.List className="right shadow-blackA7 m-0 flex items-center list-none rounded-[6px] backdrop-blur-2xl p-1 before:hidden">
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="text-amber11 dark:text-amber-500 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:shadow-amber7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
-            About{' '}
+          <NavigationMenu.Trigger onClick={() => navigate('/about')} className="text-amber11 dark:text-amber-500 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:shadow-amber7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
+            <p >About{' '}</p>
             <CaretDownIcon
-              className="text-amber10 relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
+              className="text-amber11 relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
               aria-hidden
             />
           </NavigationMenu.Trigger>
@@ -71,10 +71,10 @@ const Navbar = () => {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="text-amber11 dark:text-amber-500 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:shadow-amber7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
-            Projects{' '}
+          <NavigationMenu.Trigger onClick={() => navigate('/projects')} className="text-amber11 dark:text-amber-500 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:shadow-amber7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
+            <p >Projects{' '}</p>
             <CaretDownIcon
-              className="text-amber10 relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
+              className="text-amber11 relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
               aria-hidden
             />
           </NavigationMenu.Trigger>
@@ -103,10 +103,10 @@ const Navbar = () => {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="text-amber11 dark:text-amber-500 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:shadow-amber7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
-            Experience{' '}
+          <NavigationMenu.Trigger onClick={() => navigate('/experience')} className="text-amber11 dark:text-amber-500 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:shadow-amber7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
+            <p>Experience{' '}</p>
             <CaretDownIcon
-              className="text-amber10 relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
+              className="text-amber11 relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
               aria-hidden
             />
           </NavigationMenu.Trigger>
@@ -129,13 +129,14 @@ const Navbar = () => {
           <ToggleTheme/>
         </NavigationMenu.Item>
 
-        <NavigationMenu.Indicator className="data-[state=visible]:animate-fadeIn data-[state=hidden]:animate-fadeOut top-full z-[1] flex h-[10px] items-end justify-center overflow-hidden transition-[width,transform_250ms_ease]">
-          <div className="relative top-[70%] h-[10px] w-[10px] rotate-[45deg] rounded-tl-[2px] bg-white dark:bg-neutral-800" />
+        <NavigationMenu.Indicator className="data-[state=visible]:animate-fadeIn data-[state=hidden]:animate-fadeOut top-full z-[1] flex h-[11px] items-end justify-center overflow-hidden transition-[width,transform_250ms_ease]">
+          <div className="relative top-[70%] h-[15px] w-[12px] rotate-[45deg] rounded-tl-[2px] bg-white dark:bg-neutral-800" />
         </NavigationMenu.Indicator>
+
       </NavigationMenu.List>
 
       <div className="perspective-[2000px] absolute top-full right-0 sm:right-4 flex w-full justify-center sm:justify-end">
-        <NavigationMenu.Viewport className="data-[state=open]:animate-scaleIn data-[state=closed]:animate-scaleOut relative mt-[3px] h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-[6px] bg-white dark:bg-neutral-800 transition-[width,_height] duration-300 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
+        <NavigationMenu.Viewport className="data-[state=open]:animate-scaleIn data-[state=closed]:animate-scaleOut relative mt-[3px] h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-[6px] bg-white dark:bg-neutral-800 transition-[width,_height] duration-300 sm:w-[var(--radix-navigation-menu-viewport-width)] shadow-2xl" />
       </div>
     </NavigationMenu.Root>
   );
