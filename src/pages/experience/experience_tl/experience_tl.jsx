@@ -40,8 +40,8 @@ const delay = 2500;
 
 const container = 
 ` 
-  min-w-[75vw] max-h-[400px] 
-  px-8 pt-4 pb-8
+  min-w-[75vw] h-[375px] sm:h-[300px] md:h-[250px] lg:h-[210px]
+  px-8 pt-8 pb-12
   bg-white dark:bg-neutral-800
 `
 const content = "w-full flex flex-col"
@@ -81,14 +81,19 @@ export default function Experience_TL() {
   }, [index]);
 
   return (
-    <div className="w-[75vw] overflow-hidden">
+    <div className="w-[75vw] rounded-lg overflow-hidden">
       <div
         className="flex no-wrap gap-0 duration-500 ease-in-out"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
          {EXPERIENCES.map((exp, index) => (
 
-            <div key={index} className={container}>
+            <div key={index} className={container}
+              style={{
+                '-webkit-mask-image': 'linear-gradient(to bottom, black 60%, transparent 100%)',
+                'mask-image': 'linear-gradient(to bottom, black 60%, transparent 100%)',
+              }}
+            >
               <div className={content}>
                 <div className='flex gap-8 items-center justify-between'>
                   <div>
@@ -97,14 +102,14 @@ export default function Experience_TL() {
                   </div>
                   
                   <div className='flex flex-col items-end'>
-                    <p>{exp.date}</p>
-                    <p className='text-sm text-neutral-500 flex items-center gap-1'>
+                    <p className='text-xs sm:text-sm'>{exp.date}</p>
+                    <p className='text-xs sm:text-sm text-neutral-500 flex items-center gap-1'>
                       {exp.location}
                     </p>
                   </div>
                   
                 </div>
-                <div className='pl-4'>
+                <div className='mt-2 pl-4'>
                   <ul className='text-sm list-disc'>
                   {exp.description.map((desc) => (
                     <li>{desc}</li>
@@ -120,7 +125,7 @@ export default function Experience_TL() {
 
       <div className='mt-8'>
         
-        <div className='z-[1] flex justify-between px-14'>          
+        <div className='z-[1] flex justify-between sm:px-14'>          
           {EXPERIENCES.map((exp, idx) => (
             <div className='flex flex-col items-center justify-center'>
               <div
@@ -130,13 +135,13 @@ export default function Experience_TL() {
                   setIndex(idx);
                 }}
               ></div>
-              <p className='mt-2 text-center text-sm text-amber-800 dark:text-amber-500'>
+              <p className='mt-2 text-center text-xs md:text-sm text-amber-800 dark:text-amber-500'>
                 {exp.date}
               </p>
             </div>
           ))}
         </div>
-        <div className='z-[-1] bg-amber-500 h-1 w-[100vw] absolute left-0 translate-y-[-8.5vh] md:translate-y-[-40px]'></div>
+        <div className='z-[-1] bg-amber-500 h-1 w-[100vw] absolute left-0 translate-y-[-5.25vh] lg:translate-y-[-6vh]'></div>
       </div>
       
     </div>

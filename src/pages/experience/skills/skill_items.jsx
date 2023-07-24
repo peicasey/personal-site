@@ -21,7 +21,7 @@ const data = () => {
         {
             name: "C++",
             icon: <i class="devicon-cplusplus-plain"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-lime-700',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -30,9 +30,31 @@ const data = () => {
             projects: [""]
         },
         {
+            name: "C",
+            icon: <i class="devicon-c-plain"></i>,
+            experience: "3 yrs",
+            exp_color: 'bg-lime-700',
+            use: "frequent use",
+            use_color: 'bg-lime-600',
+            description: "printf() is both faster and easier, I will die on this hill.",
+            display: [1, 3],
+            projects: [""]
+        },
+        {
+            name: "C#",
+            icon: <i class="devicon-csharp-plain"></i>,
+            experience: "3 yrs",
+            exp_color: 'bg-lime-700',
+            use: "heavy use",
+            use_color: 'bg-lime-700',
+            description: "Game dev + .NET stuff",
+            display: [1, 3],
+            projects: [""]
+        },
+        {
             name: "Python",
             icon: <i class="devicon-python-plain"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-lime-700',
             use: "frequent use",
             use_color: 'bg-lime-600',
@@ -43,7 +65,7 @@ const data = () => {
         {
             name: "JavaScript",
             icon: <i class="devicon-javascript-plain"></i>,
-            experience: "1 year",
+            experience: "1 yr",
             exp_color: 'bg-lime-700',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -54,7 +76,7 @@ const data = () => {
         {
             name: "TypeScript",
             icon: <i class="devicon-typescript-plain"></i>,
-            experience: "1 year",
+            experience: "1 yr",
             exp_color: 'bg-lime-700',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -65,7 +87,7 @@ const data = () => {
         {
             name: "R",
             icon: <i class="devicon-r-original"></i>,
-            experience: "2.5 years",
+            experience: "2.5 yrs",
             exp_color: 'bg-lime-600',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -76,7 +98,7 @@ const data = () => {
         {
             name: "Java",
             icon: <i class="devicon-java-plain"></i>,
-            experience: "6 years",
+            experience: "6 yrs",
             exp_color: 'bg-lime-800',
             use: "moderate use",
             use_color: 'bg-orange-700',
@@ -87,7 +109,7 @@ const data = () => {
         {
             name: "HTML",
             icon: <i class="devicon-html5-plain"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -96,9 +118,53 @@ const data = () => {
             projects: [""]
         },
         {
+            name: "CSS",
+            icon: <i class="devicon-css3-plain"></i>,
+            experience: "2 yrs",
+            exp_color: 'bg-orange-500',
+            use: "heavy use",
+            use_color: 'bg-lime-700',
+            description: "CSS enjoyer",
+            display: [1, 3],
+            projects: [""]
+        },
+        {
+            name: "Dart",
+            icon: <i class="devicon-dart-plain"></i>,
+            experience: "1 yr",
+            exp_color: 'bg-orange-500',
+            use: "moderate use",
+            use_color: 'bg-orange-500',
+            description: "Used with Flutter!",
+            display: [1, 3],
+            projects: [""]
+        },
+        {
+            name: "VS Code",
+            icon: <i class="devicon-vscode-plain"></i>,
+            experience: "3 yrs",
+            exp_color: 'bg-lime-700',
+            use: "heavy use",
+            use_color: 'bg-lime-700',
+            description: "Personal fave editor <3",
+            display: [1, 2, 6],
+            projects: [""]
+        },
+        {
+            name: "Visual Studio",
+            icon: <i class="devicon-visualstudio-plain"></i>,
+            experience: "3 yrs",
+            exp_color: 'bg-lime-700',
+            use: "frequent use",
+            use_color: 'bg-lime-700',
+            description: "Finally learned how to use a debugger with this.",
+            display: [1, 6],
+            projects: [""]
+        },
+        {
             name: "R Studio",
             icon: <i class="devicon-rstudio-plain"></i>,
-            experience: "2.5 years",
+            experience: "2.5 yrs",
             exp_color: 'bg-lime-600',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -109,7 +175,7 @@ const data = () => {
         {
             name: "NumPy",
             icon: <i class="devicon-numpy-original"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-green-700',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -120,7 +186,7 @@ const data = () => {
         {
             name: "Pandas",
             icon: <i class="devicon-pandas-original"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -131,7 +197,7 @@ const data = () => {
         {
             name: "Kaggle",
             icon: <i class="devicon-kaggle-original"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -140,12 +206,12 @@ const data = () => {
             projects: [""]
         },
         {
-            name: "Jupyter Notebooks",
+            name: "Jupyter",
             icon: <i class="devicon-jupyter-plain"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
-            use: "moderate use",
-            use_color: 'bg-orange-500',
+            use: "light use",
+            use_color: 'bg-red-500',
             description: "AI4ALL projects and such.",
             display: [1, 4],
             projects: [""]
@@ -153,7 +219,7 @@ const data = () => {
         {
             name: "TensorFlow",
             icon: <i class="devicon-tensorflow-original"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -164,7 +230,7 @@ const data = () => {
         {
             name: "PyTorch",
             icon: <i class="devicon-pytorch-original"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -175,7 +241,7 @@ const data = () => {
         {
             name: "Selenium",
             icon: <i class="devicon-selenium-original"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -186,7 +252,7 @@ const data = () => {
         {
             name: "ThreeJS",
             icon: <i class="devicon-threejs-original"></i>,
-            experience: "1 year",
+            experience: "1 yr",
             exp_color: 'bg-orange-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -197,7 +263,7 @@ const data = () => {
         {
             name: "React",
             icon: <i class="devicon-react-original"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -208,62 +274,106 @@ const data = () => {
         {
             name: "NodeJS",
             icon: <i class="devicon-nodejs-plain"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "heavy use",
             use_color: 'bg-lime-700',
             description: "Node >>>",
-            display: [1, 6],
+            display: [1, 4],
+            projects: [""]
+        },
+        {
+            name: "ExpressJS",
+            icon: <i class="devicon-express-original"></i>,
+            experience: "1 yr",
+            exp_color: 'bg-orange-500',
+            use: "moderate use",
+            use_color: 'bg-orange-500',
+            description: "Pretty good for backend stuff.",
+            display: [1, 4],
             projects: [""]
         },
         {
             name: "MongoDB",
             icon: <i class="devicon-mongodb-plain"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
             description: "I've set up my own cluster! B)",
-            display: [1, 5],
+            display: [1, 2, 5],
             projects: [""]
         },
         {
             name: "PostGreSQL",
             icon: <i class="devicon-postgresql-plain"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
-            description: "Over a year's data for restaurants for CSCE 315 project!",
+            description: "Over a yr's data for restaurants for CSCE 315 project!",
             display: [1, 5],
+            projects: [""]
+        },
+        {
+            name: ".NET",
+            icon: <i class="devicon-dotnetcore-plain"></i>,
+            experience: "1 yr",
+            exp_color: 'bg-orange-500',
+            use: "heavy use",
+            use_color: 'bg-lime-700',
+            description: "Used during my Arbin Instruments internship heavily.",
+            display: [1, 4],
+            projects: [""]
+        },
+        {
+            name: "Electron",
+            icon: <i class="devicon-electron-original"></i>,
+            experience: "1 yr",
+            exp_color: 'bg-orange-500',
+            use: "heavy use",
+            use_color: 'bg-lime-700',
+            description: "Used during my Arbin Instruments internship heavily.",
+            display: [1, 4],
             projects: [""]
         },
         {
             name: "TailwindCSS",
             icon: <i class="devicon-tailwindcss-plain"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "heavy use",
             use_color: 'bg-lime-700',
             description: "On this website o-o",
-            display: [1, 4],
+            display: [1, 2, 4],
             projects: [""]
         },
         {
             name: "MaterialUI",
             icon: <i class="devicon-materialui-plain"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
             description: "On this website o-o",
+            display: [1, 4],
+            projects: [""]
+        },
+        {
+            name: "Bootstrap",
+            icon: <i class="devicon-bootstrap-plain"></i>,
+            experience: "<1 yr",
+            exp_color: 'bg-red-500',
+            use: "light use",
+            use_color: 'bg-red-500',
+            description: "IMO there are just a lot of better CSS options.",
             display: [1, 4],
             projects: [""]
         },
         {
             name: "Flutter",
             icon: <i class="devicon-flutter-plain"></i>,
-            experience: "1 year",
+            experience: "1 yr",
             exp_color: 'bg-orange-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -272,20 +382,31 @@ const data = () => {
             projects: [""]
         },
         {
+            name: "Android Studio",
+            icon: <i class="devicon-androidstudio-plain"></i>,
+            experience: "1 yr",
+            exp_color: 'bg-orange-500',
+            use: "moderate use",
+            use_color: 'bg-orange-500',
+            description: "Sacrificed so much storage space for this 😭😭",
+            display: [1, 4],
+            projects: [""]
+        },
+        {
             name: "Git",
             icon: <i class="devicon-git-plain"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-lime-700',
             use: "heavy use",
             use_color: 'bg-lime-700',
             description: "git gud",
-            display: [1, 6],
+            display: [1, 2, 6],
             projects: [""]
         },
         {
             name: "GitHub",
             icon: <i class="devicon-github-original"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-lime-700',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -296,7 +417,7 @@ const data = () => {
         {
             name: "NPM",
             icon: <i class="devicon-npm-original-wordmark"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -305,9 +426,20 @@ const data = () => {
             projects: [""]
         },
         {
+            name: "Yarn",
+            icon: <i class="devicon-yarn-plain"></i>,
+            experience: "2 yrs",
+            exp_color: 'bg-orange-500',
+            use: "moderate use",
+            use_color: 'bg-orange-500',
+            description: "I never noticed that it has a cute logo!",
+            display: [1, 6],
+            projects: [""]
+        },
+        {
             name: "Linux",
             icon: <i class="devicon-linux-plain"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-lime-700',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -318,7 +450,7 @@ const data = () => {
         {
             name: "Ubuntu",
             icon: <i class="devicon-ubuntu-plain"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-lime-700',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -329,7 +461,7 @@ const data = () => {
         {
             name: "SSH",
             icon: <i class="devicon-ssh-original"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-lime-700',
             use: "light use",
             use_color: 'bg-red-500',
@@ -340,7 +472,7 @@ const data = () => {
         {
             name: "Nuget",
             icon: <i class="devicon-nuget-original"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -351,7 +483,7 @@ const data = () => {
         {
             name: "Latex",
             icon: <i class="devicon-latex-original"></i>,
-            experience: "1 year",
+            experience: "1 yr",
             exp_color: 'bg-orange-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -362,18 +494,29 @@ const data = () => {
         {
             name: "Putty",
             icon: <i class="devicon-putty-plain"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "light use",
             use_color: 'bg-red-500',
-            description: "For CSCE 314",
+            description: "For CSCE 314; one of the most painful experiences.",
             display: [1, 6],
+            projects: [""]
+        },
+        {
+            name: "Docker",
+            icon: <i class="devicon-docker-plain"></i>,
+            experience: "3 yrs",
+            exp_color: 'bg-green-700',
+            use: "light use",
+            use_color: 'bg-red-500',
+            description: "Want to get better at this for sure.",
+            display: [1, 7, 8],
             projects: [""]
         },
         {
             name: "Figma",
             icon: <i class="devicon-figma-plain"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -382,9 +525,20 @@ const data = () => {
             projects: [""]
         },
         {
+            name: "Blender",
+            icon: <i class="devicon-blender-original"></i>,
+            experience: "2 yrs",
+            exp_color: 'bg-orange-500',
+            use: "heavy use",
+            use_color: 'bg-lime-700',
+            description: "The world's greatest blenderer.",
+            display: [1, 6],
+            projects: [""]
+        },
+        {
             name: "Unity",
             icon: <i class="devicon-unity-original"></i>,
-            experience: "3 years",
+            experience: "3 yrs",
             exp_color: 'bg-lime-700',
             use: "moderate use",
             use_color: 'bg-orange-500',
@@ -395,7 +549,7 @@ const data = () => {
         {
             name: "Unreal",
             icon: <i class="devicon-unrealengine-original"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -406,7 +560,7 @@ const data = () => {
         {
             name: "Markdown",
             icon: <i class="devicon-markdown-original"></i>,
-            experience: "3 year",
+            experience: "3 yr",
             exp_color: 'bg-lime-700',
             use: "heavy use",
             use_color: 'bg-lime-700',
@@ -417,7 +571,7 @@ const data = () => {
         {
             name: "Trello",
             icon: <i class="devicon-trello-plain"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -428,7 +582,7 @@ const data = () => {
         {
             name: "Confluence",
             icon: <i class="devicon-confluence-original"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -439,7 +593,7 @@ const data = () => {
         {
             name: "Jira",
             icon: <i class="devicon-jira-plain"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -450,7 +604,7 @@ const data = () => {
         {
             name: "Slack",
             icon: <i class="devicon-slack-plain"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -461,7 +615,7 @@ const data = () => {
         {
             name: "Heroku",
             icon: <i class="devicon-heroku-original"></i>,
-            experience: "<1 year",
+            experience: "<1 yr",
             exp_color: 'bg-red-500',
             use: "light use",
             use_color: 'bg-red-500',
@@ -472,11 +626,40 @@ const data = () => {
         {
             name: "Firebase",
             icon: <i class="devicon-firebase-plain"></i>,
-            experience: "2 years",
+            experience: "2 yrs",
             exp_color: 'bg-orange-500',
             use: "moderate use",
             use_color: 'bg-orange-500',
             description: "What hosts this site!",
+            display: [1, 7],
+            projects: [""]
+        },
+        {
+            name: "Azure",
+            icon: <i class="devicon-azure-plain"></i>,
+            experience: "2 yrs",
+            exp_color: 'bg-orange-500',
+            use: "moderate use",
+            use_color: 'bg-orange-500',
+            description: "Using my 200$ student credit B)",
+            display: [1, 7],
+            projects: [""]
+        },
+        {
+            name: "Vercel",
+            icon: <div>
+                    <div className='hidden dark:block'>
+                        <svg className="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#f59e0b" viewBox="0 0 256 222"><path d="m128 0l128 221.705H0z"/></svg>
+                    </div>
+                    <div className='dark:hidden'>
+                        <svg className="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#78350f" viewBox="0 0 256 222"><path d="m128 0l128 221.705H0z"/></svg>
+                    </div>
+                </div>,
+            experience: "1 yrs",
+            exp_color: 'bg-orange-500',
+            use: "frequent use",
+            use_color: 'bg-lime-600',
+            description: "Honestly such a good tool.",
             display: [1, 7],
             projects: [""]
         },

@@ -11,7 +11,7 @@ export default function Construction() {
                     <h1 className="text-6xl font-bold text-amber-500 text-stroke">Under Construction!</h1>
                 </div>
             </div>
-            <p className='text-2xl my-4 font-bold'>🚧 Come back later when this is done! 🚧</p>
+            <p className='text-2xl dark:text-white my-4 font-bold'>🚧 Come back later when this is done! 🚧</p>
             <NextButton link={'/'} page_name={'exit'}/>
         </div>
     )

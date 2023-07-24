@@ -1,7 +1,5 @@
 import { Suspense } from "react";
 
-import CaseySpin from '../../../assets/casey-spins.gif'
-import LoadingLight from '../../../assets/loading/loading-light.gif'
 import Loading from '../../../assets/loading/loading.png'
 
 const position = 
@@ -16,7 +14,7 @@ export default function Loading3D() {
         <div className={position}>
             <img
                 src={ Loading }
-                className='w-full h-full'
+                className='w-full h-full animate-pulse'
             />  
         </div>
     )

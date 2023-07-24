@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 // import Status from './status/status'
-import QuickStats from './quickstats'
+import QuickStats from './quickstats/quickstats'
 import Adventures_Brief from '../adventures/adventures_brief'
 import NextButton from '../../components/nextbutton'
 import LandingZone from './landingzone/landingzone'

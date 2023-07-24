@@ -40,7 +40,7 @@ const Navbar = () => {
                   <a
                     className="focus:shadow-amber7 from-yellow7 to-lime10 flex
                     h-full w-full select-none flex-col justify-end rounded-[6px] bg-gradient-to-b p-[25px] no-underline outline-none focus:shadow-[0_0_0_2px]"
-                    href="/about"
+                    href="/"
                   >
                     {/* <svg aria-hidden width="38" height="38" viewBox="0 0 25 25" fill="white">
                       <path d="M12 25C7.58173 25 4 21.4183 4 17C4 12.5817 7.58173 9 12 9V25Z"></path>
@@ -83,19 +83,19 @@ const Navbar = () => {
               <ListItem title="All Projects" className="hover:cursor-pointer" onClick={() => navigate('/projects')}>
                 all my projects bwahahaha
               </ListItem>
-              <ListItem title="Full Stack" className="hover:cursor-pointer" onClick={() => navigate('/projects/fullstack')}>
+              <ListItem title="Full Stack" className="hover:cursor-pointer" onClick={() => navigate('/construction')}>
                 my full stack work ranging from webdev to desktop
               </ListItem>
-              <ListItem title="Games!!" className="hover:cursor-pointer" onClick={() => navigate('/games')}>
+              <ListItem title="Games!!" className="hover:cursor-pointer" onClick={() => navigate('/construction')}>
                 the fun section of the website
               </ListItem>
-              <ListItem title="AI/ML" className="hover:cursor-pointer" onClick={() => navigate('/aiml')}>
+              <ListItem title="AI/ML" className="hover:cursor-pointer" onClick={() => navigate('/construction')}>
                 when the robot uprising comes they will not be happy
               </ListItem>
-              <ListItem title="Big Brain" className="hover:cursor-pointer" onClick={() => navigate('/bigbrain')}>
+              <ListItem title="Big Brain" className="hover:cursor-pointer" onClick={() => navigate('/construction')}>
                 ones that are complicated
               </ListItem>
-              <ListItem title="Favorites" className="hover:cursor-pointer" onClick={() => navigate('/favorites')}>
+              <ListItem title="Favorites" className="hover:cursor-pointer" onClick={() => navigate('/construction')}>
                 projects that I like the most
               </ListItem>
             </ul>
@@ -115,10 +115,10 @@ const Navbar = () => {
               <ListItem title="Experience" className="hover:cursor-pointer" onClick={() => navigate('/experience')}>
                 my work and leadership experience.
               </ListItem>
-              <ListItem title="Skills" className="hover:cursor-pointer" onClick={() => navigate('/experience/skills')}>
+              <ListItem title="Skills" className="hover:cursor-pointer" onClick={() => navigate('/experience')}>
                 my technical and soft skills.
               </ListItem>
-              <ListItem title="Resume" className="hover:cursor-pointer" onClick={() => navigate('/resume')}>
+              <ListItem title="Resume" className="hover:cursor-pointer" onClick={() => navigate('/experience')}>
                 the almighty resume!
               </ListItem>
             </ul>

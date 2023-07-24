@@ -1,5 +1,5 @@
 const plugin = require('tailwindcss/plugin');
-const { blackA, mauve, violet, indigo, purple, amber, yellow, lime } = require('@radix-ui/colors');
+const { blackA, mauve, indigo, purple, amber, yellow, lime } = require('@radix-ui/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -56,6 +56,26 @@ module.exports = {
           from: { opacity: 1 },
           to: { opacity: 0 },
         },
+        pulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '.5' },
+        },
+        fadeUp : {
+          '0%': 
+          { 
+            transform: 'translateY(10px)',
+            opacity: '0' 
+          },
+          '50%': {
+            transform: 'translateY(14px)',
+            opacity: '0'
+          },
+          '100%': 
+          { 
+            transform: 'translateY(0px)',
+            opacity: '1' 
+          }
+        },
       },
     },
     animation: {
@@ -67,6 +87,18 @@ module.exports = {
       enterFromRight: 'enterFromRight 250ms ease',
       exitToLeft: 'exitToLeft 250ms ease',
       exitToRight: 'exitToRight 250ms ease',
+      pulse: '0.2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      fadeUp75: 'fadeUp 0.75s ease-in-out',
+      fadeUp100: 'fadeUp 1s ease-in-out',
+      fadeUp125: 'fadeUp 1.25s ease-in-out',
+      fadeUp150: 'fadeUp 1.5s ease-in-out',
+      fadeUp175: 'fadeUp 1.75s ease-in-out',
+      fadeUp200: 'fadeUp 2s ease-in-out',
+      fadeUp225: 'fadeUp 2.25s ease-in-out',
+      fadeUp250: 'fadeUp 2.5s ease-in-out',
+      fadeUp275: 'fadeUp 2.75s ease-in-out',
+      fadeUp300: 'fadeUp 3s ease-in-out',
+      fadeUp325: 'fadeUp 3.25s ease-in-out',
     },
   },
   plugins: [

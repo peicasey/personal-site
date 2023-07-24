@@ -41,14 +41,45 @@ const StyledAutocomplete = styled(Autocomplete)({
   
 
 const TYPES = [
-    { id: 1, name: '😵‍💫 All' },
-    { id: 2, name: '🌟 Main Picks' },
-    { id: 3, name: '💬 Languages' },
-    { id: 4, name: '📚 Libraries/Frameworks/Engines' },
-    { id: 5, name: '💾 Databases' },
-    { id: 6, name: '🛠️ Developer Tools' },
-    { id: 7, name: '🌐 Hosting' },
-    { id: 8, name: '📆 Project Management' },
+    { 
+        id: 1, 
+        name: '😵‍💫 All',
+        description: "If I've breathed near it, then that's enough to be listed here."
+    },
+    { 
+        id: 2, 
+        name: '🌟 Main Picks',
+        description: "My most used / favorite stuff!"
+    },
+    { 
+        id: 3, name: '💬 Languages',
+        description: "Not including Scheme or Assembly here out of pure spite."
+    },
+    { 
+        id: 4, 
+        name: '📚 Libraries/Frameworks/Engines',
+        description: "Code by other people that I find very helpful yes."
+    },
+    { 
+        id: 5, 
+        name: '💾 Databases',
+        description: "Unfortunately google sheets does not count."
+    },
+    { 
+        id: 6, 
+        name: '🛠️ Developer Tools',
+        description: "Tools for my toolbox."
+    },
+    { 
+        id: 7, 
+        name: '🌐 Hosting/Containers',
+        description: "DevOps is crazy."
+},
+    { 
+        id: 8, 
+        name: '📆 Project Management', 
+        description: "Soft skill central :]"
+},
 ]
 
 const popup =
@@ -91,9 +122,9 @@ const Skills = () => {
   console.log(selectedDisplay);
 
   return (
-    <div className='px-28 pb-8'>
-        <div className='flex gap-12'>
-            <div className='w-3/6'>
+    <div className='px-8 sm:px-28 pb-8'>
+        <div className='flex flex-col md:flex-row gap-12'>
+            <div className='w-full md:w-3/6'>
                 <h2 className='text-2xl font-bold mb-4 text-amber-700 dark:text-amber-500'>Skills</h2>
                 <p className='mb-4 dark:text-white'>Pick what you want to see :D</p>
                 <StyledAutocomplete
@@ -111,12 +142,12 @@ const Skills = () => {
                     }}
                 />
                 <p className='mt-4 text-amber-700 dark:text-neutral-500'>
-                    If there's something that you think I should learn, let me know! I'm always down
+                    If there's something that you think I should learn, let me know -- I'm always down
                     to learn new things!
                 </p>
             </div>
-            <div className='w-full h-full bg-amber-200 dark:bg-neutral-900 p-4 pb-6 rounded-lg duration-500'>
-                <div className='flex gap-2 pb-2 border-b-[1px] border-amber-400 dark:border-neutral-700 mb-6'>
+            <div className='w-full h-full flex flex-col justify-center items-center bg-amber-200 dark:bg-neutral-900 p-4 pb-6 rounded-lg duration-500'>
+                <div className='flex w-full gap-2 pb-2 border-b-[1px] border-amber-400 dark:border-neutral-700 mb-6'>
                     <p className='text-amber-600 dark:text-amber-800 font-bold'>Selected: </p>
                     <div className={tag}>{selectedDisplay.name}</div>
                 </div>
@@ -149,7 +180,12 @@ const Skills = () => {
                             </div>
                         </div>
                     ))}
-                </div>  
+                </div> 
+                <div className='flex w-full border-t-[1px] mt-4 border-amber-400 dark:border-neutral-700'>
+                    <p className='text-amber-600 dark:text-amber-800 mt-2 italic'>
+                        {selectedDisplay.description}
+                    </p>
+                </div> 
             </div>
         </div>
         
