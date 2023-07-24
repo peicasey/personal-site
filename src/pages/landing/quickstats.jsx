@@ -6,24 +6,25 @@ import Me from '../../assets/meTpose.png';
 import Floaties from '../../assets/floaties1.png';
 import FloatiesTop from '../../assets/floaties2.png';
 
-import NextButton from '../../components/nextbutton';
+// icons
+import { SiCplusplus, SiPython, SiR, SiTypescript } from "react-icons/si";
 
 const TOP_LANGS = [
     { 
         name: "C++",
-        icon: "C++",
+        icon: <SiCplusplus/>,
     },
     { 
-        name: "Javascript/TypeScript",
-        icon: "JS/TS",
+        name: "JavaScript / TypeScript",
+        icon: <SiTypescript/>,
     },
     { 
         name: "Python",
-        icon: "Py",
+        icon: <SiPython/>,
     },
     { 
         name: "R",
-        icon: "R",
+        icon: <SiR/>,
     },
 ]
 
@@ -33,7 +34,7 @@ const FAVE_FRAMES = [
         icon: "React",
     },
     { 
-        name: "Javascript/TypeScript",
+        name: "Javascript / TypeScript",
         icon: "JS/TS",
     },
     { 
@@ -70,6 +71,13 @@ const glow =
     brightness-50 blur-md
 `
 
+const bg = 
+`
+    bg-[#4f6232] group-hover:bg-[#576732] 
+    dark:bg-[#1c230c] dark:group-hover:bg-[#21290f]
+    h-64 w-[100vw] py-8 pl-64 
+    transition-colors duration-500
+`
 
 export default function QuickStats () {
 
@@ -88,11 +96,22 @@ export default function QuickStats () {
         <div onClick={() => navigate('/experience')} className='group hover:cursor-pointer w-full my-20'>
             <div className='flex justify-center' id="scene">
                 <div className='py-10' data-depth="0">
-                    <div className='bg-[#4f6232] dark:bg-[#1c230c] h-64 w-[100vw] py-8 pl-64'>
-                        <h2 className='text-lime-200 dark:text-lime-200 text-2xl font-bold'>Quick Stats</h2>
-                        <div className='z-100'>
-                            <NextButton link={'/experience'} page_name={'see more'} />
+                    <div className={bg}>
+                        <h2 className='text-lime-200 text-2xl font-bold'>Quick Stats</h2>
+                        <div className='text-lime-300 pl-4'>
+                            <h3 className='font-bold'>TOP LANGS</h3>
+                            <div className='flex gap-4 flex-wrap flex-col sm:flex-row duration-500'>
+                                {TOP_LANGS.map((top_lang) => (
+                                    <div className='flex items-center gap-1  duration-500'>
+                                        {top_lang.icon}
+                                        <div className='w-0 scale-0 truncate group-hover:w-full group-hover:scale-100 duration-500'>
+                                            {top_lang.name}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
                 <img data-depth="0.1"
@@ -106,7 +125,7 @@ export default function QuickStats () {
                 <div className=' flex' data-depth="0.3">
                     <img 
                         src={Me}
-                        className='w-60 h-auto select-none filter dark:brightness-75 drop-shadow-md'
+                        className='group-hover:scale-[1.05] transition-transform duration-300 w-60 h-auto select-none filter dark:brightness-75 drop-shadow-md'
                     />
                     <div className={seeMore}>
                         Click to see more!

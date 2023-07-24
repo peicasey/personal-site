@@ -13,7 +13,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <NavigationMenu.Root className="fixed z-[1] flex w-screen py-2 px-4 m-0 top-0 justify-between backdrop-blur">
+    <NavigationMenu.Root className="fixed z-[2] flex w-screen py-2 px-4 m-0 top-0 justify-between backdrop-blur">
       <div className='flex justify-center items-center'>
         <IconButton aria-label="delete">
           <img
