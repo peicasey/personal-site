@@ -12,16 +12,16 @@ const contentStyle = {
 const Project_Feature = () => (
   <Carousel autoplay>
     <div>
-      <div className="h-[260px] w-full bg-cover filter brightness-75 bg-[url('./carousel/tao.png')]"></div>
+      <div className="h-[260px] w-full bg-cover filter brightness-75 bg-[url('./tao.png')]"></div>
     </div>
     <div>
-      <div className="h-[260px] w-full bg-cover bg-center bg-[url('./carousel/revs.png')]"></div>
+      <div className="h-[260px] w-full bg-cover bg-center bg-[url('./revs.png')]"></div>
     </div>
     <div>
-      <div className="h-[260px] w-full bg-cover bg-[url('./carousel/breakfree.png')]"></div>
+      <div className="h-[260px] w-full bg-cover bg-[url('./breakfree.png')]"></div>
     </div>
     <div>
-      <div className="h-[260px] w-full bg-cover bg-[url('./carousel/thrivetogether.png')]"></div>
+      <div className="h-[260px] w-full bg-cover bg-[url('./thrivetogether.png')]"></div>
     </div>
   </Carousel>
 );
