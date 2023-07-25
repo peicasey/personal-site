@@ -1,33 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+
+// components
+import Navbar from'./components/navbar'
+import Footer from'./components/footer/footer'
+
+// pages
+import NotFound from'./pages/notfound/notfound'
+import Construction from'./pages/construction/construction'
+
+// import LandingZone from'./pages/landing/landingzone'
+import Temp from './pages/landing/landingzone/temp'
+
+import Landing from'./pages/landing/landing'
+import Projects from'./pages/projects/projects'
+import About from'./pages/about/about'
+import Experience from'./pages/experience/experience'
+
+// subpages
+import Links from './pages/links/links'
+import Adventures from './pages/adventures/adventures'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React + Casey's site for now :D</h1>
-      <h2>Dev change</h2>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="font-atkins ">
+      <Navbar/>
+      <Routes>
+        <Route exact path="/" element={<Landing />} />
+        <Route path="*" element={<NotFound />} />
+        <Route exact path="/projects" element={<Projects/>} />
+        <Route exact path="/about" element={<About/>} />
+        <Route exact path="/experience" element={<Experience/>} />
+        <Route exact path="/links" element={<Links/>} />
+        <Route exact path="/adventures" element={<Adventures/>} />
+        <Route exact path="/construction" element={<Construction/>} />
+
+        <Route exact path="/jmm" element={<Temp/>} />
+
+
+        {/* <Route exact path="/groups" element={<Groups server={s}/>} />
+        <Route exact path="/explore" element={<Explore server={s}/>} /> */}
+      </Routes>
+      <Footer/>
     </div>
   )
 }

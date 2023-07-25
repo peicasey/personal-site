@@ -1,0 +1,47 @@
+.scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    font-size: x-large;
+    text-align: left;
+    color: #3f6212;
+}
+
+.scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 7s infinite;
+    text-decoration: underline dotted;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    25% {
+        top: -1.2em;
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    50% {
+        top: -2.4em;
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    75% {
+        top: -3.6em;
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
