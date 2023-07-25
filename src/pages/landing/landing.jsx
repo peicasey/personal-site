@@ -5,6 +5,7 @@ import QuickStats from './quickstats/quickstats'
 import Adventures_Brief from '../adventures/adventures_brief'
 import NextButton from '../../components/nextbutton'
 import LandingZone from './landingzone/landingzone'
+import Project_Feature from '../projects/components/project_feature'
 
 import '../../index.css'
 import './landing.css'
@@ -37,9 +38,17 @@ export default function Landing() {
                 <QuickStats />
             </div>
             
+            <div className='mt-36 mb-16'>
+                <div className="px-28 flex justify-between">
+                    <p className="text-lg font-bold dark:text-white mb-8">Some of my projects!</p>
+                    <NextButton link={'/adventures'} page_name={'more'} />
+                </div>
+                <Project_Feature />
+            </div>
+
             <div className="pt-16 pb-16 pr-8 pl-8 sm:pr-16 sm:pl-16 md:pr-24 md:pl-24 md:pb-24">
                 <div className="flex justify-between">
-                    <p className="text-lg font-bold dark:text-white">What I've been up to!</p>
+                    <p className="text-lg font-bold dark:text-white mb-8">What I've been up to!</p>
                     <NextButton link={'/adventures'} page_name={'more'} />
                 </div>
                 <Adventures_Brief />

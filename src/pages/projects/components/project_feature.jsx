@@ -1,26 +1,27 @@
 import { Carousel } from 'antd';
 
+
 const contentStyle = {
   height: '260px',
   color: '#fff',
   lineHeight: '160px',
   textAlign: 'center',
-  background: '#f59e0b',
+  background: 'gray',
 };
 
 const Project_Feature = () => (
   <Carousel autoplay>
     <div>
-      <h3 style={contentStyle}>1</h3>
+      <div className="h-[260px] w-full bg-cover filter brightness-75 bg-[url('./carousel/tao.png')]"></div>
     </div>
     <div>
-      <h3 style={contentStyle}>2</h3>
+      <div className="h-[260px] w-full bg-cover bg-center bg-[url('./carousel/revs.png')]"></div>
     </div>
     <div>
-      <h3 style={contentStyle}>3</h3>
+      <div className="h-[260px] w-full bg-cover bg-[url('./carousel/breakfree.png')]"></div>
     </div>
     <div>
-      <h3 style={contentStyle}>4</h3>
+      <div className="h-[260px] w-full bg-cover bg-[url('./carousel/thrivetogether.png')]"></div>
     </div>
   </Carousel>
 );

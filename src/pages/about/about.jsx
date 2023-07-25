@@ -41,7 +41,7 @@ const currently = [
         link_text: 'Institute of Biosciences and Technology',
         link: 'https://ibt.tamu.edu/faculty/kurt-zhang.html'
     },  
-]
+];
 
 const school = [
     {
@@ -74,7 +74,7 @@ const school = [
         link_text: 'some hackathons',
         link: 'https://devpost.com/peicasey'
     },
-]
+];
 
 
 const previously = [
@@ -94,15 +94,15 @@ const previously = [
         link: 'https://www.swetamu.com/'
     },
 
-]
+];
 
-const loading = () => {
+const Loading = () => {
     return (
-        <div className='flex justify-center items-center'>
+        <div className='w-36 sm:w-[20vw] animate-pulse flex-grow h-auto rounded-lg flex justify-center items-center'>
             <p>Loading... 🐊</p>
         </div>
     );
-}
+};
 
 export default function About() {
 
@@ -121,7 +121,7 @@ export default function About() {
             <div className="flex flex-col items-stretch md:flex-row gap-16 p-10 pb-16 sm:pl-24 sm:pr-24 bg-stone-50 dark:bg-[#211e1d] mb-2 dark:text-white duration-500">
                 
                 <div className='h-full w-full flex flex-col justify-center items-center pt-8'>
-                    <Suspense fallback={loading}>
+                    <Suspense fallback={ <Loading/> }>
                         <img
                             src={ Me }
                             alt='Casey Pei staring off past the camera'
@@ -132,6 +132,8 @@ export default function About() {
                         figure 1. a picture to humanize me by reminding you that 
                         I'm a real person and not a little internet creature
                     </p>
+                    
+
                 </div>
                 <div>
                     <p className="text-md text-amber-500">C:/about/about-me.txt</p>

@@ -14,7 +14,7 @@ export default function Loading3D() {
         <div className={position}>
             <img
                 src={ Loading }
-                className='w-full h-full animate-pulse'
+                className='w-full h-full animate-[fadeUp_1s_ease-out]'
             />  
         </div>
     )
