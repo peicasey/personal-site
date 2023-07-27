@@ -35,7 +35,6 @@ const EXPERIENCES =
 
 ]
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 const delay = 2500;
 
 const container = 
@@ -70,7 +69,7 @@ export default function Experience_TL() {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          prevIndex === EXPERIENCES.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -157,8 +156,6 @@ export default function Experience_TL() {
           </div>
         </div>
         
-        {/* <div className='z-[-1] bg-amber-500 h-1 w-full'></div> */}
-        {/* <div className='z-[-1] bg-amber-500 h-1 w-[100vw] absolute left-0 translate-y-[-5.25vh] lg:translate-y-[-6vh]'></div> */}
       </div>
     </div>
     

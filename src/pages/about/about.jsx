@@ -150,7 +150,7 @@ export default function About() {
                         </div>
                         ))} 
                     </div>
-                    <p className="text-sm sm:text-md mb-4 dark:text-neutral-200 duration-500">
+                    <p className="text-sm sm:text-md md:text-lg mb-4 dark:text-neutral-200 duration-500">
                         Hi, my name is Casey :)
                     </p>
                     <p className="text-sm sm:text-md mb-4 dark:text-neutral-200 duration-500">
@@ -175,7 +175,7 @@ export default function About() {
                     {({ open }) => (
                         <>
                         <Disclosure.Button className="flex w-full justify-between rounded-lg px-2 py-2 text-left text-sm font-medium bg-[#edece8] hover:bg-[#dcdbd7] dark:bg-neutral-700 dark:hover:bg-neutral-600 duration-500">
-                            <p className="text-sm sm:text-md">
+                            <p className="text-sm sm:text-md md:text-lg">
                                 ⏰ Currently I'm . . .
                             </p>
                             <ChevronUpIcon
@@ -210,7 +210,7 @@ export default function About() {
                     {({ open }) => (
                         <>
                         <Disclosure.Button className="flex w-full justify-between rounded-lg px-2 py-2 mt-2 text-left text-sm font-medium bg-[#edece8] hover:bg-[#dcdbd7] dark:bg-neutral-700 dark:hover:bg-neutral-600 duration-500">
-                            <p className="text-sm sm:text-md">
+                            <p className="text-sm sm:text-md md:text-lg">
                                 🎒 At school I'm . . .
                             </p>
                             <ChevronUpIcon
@@ -245,7 +245,7 @@ export default function About() {
                     {({ open }) => (
                         <>
                         <Disclosure.Button className="flex w-full justify-between rounded-lg px-2 py-2 mt-2 text-left text-sm font-medium bg-[#edece8] hover:bg-[#dcdbd7] dark:bg-neutral-700 dark:hover:bg-neutral-600 duration-500">
-                            <p className="text-sm sm:text-md">
+                            <p className="text-sm sm:text-md md:text-lg">
                                 ⏪ Previously I've . . .
                             </p>
                             <ChevronUpIcon

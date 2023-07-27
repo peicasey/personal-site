@@ -30,7 +30,7 @@ export default function Projects() {
                 <Project_Feature/>
             {/* </Suspense> */}
             
-            <div className='m-16 sm:text-lg flex gap-8'>
+            <div className='mt-16 mx-8 sm:mx-16 sm:text-lg flex gap-8'>
                 <div className='text-6xl drop-shadow-lg'>
                     🫡
                 </div>
@@ -47,7 +47,7 @@ export default function Projects() {
                 </div>
             </div>
 
-            <div className="my-16 mx-4 sm:mx-16 ">
+            <div className="mt-16 mb-36 mx-4 sm:mx-16 ">
                 {/* <h2 className="mb-4">All Projects</h2> */}
                 <div className="">
                     <Project_Cards/>
