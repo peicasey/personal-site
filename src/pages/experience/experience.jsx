@@ -5,23 +5,38 @@ import Skills from './skills/skills'
 export default function Experience() {
     return (
         <>
-            <div className="p-4 pt-24 pb-24 md:p-24 md:pb-32 dark:text-white drop-shadow-lg">
+            <div className="pt-24 md:px-24 pb-4 dark:text-white">
                 <div className='flex justify-center md:block'>
                     <div className="relative mb-2">
                         <div >
-                            <h1 className="text-6xl dark:text-red-800 font-bold mr-2 duration-0">EXPERIENCE</h1>
+                            <h1 className="text-5xl sm:text-6xl dark:text-red-800 font-bold mr-2 duration-0">EXPERIENCE</h1>
                         </div>
                         <div className="absolute top-0 left-1 aria-hidden select-none">
-                            <h1 className="text-6xl font-bold text-amber-500 text-stroke">EXPERIENCE</h1>
+                            <h1 className="text-5xl sm:text-6xl font-bold text-amber-500 text-stroke">EXPERIENCE</h1>
                         </div>
                     </div>
                 </div> 
-                <div className='flex flex-col justify-start mt-4'>
-                    <div className='flex justify-center mt-4'>
-                        <Experience_TL/>
+                <div className='my-16 mx-4 sm:mx-16 sm:text-lg flex gap-8'>
+                    <div className='text-6xl drop-shadow-lg'>
+                        💻
+                    </div>
+                    <div className=''>
+                        <p className=' text-amber-800'>
+                            I've been shaped by so many experiences and I'm always looking for new
+                            ones. Here is a brief overview of that as well as what skills I've gained.
+                        </p>
+                        <p className=' text-amber-800 mt-4'>
+                            (Currently a work-in-progress as I add my school leadership activities).
+                        </p>
                     </div>
                 </div>
+
             </div>
+            
+            <div className='flex flex-col justify-start mb-36 w-full'>
+                <Experience_TL/>
+            </div>
+
             <div className='mt-8 mb-36'>
                 <Skills />
             </div>

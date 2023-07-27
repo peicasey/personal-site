@@ -50,7 +50,7 @@ const TOP_LANGS = [
             [1, 110, 100],
             [1, 150, 100],
             [1, 200, 100],
-            [1, 300, 100],
+            [0, 300, 100],
             [0, 400, 100],
 
         ]
@@ -97,18 +97,18 @@ const glow =
 `
 
 const bg = 
-`
-    bg-[#4f6232] group-hover:bg-[#576732] 
-    dark:bg-[#1c230c] dark:group-hover:bg-[#21290f]
+`   
     sm:h-full w-[100vw] py-8 pl-64
     h-[60vh] 
-    transition-colors duration-500
+    pr-2 sm:pr-8 md:pr-12 lg:pr-24
+    flex flex-col md:flex-row gap-0 md:gap-8 lg:gap-18
 `
 
 const skill_rating =
 `
-    w-4 h-4
-    border-[1px] border-lime-500
+    w-4 h-4 lg:w-6 lg:h-6
+    border-[1px] border-amber-700 dark:border-lime-700
+    bg-amber-500 dark:bg-lime-800
     translate-x-[-40px] scale-0 
     group-hover:scale-100 group-hover:translate-x-0 
     duration-500
@@ -128,18 +128,25 @@ export default function QuickStats () {
     
 
     return (
-        <div onClick={() => navigate('/experience')} className='group hover:cursor-pointer w-full my-20'>
+        <div onClick={() => navigate('/experience')} className='group hover:cursor-pointer w-full my-28'>
             <div className='flex justify-center' id="scene">
-                <div className='py-10' data-depth="0">
+                <div className='py-4' data-depth="0">
                     <div className={bg}>
-                        <h2 className='text-lime-200 text-2xl font-bold'>Quick Stats</h2>
-                        <div className='text-lime-300 pl-0 sm:pl-4 px-28'>
-                            <h3 className='font-bold text-sm sm:text-md'>TOP LANGS</h3>
-                            <div className='flex justify-between flex-wrap flex-col sm:flex-row duration-500'>
+                        <div className='md:w-[50vw] pl-0 '>
+                            <p className="font-bold text-lg text-amber-950 dark:text-white">Me in a nutshell :)</p>
+                            <div className='text-amber-950 dark:text-lime-700 font-normal hidden sm:block'>
+                                <p>I've worked mostly in web, desktop, games, and statistics!</p>
+                                <p className='mt-2'>However I've also dabbled in mobile, AI/ML, parellized networks, and assembly.</p>
+                                <p className='mt-2'>You'll find me checking out some new front-end JS package!</p>
+                            
+                            </div>
+                        </div>
+                        <div className='w-full text-amber-700 dark:text-white pl-0 mt-4'>
+                            <div className='flex justify-between flex-wrap flex-col sm:flex-row gap-4 sm:gap-0 duration-500'>
                                 {TOP_LANGS.map((top_lang) => (
-                                    <div className='flex items-center gap-2 duration-500' >
+                                    <div className='flex items-center sm:gap-2 duration-500' >
                                         <div className='group-hover:translate-y-[-2px] group-hover:hidden flex items-center gap-4'>
-                                            <div className='scale-150 '>
+                                            <div className='scale-150 lg:text-3xl'>
                                                 {top_lang.icon}
                                             </div>
                                             <div className=''>
@@ -148,7 +155,7 @@ export default function QuickStats () {
                                         </div>
                                         <div className='w-0 group-hover:w-full overflow-hidden'>
                                             <div className='flex items-center gap-1'>
-                                                <div className='translate-y-2 translate-x-[-100px] group-hover:translate-x-0 group-hover:translate-y-0 duration-100'>
+                                                <div className=' translate-y-2 translate-x-[-100px] group-hover:translate-x-0 group-hover:translate-y-0 duration-100'>
                                                     {top_lang.icon}
                                                 </div>
                                                 <div className='translate-y-2 translate-x-[-100px] group-hover:translate-x-0 group-hover:translate-y-0  duration-200'>
@@ -156,12 +163,12 @@ export default function QuickStats () {
                                                 </div>
                                             </div>
                                             <div className=''>
-                                                <div className='flex gap-1 w-full'>
+                                                <div className='flex gap-1 lg:gap-2 w-full'>
                                                     {top_lang.exp.map((exp) => (
                                                         <div 
                                                             className={skill_rating} 
                                                             style={{
-                                                                background: (exp[0]) ? 'green' : '',
+                                                                background: (!exp[0]) ? 'transparent' : '',
                                                                 'transition-duration': exp[1] + 'ms',
                                                                 'transition-delay': exp[2] + 'ms',
 
@@ -176,8 +183,7 @@ export default function QuickStats () {
                                     </div>
                                 ))}
                             </div>
-                            <h3 className='font-bold mt-4 absolute left-8 translate-y-10 sm:translate-y-0 sm:left-auto sm:relative'>CHARACTER TRAITS</h3>
-                            <div className='absolute left-8 sm:left-auto translate-y-20 sm:translate-y-0 sm:relative p-4 bg-[#33352f] dark:bg-[#010d0a] rounded-lg mt-1 overflow-hidden'>
+                            <div className='absolute left-[10vw] sm:left-auto translate-y-24 sm:translate-y-14 sm:relative p-4 bg-[#33352f] dark:bg-neutral-800 rounded-lg mt-1 overflow-hidden'>
                                 <div className='absolute group-hover:opacity-0 group-hover:translate-x-[-100%] translate-x-0 ease-in-out duration-100'>
                                     <code className='text-white'>
                                         [...]

@@ -11,6 +11,9 @@ const tags = [
       text: "she/her",
     },
     {
+        text: "(kay - see) (pay)",
+    },
+    {
         text: "web dev",
     },
     {
@@ -110,14 +113,17 @@ export default function About() {
 
     return (
         <div className="mt-20 dark:text-white">
-            <div className="relative mb-8 mr-8 ml-8 sm:mr-24 sm:ml-24">
-                <div >
-                    <h1 className="text-5xl sm:text-6xl dark:text-red-800 font-bold mr-2 duration-0">ABOUT</h1>
-                </div>
-                <div className="absolute top-0 left-1 aria-hidden select-none">
-                    <h1 className="text-5xl sm:text-6xl font-bold text-amber-500 text-stroke">ABOUT</h1>
+            <div className='flex justify-center sm:block'>
+                <div className="relative mb-8 mr-8 ml-8 sm:mr-24 sm:ml-24">
+                    <div >
+                        <h1 className="text-5xl sm:text-6xl dark:text-red-800 font-bold mr-2 duration-0">ABOUT</h1>
+                    </div>
+                    <div className="absolute top-0 left-1 aria-hidden select-none">
+                        <h1 className="text-5xl sm:text-6xl font-bold text-amber-500 text-stroke">ABOUT</h1>
+                    </div>
                 </div>
             </div>
+            
             <div className="flex flex-col items-stretch md:flex-row gap-16 p-10 pb-16 sm:pl-24 sm:pr-24 bg-stone-50 dark:bg-[#211e1d] mb-2 dark:text-white duration-500">
                 
                 <div className='h-full w-full flex flex-col justify-center items-center pt-8'>
@@ -277,7 +283,7 @@ export default function About() {
                 </div>
                 
             </div>
-            <div className="p-24 pt-8 pb-24">
+            <div className="px-8 sm:px-24 pt-8 pb-24">
                 <p className="text-lg font-bold mb-4">More from me :o</p>
                 <About_Cards />
             </div>

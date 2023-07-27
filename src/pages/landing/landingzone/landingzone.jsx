@@ -36,12 +36,12 @@ const popup =
 
 export default function LandingPage() {
   return (
-    <div className="bg-[#ffc846] dark:bg-[#0c0b09] pt-10 overflow-hidden w-[100vw] h-[100vh]">
+    <div className="bg-[#ffc846] dark:bg-[#0c0b09] pt-4 overflow-hidden w-[100vw] h-[100vh]">
 
        <div className="absolute flex flex-col sm:flex-row justify-between duration-200">
           <div className="hidden sm:block"></div>
-          <div className="relative w-auto md:w-2/4 m-20 mr-10">
-              <div className=" relative mb-4">
+          <div className="relative w-auto md:w-2/4 mt-20 ml-12 sm:m-20 mr-8">
+              <div className="relative mb-4">
                   <div >
                       <h1 className="animate-[scaleUp_0.5s_ease-out] text-6xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-3">HI! IT'S</h1>
                       <h1 className="animate-[scaleUp_0.75s_ease-out] text-7xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-3">CASEY PEI</h1>
@@ -56,7 +56,7 @@ export default function LandingPage() {
                   </div>
               </div>
 
-              <div className="md:w-full w-[31vw]">            
+              <div className="md:w-full w-[35vw]">            
                 <p className="animate-[scaleUp_1s_ease-out] text-md md:text-xl mb-4 text-black dark:text-white duration-500">Welcome to my site! I'm Casey, currently a <a href="" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted text-lime-700 hover:text-[#a9b11b] dark:text-lime-200 dark:hover:text-lime-500 duration-500">junior Honors CS + Stats major @ Texas A&M 🎓</a> interested in all things software dev :)</p>              
                 <div className="animate-[scaleUp_1.25s_ease-out]">
                   <Status />
