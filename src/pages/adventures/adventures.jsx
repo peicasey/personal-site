@@ -173,13 +173,13 @@ export default function Adventures() {
         <div className="h-full dark:text-white duration-500">
           <div className="p-4 pt-24 pb-24 md:p-24 md:pb-32">
               <BackButton />
-              <div className="bg-stone-50 dark:bg-neutral-900 rounded-lg p-8 pb-16 drop-shadow-lg">
+              <div className="bg-stone-50 dark:bg-neutral-900 rounded-lg pt-4 sm:pt-8 px-4 sm:px-8 pb-16 drop-shadow-lg">
                   <div className="relative mb-2">
                       <div >
-                          <h1 className="text-5xl sm:text-6xl dark:text-red-800 font-bold mr-2 duration-0">ADVENTURES</h1>
+                          <h1 className="text-4xl sm:text-6xl dark:text-red-800 font-bold mr-2 duration-0">ADVENTURES</h1>
                       </div>
                       <div className="absolute top-0 left-1 aria-hidden select-none">
-                          <h1 className="text-5xl sm:text-6xl font-bold text-amber-500 text-stroke">ADVENTURES</h1>
+                          <h1 className="text-4xl sm:text-6xl font-bold text-amber-500 text-stroke">ADVENTURES</h1>
                       </div>
                   </div>
                   <p className="mb-4 text-neutral-500">A more casual record of stuff I've been up to! (Oversharing).</p>
