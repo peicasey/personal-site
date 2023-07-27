@@ -43,16 +43,16 @@ export default function LandingPage() {
           <div className="relative w-auto md:w-2/4 mt-20 ml-12 sm:m-20 mr-8">
               <div className="relative mb-4">
                   <div >
-                      <h1 className="animate-[scaleUp_0.5s_ease-out] text-6xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-3">HI! IT'S</h1>
-                      <h1 className="animate-[scaleUp_0.75s_ease-out] text-7xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-3">CASEY PEI</h1>
+                      <h1 className="animate-[scaleUp_0.5s_ease-out] text-5xl sm:text-6xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-3">HI! IT'S</h1>
+                      <h1 className="animate-[scaleUp_0.75s_ease-out] text-6xl sm:text-7xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-3">CASEY PEI</h1>
                   </div>
                   <div className="absolute top-0 left-2 aria-hidden select-none">
-                      <h1 className="animate-[scaleUp_0.5s_ease-out] text-6xl md:text-8xl font-bold text-amber-200 text-stroke mr-1">HI! IT'S</h1>
-                      <h1 className="animate-[scaleUp_0.75s_ease-out] text-7xl md:text-8xl  font-bold text-amber-200 text-stroke mr-1">CASEY PEI</h1>
+                      <h1 className="animate-[scaleUp_0.5s_ease-out] text-5xl sm:text-6xl md:text-8xl font-bold text-amber-200 text-stroke mr-1">HI! IT'S</h1>
+                      <h1 className="animate-[scaleUp_0.75s_ease-out] text-6xl sm:text-7xl md:text-8xl  font-bold text-amber-200 text-stroke mr-1">CASEY PEI</h1>
                   </div>
                   <div className="absolute top-0 left-3 aria-hidden select-none">
-                      <h1 className="animate-[scaleUp_0.5s_ease-out] text-6xl md:text-8xl font-bold text-amber-500 text-stroke">HI! IT'S</h1>
-                      <h1 className="animate-[scaleUp_0.75s_ease-out] text-7xl md:text-8xl font-bold text-amber-500 text-stroke">CASEY PEI</h1>
+                      <h1 className="animate-[scaleUp_0.5s_ease-out] text-5xl sm:text-6xl md:text-8xl font-bold text-amber-500 text-stroke">HI! IT'S</h1>
+                      <h1 className="animate-[scaleUp_0.75s_ease-out] text-6xl sm:text-7xl md:text-8xl font-bold text-amber-500 text-stroke">CASEY PEI</h1>
                   </div>
               </div>
 

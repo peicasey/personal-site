@@ -125,7 +125,7 @@ const Navbar = () => {
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
-        <NavigationMenu.Item className="flex items-center pl-2">
+        <NavigationMenu.Item className="flex items-center pr-2 sm:pr-0 sm:pl-2">
           <ToggleTheme/>
         </NavigationMenu.Item>
 

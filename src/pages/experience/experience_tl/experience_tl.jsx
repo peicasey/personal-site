@@ -96,7 +96,7 @@ export default function Experience_TL() {
                   }}
                 >
                   <div className={content}>
-                    <div className='flex gap-8 items-center justify-between'>
+                    <div className='flex gap-8 items-center justify-between dark:text-white'>
                       <div>
                         <h2 className="text-md font-bold text-amber-700 dark:text-amber-500">{exp.company}</h2>
                         <h3>{exp.role}</h3>
@@ -111,7 +111,7 @@ export default function Experience_TL() {
                       
                     </div>
                     <div className='mt-2 pl-4'>
-                      <ul className='text-sm list-disc'>
+                      <ul className='text-sm list-disc dark:text-neutral-400'>
                       {exp.description.map((desc) => (
                         <li>{desc}</li>
                       ))}
@@ -127,15 +127,15 @@ export default function Experience_TL() {
         
       </div>
       <div className='mt-8'>
-        <div className='flex justify-between w-full'>   
-          <div className='flex-grow w-[75%] h-6 flex items-center'>
-            <div className='z-[-1] bg-amber-500 h-1 w-full'></div>
+        <div className='flex items-stretch justify-between w-[100vw]'>   
+          <div className='flex-grow h-6 flex items-center'>
+            <div className='bg-amber-500 h-1 w-full'></div>
           </div>
-          <div className='flex items-center w-full'>     
+          <div className='flex items-center'>     
             {EXPERIENCES.map((exp, idx) => (
               <div className='flex flex-col items-center justify-center'>
                 <div className='flex items-center w-full '>
-                  <div className='z-[-1] bg-amber-500 h-1 flex-grow'></div>
+                  <div className=' bg-amber-500 h-1 flex-grow'></div>
                   <div
                     key={idx}
                     className={TL_pnt + `${index === idx ? " bg-amber-500 scale-110" : "bg-neutral-50 dark:bg-neutral-800"}`}
@@ -143,16 +143,16 @@ export default function Experience_TL() {
                       setIndex(idx);
                     }}
                   ></div>
-                  <div className='z-[-1] bg-amber-500 h-1 flex-grow'></div>
+                  <div className=' bg-amber-500 h-1 flex-grow'></div>
                 </div>
-                <p className='mt-2 text-center text-xs md:text-sm text-amber-800 dark:text-amber-500'>
+                <p className='mt-2 px-2 sm:px-4 text-center text-xs md:text-sm text-amber-800 dark:text-amber-500'>
                   {exp.date}
                 </p>
               </div>
             ))}
           </div>
-          <div className='flex-grow w-[75%] h-6 flex items-center'>
-            <div className='z-[-1] bg-amber-500 h-1 w-full'></div>
+          <div className='flex-grow h-6 flex items-center'>
+            <div className='bg-amber-500 h-1 w-full'></div>
           </div>
         </div>
         
