@@ -91,7 +91,7 @@ const Project_Cards = () => {
             <div>
             </div>
           : 
-          <div className="group flex flex-col border-[1px] border-amber-800 rounded-lg"
+          <div className="group flex flex-col border-[1px] border-amber-800 rounded-lg shadow-lg"
           >
           
             <div 
