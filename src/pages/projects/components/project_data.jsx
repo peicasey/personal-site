@@ -1,4 +1,4 @@
-import { RiGithubLine, RiYoutubeLine } from "react-icons/ri";
+import { RiGithubLine, RiYoutubeLine, RiSlideshowLine } from "react-icons/ri";
 import { SiDevpost } from "react-icons/si";
 import { FaLink, FaItchIo } from "react-icons/fa";
 
@@ -13,8 +13,8 @@ const data = () => {
     return [
         {
             name: "Rev's Grill",
-            idx: 1,
-            icon: '🐕‍🦺',
+            idx: 0,
+            icon: '🐕‍🦺🍔',
             color: 'maroon',
             timeline: "Mar - May 2023",
             roles: ['Full-Stack Developer'],
@@ -27,7 +27,7 @@ const data = () => {
             ],
             categories: 
             [
-                'Full-Stack', 'Back-End', 'Front-end', 'Web'
+                'Full-Stack', 'Back-End', 'Front-End', 'Web'
             ],
             description: 
             `
@@ -37,14 +37,15 @@ const data = () => {
             links: 
             [
               { link: 'https://csce-315-project3-team51.vercel.app/', icon: <FaLink/> },   
-              { link: 'https://github.com/peicasey/CSCE315_Project3_Team51', icon: <RiGithubLine/> }   
+              { link: 'https://github.com/peicasey/CSCE315_Project3_Team51', icon: <RiGithubLine/> },
+              { link: 'https://docs.google.com/presentation/d/1NTnYNZHogNn4e-pfzuGFJUpqq05gTcrCKD_wx3Y6iV8/edit?usp=sharing', icon: <RiSlideshowLine/> },   
             ]
             ,
         },
         {
             name: "CarryOn",
-            idx: 2,
-            icon: '🧳',
+            idx: 1,
+            icon: '🧳✈️',
             color: 'lightblue',
             timeline: "January 20-22 2023",
             roles: [ 'Project Manager', 'Front-End Developer'],
@@ -56,12 +57,12 @@ const data = () => {
             ],
             categories: 
             [
-                'Full-Stack', 'Front-end', 'Web', 'AI/ML'
+                'Full-Stack', 'Front-End', 'Web', 'AI/ML'
             ],
             description: 
             `
              Designed and implemented a Selenium web scraper to extract item guideline information from the Transportation Security Administration website's carry-on item guideline page.
-             Developed a React front-end to enter packing-lists, applying TensorFlow Natural Language Processing to process items and checking validity of lists.            
+             Developed a React Front-End to enter packing-lists, applying TensorFlow Natural Language Processing to process items and checking validity of lists.            
             `,
             links: 
             [
@@ -71,8 +72,8 @@ const data = () => {
         },
         {
             name: "Crawler.txt",
-            idx: 3,
-            icon: '📜',
+            idx: 2,
+            icon: '📜🤖',
             color: '#ae9068',
             timeline: "Mar - May 2023",
             roles: [ 'Designer', 'Back-End Developer'],
@@ -82,7 +83,7 @@ const data = () => {
             ],
             categories: 
             [
-                'Back-end', 'Networks'
+                'Back-End', 'Networks'
             ],
             description: 
             `
@@ -95,8 +96,8 @@ const data = () => {
         },
         {
             name: "Electify",
-            idx: 4,
-            icon: '🗳️',
+            idx: 3,
+            icon: '🗳️⚡',
             color: '#e74646',
             timeline: "Mar - April 2023",
             roles: [ 'Project Manager', 'Designer', 'Full-Stack Developer'],
@@ -107,7 +108,7 @@ const data = () => {
             ],
             categories: 
             [
-                'Full-Stack', 'Front-end', 'Back-end', 'Mobile', 'AI/ML'
+                'Full-Stack', 'Front-End', 'Back-End', 'Mobile', 'AI/ML'
             ],
             description: 
             `
@@ -122,18 +123,44 @@ const data = () => {
         },
         {
             name: "Breaking Free",
-            idx: 5,
-            icon: '💔',
-            color: 'gray',
+            idx: 4,
+            icon: '💔❤️‍🩹',
+            color: '#262628',
             timeline: "February 2023",
             roles: [ 'Game Developer', 'UI Designer', 'Visuals'],
             tools: 
             [
-                'C++', 'Windows API'
+                'Unity', 'C#',
             ],
             categories: 
             [
-                'Front-end', 'Game'
+                'Front-End', 'Game'
+            ],
+            description: 
+            `
+             Created a grid-based puzzle game solved by switching between three characters with different abilities to navigate a system of walls, wires and pressure plates in C# and Unity Engine (pengso0o.itch.io/break-free).
+             Won Best in Visuals at the Chillenium Game Jam 2023 (55 submissions, 200+ participants).        
+            `,
+            links: 
+            [
+                { link: 'https://pengso0o.itch.io/break-free', icon: <FaItchIo/>},
+                { link: 'https://youtu.be/o_yJc_myIks', icon: <RiYoutubeLine/>} 
+            ],
+        },
+        {
+            name: "Edge of the Universe",
+            idx: 5,
+            icon: '🪐🌠',
+            color: '#161932',
+            timeline: "February 2023",
+            roles: [ 'Game Developer', 'UI Designer', 'Visuals'],
+            tools: 
+            [
+                'Unity', 'C#',
+            ],
+            categories: 
+            [
+                'Front-End', 'Game'
             ],
             description: 
             `

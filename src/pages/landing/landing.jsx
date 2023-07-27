@@ -21,7 +21,7 @@ export default function Landing() {
             <div>
                 {/* <Landing/> */}
             </div>
-            <div className="p-10 pl-24 pr-24 bg-neutral-50 dark:bg-[#211e1d] md:text-lg mb-2 dark:text-white duration-500">
+            <div className="p-10 sm:px-24 bg-neutral-50 dark:bg-[#211e1d] md:text-lg mb-2 dark:text-white duration-500">
                 <p className="text-md text-amber-500 mb-4">C:/landing/hi-there.txt</p>
                 <p className="text-md mb-2 dark:text-white duration-500">
                     Thanks for visiting my little corner of the internet / portfolio / project storage / blog / cry into the void!
@@ -34,16 +34,19 @@ export default function Landing() {
                 </p>
             </div>
             
-            <div>
+            <div className='pt-8 pb-4'>
                 <QuickStats />
             </div>
             
-            <div className='mt-36 mb-16'>
-                <div className="px-28 flex justify-between">
+            <div className='mt-24 mb-24'>
+                <div className="px-8 sm:px-28 flex justify-between">
                     <p className="text-lg font-bold dark:text-white mb-8">Some of my projects!</p>
-                    <NextButton link={'/adventures'} page_name={'more'} />
+                    <NextButton link={'/projects'} page_name={'more'} />
                 </div>
                 <Project_Feature />
+                <p className='mt-2 text-center text-amber-950 dark:text-neutral-300'>
+                    Not a complete list but worth checking out :^)
+                </p>
             </div>
 
             <div className="pt-16 pb-16 pr-8 pl-8 sm:pr-16 sm:pl-16 md:pr-24 md:pl-24 md:pb-24">

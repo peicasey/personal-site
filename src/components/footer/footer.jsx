@@ -9,7 +9,7 @@ export default function Footer() {
     const link_style = "cursor-pointer underline decoration-dotted text-lime-700 hover:text-[#a9b11b] dark:text-lime-200 dark:hover:text-lime-500 duration-500"
 
     return (
-        <div className="p-8 pl-24 pr-24 bg-[#ffc846] dark:bg-[#0c0b09] dark:text-white inset-shadow">
+        <div className="py-8 px-16 sm:px-24 bg-[#ffc846] dark:bg-[#0c0b09] dark:text-white inset-shadow">
             <div className="flex gap-8 sm:gap-16 mb-8 mt-4">
                 <div className="flex gap-8 md:gap-16 flex-col sm:flex-row">
                     <div>

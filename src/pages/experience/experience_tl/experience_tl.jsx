@@ -40,7 +40,7 @@ const delay = 2500;
 
 const container = 
 ` 
-  min-w-[75vw] h-[375px] sm:h-[300px] md:h-[250px] lg:h-[210px]
+  min-w-[90vw] sm:min-w-[75vw] h-[375px] sm:h-[300px] md:h-[250px] lg:h-[210px]
   px-8 pt-8 pb-12
   bg-white dark:bg-neutral-800
 `
@@ -81,172 +81,87 @@ export default function Experience_TL() {
   }, [index]);
 
   return (
-    <div className="w-[75vw] rounded-lg overflow-hidden">
-      <div
-        className="flex no-wrap gap-0 duration-500 ease-in-out"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-         {EXPERIENCES.map((exp, index) => (
+    <div className='w-full flex flex-col justify-center'>
+      <div className='w-full flex justify-center'>
+        <div className="w-[90vw] sm:w-[75vw] rounded-lg overflow-hidden">
+          <div
+            className="flex no-wrap gap-0 duration-500 ease-in-out"
+            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+          >
+            {EXPERIENCES.map((exp, index) => (
 
-            <div key={index} className={container}
-              style={{
-                '-webkit-mask-image': 'linear-gradient(to bottom, black 60%, transparent 100%)',
-                'mask-image': 'linear-gradient(to bottom, black 60%, transparent 100%)',
-              }}
-            >
-              <div className={content}>
-                <div className='flex gap-8 items-center justify-between'>
-                  <div>
-                    <h2 className="text-md font-bold text-amber-700 dark:text-amber-500">{exp.company}</h2>
-                    <h3>{exp.role}</h3>
+                <div key={index} className={container}
+                  style={{
+                    '-webkit-mask-image': 'linear-gradient(to bottom, black 60%, transparent 100%)',
+                    'mask-image': 'linear-gradient(to bottom, black 60%, transparent 100%)',
+                  }}
+                >
+                  <div className={content}>
+                    <div className='flex gap-8 items-center justify-between'>
+                      <div>
+                        <h2 className="text-md font-bold text-amber-700 dark:text-amber-500">{exp.company}</h2>
+                        <h3>{exp.role}</h3>
+                      </div>
+                      
+                      <div className='flex flex-col items-end'>
+                        <p className='text-xs sm:text-sm'>{exp.date}</p>
+                        <p className='text-xs sm:text-sm text-neutral-500 flex items-center gap-1'>
+                          {exp.location}
+                        </p>
+                      </div>
+                      
+                    </div>
+                    <div className='mt-2 pl-4'>
+                      <ul className='text-sm list-disc'>
+                      {exp.description.map((desc) => (
+                        <li>{desc}</li>
+                      ))}
+                      </ul>
+                    </div>
+                    
                   </div>
-                  
-                  <div className='flex flex-col items-end'>
-                    <p className='text-xs sm:text-sm'>{exp.date}</p>
-                    <p className='text-xs sm:text-sm text-neutral-500 flex items-center gap-1'>
-                      {exp.location}
-                    </p>
-                  </div>
-                  
                 </div>
-                <div className='mt-2 pl-4'>
-                  <ul className='text-sm list-disc'>
-                  {exp.description.map((desc) => (
-                    <li>{desc}</li>
-                  ))}
-                  </ul>
-                </div>
-                
-              </div>
-            </div>
 
-        ))}
-      </div>
-
-      <div className='mt-8'>
-        
-        <div className='z-[1] flex justify-between sm:px-14'>          
-          {EXPERIENCES.map((exp, idx) => (
-            <div className='flex flex-col items-center justify-center'>
-              <div
-                key={idx}
-                className={TL_pnt + `${index === idx ? " bg-amber-500 scale-110" : "bg-neutral-50 dark:bg-neutral-800"}`}
-                onClick={() => {
-                  setIndex(idx);
-                }}
-              ></div>
-              <p className='mt-2 text-center text-xs md:text-sm text-amber-800 dark:text-amber-500'>
-                {exp.date}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        <div className='z-[-1] bg-amber-500 h-1 w-[100vw] absolute left-0 translate-y-[-5.25vh] lg:translate-y-[-6vh]'></div>
+        
       </div>
-      
+      <div className='mt-8'>
+        <div className='flex justify-between w-full'>   
+          <div className='flex-grow w-[75%] h-6 flex items-center'>
+            <div className='z-[-1] bg-amber-500 h-1 w-full'></div>
+          </div>
+          <div className='flex items-center w-full'>     
+            {EXPERIENCES.map((exp, idx) => (
+              <div className='flex flex-col items-center justify-center'>
+                <div className='flex items-center w-full '>
+                  <div className='z-[-1] bg-amber-500 h-1 flex-grow'></div>
+                  <div
+                    key={idx}
+                    className={TL_pnt + `${index === idx ? " bg-amber-500 scale-110" : "bg-neutral-50 dark:bg-neutral-800"}`}
+                    onClick={() => {
+                      setIndex(idx);
+                    }}
+                  ></div>
+                  <div className='z-[-1] bg-amber-500 h-1 flex-grow'></div>
+                </div>
+                <p className='mt-2 text-center text-xs md:text-sm text-amber-800 dark:text-amber-500'>
+                  {exp.date}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className='flex-grow w-[75%] h-6 flex items-center'>
+            <div className='z-[-1] bg-amber-500 h-1 w-full'></div>
+          </div>
+        </div>
+        
+        {/* <div className='z-[-1] bg-amber-500 h-1 w-full'></div> */}
+        {/* <div className='z-[-1] bg-amber-500 h-1 w-[100vw] absolute left-0 translate-y-[-5.25vh] lg:translate-y-[-6vh]'></div> */}
+      </div>
     </div>
+    
   );
 }
 
-
-
-// // const timeline = "flex justify-left w-full px-8"
-// // const line = "border-l-2 border-amber-700 py-20 flex flex-col gap-4"
-// const container = "group hover:shadow-lg hover:translate-x-2 relative ml-8 mr-8 px-8 pt-4 pb-8 bg-white rounded-lg duration-500"
-// const content = "flex flex-col gap-2"
-// // const title = 
-// // `
-// //   text-amber-700 font-bold text-lg
-// //   before:absolute before:w-[15px] before:h-[15px] before:bg-white before:rounded-xl before:left-[-40px] before:border-4 before:border-amber-500
-// //   group-hover:before:bg-yellow-500 group-hover:before:translate-x-[-8px] before:duration-500
-// // `
-
-// export default function Experience_TL () {
-
-  
-//   return (
-//     <div>
-//       {/* timeline */}
-//       <div>
-
-//       </div>
-//       {/* card */}
-//       <div>
-//         {EXPERIENCES.map((exp) => (
-//           <li className="list-none">
-              
-//               <div className={container}>
-//                 <div className={content}>
-//                   <div className='flex gap-8 items-center justify-between'>
-//                     <div>
-//                       <h2 className="text-lg text-amber-700">{exp.company}</h2>
-//                       <h3>{exp.role}</h3>
-//                     </div>
-                    
-//                     <div className='flex flex-col items-end'>
-//                       <p>{exp.date}</p>
-//                       <p className='text-sm text-neutral-500 flex items-center gap-1'>
-//                         {exp.location}
-//                       </p>
-//                     </div>
-                    
-//                   </div>
-//                   <div className='pl-4'>
-//                     <ul className='text-sm list-disc'>
-//                     {exp.description.map((desc) => (
-//                       <li>{desc}</li>
-//                     ))}
-//                     </ul>
-//                   </div>
-                  
-//                 </div>
-//               </div>
-                
-//           </li>
-//         ))}
-//       </div>
-//     </div>
-    
-//   )
-// }
-
-
-{/* <div className='experience-body w-full fade-out-mask-bottom'>
-      <div className={timeline}>
-        <div className={line}>
-
-          {EXPERIENCES.map((exp) => (
-          <li className="list-none">
-              
-              <div className={container}>
-                <div className={content}>
-                  <div className='flex gap-8 items-center justify-between'>
-                    <div>
-                      <h2 className={title}>{exp.company}</h2>
-                      <h3>{exp.role}</h3>
-                    </div>
-                    
-                    <div className='flex flex-col items-end'>
-                      <p>{exp.date}</p>
-                      <p className='text-sm text-neutral-500 flex items-center gap-1'>
-                        {exp.location}
-                      </p>
-                    </div>
-                    
-                  </div>
-                  <div className='pl-4'>
-                    <ul className='text-sm list-disc'>
-                    {exp.description.map((desc) => (
-                      <li>{desc}</li>
-                    ))}
-                    </ul>
-                  </div>
-                  
-                </div>
-              </div>
-                
-          </li>
-          ))}
-        </div>  
-      </div> 
-    </div> */}
