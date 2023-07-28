@@ -1,5 +1,6 @@
 const plugin = require('tailwindcss/plugin');
 const { blackA, mauve, indigo, purple, amber, yellow, lime } = require('@radix-ui/colors');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,6 +10,10 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
+    screens: {
+      'xs': '340px',
+      ...defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
         atkins: ['Atkinson Hyperlegible', 'sans-serif']

@@ -170,7 +170,7 @@ const Project_Cards = () => {
             <div 
               className='flex justify-center items-center 
                          h-[10vh] w-full rounded-t-lg
-                          text-4xl
+                         text-2xl md:text-4xl
                         ' 
               style={{ backgroundColor: project.color }}
             >
