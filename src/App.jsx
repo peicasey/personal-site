@@ -9,9 +9,6 @@ import Footer from'./components/footer/footer'
 import NotFound from'./pages/notfound/notfound'
 import Construction from'./pages/construction/construction'
 
-// import LandingZone from'./pages/landing/landingzone'
-import Temp from './pages/landing/landingzone/temp'
-
 import Landing from'./pages/landing/landing'
 import Projects from'./pages/projects/projects'
 import About from'./pages/about/about'
@@ -37,11 +34,6 @@ function App() {
         <Route exact path="/adventures" element={<Adventures/>} />
         <Route exact path="/construction" element={<Construction/>} />
 
-        <Route exact path="/jmm" element={<Temp/>} />
-
-
-        {/* <Route exact path="/groups" element={<Groups server={s}/>} />
-        <Route exact path="/explore" element={<Explore server={s}/>} /> */}
       </Routes>
       <Footer/>
     </div>

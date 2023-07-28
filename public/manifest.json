@@ -1,0 +1,11 @@
+{
+    "name": "Casey's Site!",
+    "short_name": "casey pei",
+    "icons": [{
+        "src": "favicon512.png",
+        "sizes": "512x512"
+    }],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "fullscreen"
+}

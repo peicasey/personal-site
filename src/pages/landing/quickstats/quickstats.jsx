@@ -183,16 +183,18 @@ export default function QuickStats () {
                                     </div>
                                 ))}
                             </div>
-                            <div className='absolute left-[4vw] sm:left-auto translate-y-24 sm:translate-y-14 sm:relative p-4 bg-[#33352f] dark:bg-neutral-800 rounded-lg mt-1 overflow-hidden'>
-                                <div className='absolute group-hover:opacity-0 group-hover:translate-x-[-100%] translate-x-0 ease-in-out duration-100'>
-                                    <code className='text-white text-sm sm:text-md'>
-                                        [...]
-                                    </code>
-                                </div>
-                                <div className='translate-x-[-150%] group-hover:translate-x-0 ease-out duration-300'>
-                                    <code className='text-white text-sm sm:text-md'>
-                                        ['begs cats for attention', 'sleepy']
-                                    </code>
+                            <div className='absolute left-0 sm:left-auto translate-y-24 sm:translate-y-14 sm:relative w-full flex justify-center'>
+                                <div className='p-4 bg-[#33352f] dark:bg-neutral-800 rounded-lg mt-1 overflow-hidden'>
+                                    <div className='absolute group-hover:opacity-0 group-hover:translate-x-[-100%] translate-x-0 ease-in-out duration-100'>
+                                        <code className='text-white text-sm sm:text-md'>
+                                            [...]
+                                        </code>
+                                    </div>
+                                    <div className='translate-x-[-150%] group-hover:translate-x-0 ease-out duration-300'>
+                                        <code className='text-white text-sm sm:text-md'>
+                                            ['begs cats for attention', 'sleepy']
+                                        </code>
+                                    </div>
                                 </div>
                             </div>
                             

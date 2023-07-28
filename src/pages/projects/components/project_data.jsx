@@ -27,7 +27,7 @@ const data = () => {
             ],
             categories: 
             [
-                'Full-Stack', 'Back-End', 'Front-End', 'Web'
+                'Full-Stack', 'Web'
             ],
             description: 
             `
@@ -100,7 +100,7 @@ const data = () => {
             icon: '🗳️⚡',
             color: '#e74646',
             timeline: "Mar - April 2023",
-            roles: [ 'Project Manager', 'Designer', 'Full-Stack Developer'],
+            roles: [ 'Project Manager', 'Full-Stack Developer'],
             tools: 
             [
                 'Flutter', 'Android Studio', 'Firebase', 
@@ -108,7 +108,7 @@ const data = () => {
             ],
             categories: 
             [
-                'Full-Stack', 'Front-End', 'Back-End', 'Mobile', 'AI/ML'
+                'Full-Stack', 'Mobile', 'AI/ML'
             ],
             description: 
             `
@@ -171,6 +171,31 @@ const data = () => {
             [
                 { link: 'https://pengso0o.itch.io/break-free', icon: <FaItchIo/>},
                 { link: 'https://youtu.be/o_yJc_myIks', icon: <RiYoutubeLine/>} 
+            ],
+        },
+        {
+            name: "Casey's Site",
+            idx: 6,
+            icon: '🐊🍊',
+            color: '#d97706',
+            timeline: "July 2023",
+            roles: [ 'Lead Designer'],
+            tools: 
+            [
+                'React', 'JS', 'MUI', 'TailwindCSS', 'ThreeJS', 'NodeJS', 'Firebase',
+            ],
+            categories: 
+            [
+                'Front-End', 'Web'
+            ],
+            description: 
+            `
+             Designed a personal portfolio site using Vite and React, deployed via Firebase.
+             Crafted UX design with focus on accessability using Material UI and TailwindCSS. 
+            `,
+            links: 
+            [
+                { link: 'https://caseypei.me', icon: <FaLink/>},
             ],
         },
     ]

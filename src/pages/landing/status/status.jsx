@@ -26,7 +26,7 @@ export default class Status extends Component {
 
         return (
             <div>
-                <p className="text-md md:text-xl text-black dark:text-white duration-500">You can catch me <a id="status-update" href="/links" className="underline decoration-dotted text-lime-700 dark:text-lime-100">
+                <p className="text-sm sm:text-md md:text-xl text-black dark:text-white duration-500">You can catch me <a id="status-update" href="/links" className="underline decoration-dotted text-lime-700 dark:text-lime-100">
                     <TypeIt className="hover:text-[#a9b11b] dark:text-lime-200 dark:hover:text-lime-500 duration-500"
                         options={{
                         loop: true,

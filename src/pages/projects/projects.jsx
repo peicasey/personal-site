@@ -1,15 +1,6 @@
-// import { Suspense } from 'react'
-
 import Project_Cards from './components/project_cards'
 import Project_Feature from './components/project_feature'
 
-// function Loading () {
-//     return (
-//         <div className='w-full h-[50vh] bg-amber-500 flex justify-center items-center'>
-//             <p className='select-none text-9xl text-center'>🐊</p>
-//         </div>
-//     )
-// }
 
 export default function Projects() {
 
@@ -26,9 +17,7 @@ export default function Projects() {
                 </div>
             </div>    
             
-            {/* <Suspense fallback={ <Loading/>}> */}
-                <Project_Feature/>
-            {/* </Suspense> */}
+            <Project_Feature/>
             
             <div className='mt-16 mx-8 sm:mx-16 sm:text-lg flex gap-8'>
                 <div className='text-6xl drop-shadow-lg'>
