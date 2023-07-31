@@ -44,6 +44,20 @@ const people = [
     icon: '👩🏻‍🔬',
   },
   {
+    name: 'Tiffany Pei',
+    description: 'public health girlboss',
+    link: 'https://www.linkedin.com/in/pei-tiffany/',
+    link_display: 'linkedin/in/pei-tiffany',
+    icon: '👩🏻',
+  },
+  {
+    name: 'Jing Pei',
+    description: 'owner of sharma',
+    link: 'https://www.linkedin.com/in/jingjpei/',
+    link_display: 'linkedin/in/jingpei',
+    icon: '👩🏻‍💻',
+  },
+  {
     name: 'Lily Tang',
     description: "as co-PM of Twitter Bot project and cat-haver",
     link: 'https://www.linkedin.com/in/yushan-tang-083746219/',

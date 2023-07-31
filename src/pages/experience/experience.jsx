@@ -46,7 +46,7 @@ export default function Experience() {
                     <div className='bg-amber-300 dark:bg-neutral-800 w-full h-[22em] sm:h-72 sm:shadow-lg mt-8 sm:mt-0 pt-16'>
                         <div className='pl-16 md:pl-28 pr-8 hidden sm:block'>
                             <p className='text-amber-950 dark:text-amber-500 font-bold text-xl'>Wouldn't it be cool if you saved my resume?</p>
-                            <p className='text-amber-950 dark:text-amber-500 text-lg'>Last updated: July 7, 2023</p>
+                            <p className='text-amber-950 dark:text-amber-500 text-lg'>Last updated: July 29, 2023</p>
                             <div className='mt-6 text-amber-800 text-xl flex gap-4 items-center'>
                                 <p>Download: </p>
                                 <a 
@@ -64,7 +64,7 @@ export default function Experience() {
                     </div>
                 </div>
                 <iframe 
-                    src="https://drive.google.com/file/d/1b93M4hC97dCYc5BzVtbdZZPEPY4saGsW/preview?usp=embed_googleplus" 
+                    src="https://drive.google.com/file/d/1X6Z0Ta4T8kpJJkwK5bZwVjc1HoH0GD70/preview?usp=embed_googleplus" 
                     className='w-auto h-96 shadow-lg flex-grow-0'
                 >    
                 </iframe>
@@ -77,7 +77,7 @@ export default function Experience() {
                 <div className='px-16 sm:hidden flex gap-4'>
                     <div>
                         <p className='text-amber-950 dark:text-amber-500 font-bold text-md'>Wouldn't it be cool if you saved my resume?</p>
-                        <p className='text-amber-950 dark:text-amber-500 text-md'>Last updated: July 7, 2023</p>
+                        <p className='text-amber-950 dark:text-amber-500 text-md'>Last updated: July 29, 2023</p>
                     </div>
                     <div className='text-amber-800 text-md flex flex-col justify-center items-center'>
                         <p>Download: </p>

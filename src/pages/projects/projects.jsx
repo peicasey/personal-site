@@ -26,7 +26,7 @@ export default function Projects() {
                 <div className=''>
                     <p className=' text-amber-800'>
                         An incomplete record of some of the projects I've been cooking up!
-                        I'm always try to make something novel and/or helpful, using interesting 
+                        I'm always trying to make something novel and/or helpful, using interesting 
                         technologies and designs, so I hope you enjoy.
                     </p>
                     <p className=' text-amber-800 mt-4'>

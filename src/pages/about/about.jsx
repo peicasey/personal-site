@@ -1,10 +1,11 @@
-import { Suspense } from 'react'
+import { useState } from 'react'
 import About_Cards from './components/about_cards'
 
 import { ChevronUpIcon } from '@heroicons/react/24/outline'
 import { Disclosure, Transition } from '@headlessui/react'
 
 import Me from '../../assets/me.png'
+import MeTyping from '../../assets/me-typing.gif'
 
 const tags = [
     {
@@ -109,6 +110,17 @@ const Loading = () => {
 
 export default function About() {
 
+    const [meImage, setMeImage] = useState(Me);
+
+    function toggleImage() {
+        if (meImage == Me) {
+            setMeImage(MeTyping);
+        }
+        else {
+            setMeImage(Me);
+        }
+    }
+
     const link_style = "underline decoration-dotted text-lime-700 hover:text-[#a9b11b] dark:text-lime-200 dark:hover:text-lime-300"
 
     return (
@@ -127,13 +139,15 @@ export default function About() {
             <div className="flex flex-col items-stretch md:flex-row gap-16 p-10 pb-16 sm:pl-24 sm:pr-24 bg-stone-50 dark:bg-[#211e1d] mb-2 dark:text-white duration-500">
                 
                 <div className='h-full w-full flex flex-col justify-center items-center pt-8'>
-                    <Suspense fallback={ <Loading/> }>
-                        <img
-                            src={ Me }
-                            alt='Casey Pei staring off past the camera'
-                            className='w-36 sm:w-[20vw] flex-grow h-auto rounded-lg'
-                        />
-                    </Suspense>
+                    
+                    <img
+                        src={ meImage }
+                        alt='Casey Pei staring off past the camera'
+                        className='w-36 sm:w-[20vw] flex-grow h-auto rounded-lg 
+                        hover:scale-[1.05] hover:translate-y-[-2px] hover:cursor-pointer duration-200'
+                        onClick={e => toggleImage()}
+                    />
+                    
                     <p className='mt-4 sm:text-center text-stone-500 text-sm'>
                         figure 1. a picture to humanize me by reminding you that 
                         I'm a real person and not a little internet creature

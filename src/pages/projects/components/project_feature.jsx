@@ -32,7 +32,7 @@ const container =
 const style = 
 `
   h-[50vh] w-[100vw] bg-amber-500
-  hover:scale-110 hover:cursor-pointer duration-700
+  xs:hover:scale-110 xs:hover:cursor-pointer duration-700
   bg-cover 
 `
 
