@@ -40,7 +40,7 @@ export default function LandingPage() {
 
       <div className=" flex flex-col sm:flex-row justify-between duration-200">
         <div className="hidden sm:block"></div>
-          <div className="relative w-auto md:w-2/4 mt-16 sm:mt-20 ml-6 xs:ml-12 sm:m-20 mr-8">
+          <div className="relative w-auto md:w-2/4 mt-16 md:mt-20 ml-6 xs:ml-12 md:m-20 mr-8">
             <div className="relative mb-4">
               <div >
                   <h1 className="animate-[scaleUp_0.5s_ease-out] text-4xl xs:text-5xl sm:text-6xl dark:text-red-800 md:text-8xl drop-shadow-lg font-bold mr-1 xs:mr-3">HI! IT'S</h1>
@@ -61,7 +61,7 @@ export default function LandingPage() {
               <div className="animate-[scaleUp_1.25s_ease-out] md:w-full mt-4 xs:mt-0 xs:w-[35vw]">
                 <Status />
               </div>
-              <div className="absolute animate-[scaleUp_1.5s_ease-out] z-[100] text-3xl hidden md:flex pt-8 gap-4">
+              <div className="absolute z-[5] delay-200 animate-[scaleUp_1.25s_ease-out] text-2xl hidden md:flex pt-8 gap-4">
                 <a className='dark:text-white mr-4'><RiArrowDropRightLine/></a>
                 <a className="dark:text-white dark:hover:text-amber-300 hover:text-amber-800 duration-200" target="_blank" href='https://github.com/peicasey/'><RiGithubLine/></a>
                 <a className="dark:text-white dark:hover:text-amber-300 hover:text-amber-800 duration-200" target='_blank' href='https://www.linkedin.com/in/casey-pei/'><RiLinkedinBoxLine/></a>
@@ -73,7 +73,7 @@ export default function LandingPage() {
      
       <div className='absolute top-0 w-[100vw] h-full flex flex-col sm:flex-row justify-center sm:justify-between items-end '>
         
-        <div className='delay-500 animate-[fadeUp_1s_ease-out] group hover:cursor-grab w-[60vw] h-full absolute md:top-0 right-0 md:right-auto left-auto md:left-[-12vw]'>
+        <div className='delay-500 animate-[fadeUp_1s_ease-out] group hover:cursor-grab w-[60vw] h-full absolute sm:top-0 right-0 sm:right-auto left-auto sm:left-[-12vw]'>
           <div className={popup}>
             Hi hey hello! Scroll down for more 👇
           </div>
@@ -81,11 +81,12 @@ export default function LandingPage() {
 
             <Canvas className='group-hover:scale-110 scale-100 duration-200' camera={{ fov: 25 }}>
                 
-              {/* <ambientLight color={'#FFC0CB'} intensity={0.25} /> */}
               <Stage intensity={0.1} preset={"soft"} shadows="accumulate" environment="sunset">
                 <Model/>
               </Stage>
-              <OrbitControls autoRotate cursor={true} speed={15} enablePan={false} enableZoom={false} />
+              <OrbitControls autoRotate cursor={true} speed={15} enablePan={false} enableZoom={false} 
+                maxPolarAngle={3 * (Math.PI / 5)}
+              />
             
             </Canvas>
           </Suspense>

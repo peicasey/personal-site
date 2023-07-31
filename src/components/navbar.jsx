@@ -13,7 +13,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <NavigationMenu.Root className="fixed z-[2] flex w-screen py-2 px-4 m-0 top-0 justify-between backdrop-blur">
+    <NavigationMenu.Root className="fixed z-[102] flex w-screen py-2 px-4 m-0 top-0 justify-between backdrop-blur">
       <div className='flex justify-center items-center'>
         <IconButton aria-label="delete">
           <img
@@ -33,7 +33,7 @@ const Navbar = () => {
               aria-hidden
             />
           </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight absolute top-0 left-0 w-full sm:w-auto">
+          <NavigationMenu.Content className=" z-[100] data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight absolute top-0 left-0 w-full sm:w-auto">
             <ul className="one m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[500px] sm:grid-cols-[0.75fr_1fr]">
               <li className="row-span-3 grid">
                 <NavigationMenu.Link asChild>
@@ -78,7 +78,7 @@ const Navbar = () => {
               aria-hidden
             />
           </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="absolute top-0 left-0 w-full sm:w-auto">
+          <NavigationMenu.Content className="absolute z-[100] top-0 left-0 w-full sm:w-auto">
             <ul className="m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[600px] sm:grid-flow-col sm:grid-rows-3">
               <ListItem title="All Projects" className="hover:cursor-pointer" onClick={() => navigate('/projects')}>
                 all my projects bwahahaha
@@ -110,7 +110,7 @@ const Navbar = () => {
               aria-hidden
             />
           </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="absolute top-0 left-0 w-full sm:w-auto">
+          <NavigationMenu.Content className="absolute z-[100] top-0 left-0 w-full sm:w-auto">
             <ul className="m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[600px] sm:grid-flow-col sm:grid-rows-2">
               <ListItem title="Experience" className="hover:cursor-pointer" onClick={() => navigate('/experience')}>
                 my work and leadership experience.

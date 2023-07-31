@@ -41,7 +41,7 @@ export default function Footer() {
                     <p className="text-sm sm:text-md text-lime-800 dark:text-lime-200">Made with 💚 by Casey Pei</p>
                     
                     <p className="text-sm sm:text-md mb-0">
-                        <a href="/accessibility" target="_blank" rel="noopener noreferrer" className={link_style}>Accessibility Statement</a> <br/> <a href="https://www.websitecarbon.com/website/casey-pei-web-app/" target="_blank" rel="noopener noreferrer" className={link_style}> 0.01 g of CO2/view</a>
+                        <a href="/accessibility" target="_blank" rel="noopener noreferrer" className={link_style}>Accessibility Statement</a> <br/> <a href="https://www.websitecarbon.com/website/caseypei-me/" target="_blank" rel="noopener noreferrer" className={link_style}> 1.83 g of CO2/view</a>
                     </p>
                     
                 </div>
