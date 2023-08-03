@@ -8,8 +8,9 @@ const EXPERIENCES =
     location: 'College Station, TX',
     role: '💻 Software Engineer Intern',
     description: [
-      "Improved UI and functionality of Python application (used by +3000 clients) that generated connection diagrams.",
-      "Created an Electron and C# desktop application connected via API calls for the testing department to use."
+      "Refactored diagram design software in Python, reducing time spent manually designing by 98% for 3k+ clients", 
+      "Designed enterprise-grade Electron employee monitoring application with REST API endpoints, embedded ASP.NET core and Access Database, decreasing time spent manually tracking employee tasks by 70%",
+      "Effected modern redesign of proprietary MITS X software from WinForms to Electron with TypeScript and React"
     ]
   },
   {
@@ -18,8 +19,8 @@ const EXPERIENCES =
     location: 'Houston, TX',
     role: '🔍 Research Assistant',
     description: [
-      "Developed a k-Nearest Neighbors island-clustering program using C++ and R to detect methylation patterns of 68 million DNA reads for preliminary research in early breast cancer detection, with publication in work.",
-      "Currently using statistical analysis in R to compare diseased and healthy ECG data for use in lab's workflow.",
+      "Developed parallelized kNN island-clustering program with C++ and R used on 68M+ DNA reads processed on a Linux high-performance computing cluster, for use in an in-progress publication on early breast cancer detection",
+      "Created R script to identify unique cycle features in diseased ECG reads, lowering time on manual analysis by 80%",
     ]
   },
   {
@@ -28,8 +29,8 @@ const EXPERIENCES =
     location: 'Houston, TX',
     role: '🔍 Research Intern',
     description: [
-      "Built a C++ and R package to read methylation data with findings from applying it to patient data presented at Research Day poster presentation, showing my research project to faculty and trainees.",
-      "Attended lectures of the graduate course 'Foundations of Clinical and Research Sciences' and thesis dissertations.",
+      "Built a C++ and R package to read methylation data with findings from applying it to patient data presented at Research Day poster presentation, presenting research to faculty and PhD candidates.",
+      "Attended graduate-level course 'Foundations of Clinical and Research Sciences' and thesis dissertations.",
     ]
   },
 
