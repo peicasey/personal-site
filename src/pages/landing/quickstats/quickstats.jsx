@@ -136,7 +136,7 @@ export default function QuickStats () {
                             <p className="font-bold text-lg text-amber-950 dark:text-white">Me in a nutshell :)</p>
                             <div className='text-amber-950 dark:text-lime-700 font-normal hidden sm:block'>
                                 <p>I've worked mostly in web, desktop, games, and statistics!</p>
-                                <p className='mt-2'>However I've also dabbled in mobile, AI/ML, parellized networks, and assembly.</p>
+                                <p className='mt-2'>However I've also dabbled in mobile, AI/ML, parallelized networks, and assembly.</p>
                                 <p className='mt-2'>You'll find me checking out some new front-end JS package!</p>
                             
                             </div>
