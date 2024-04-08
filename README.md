@@ -10,9 +10,11 @@ casey pei's personal site
 - firebase
 
 ## to-do:
+- [ ] refactor to Next.js and Typescript
+- [ ] blog?
 - [ ] accessibility statement
 - [ ] change light/dark mode button
 - [ ] smaller file size for model
-- [ ] update resume
+- [x] update resume
 - [ ] project write-ups
 - [ ] about section reformatting
