@@ -8,10 +8,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
+	  extend: {
   		colors: {
 			'generic-yellow': '#ffc458',
 			'orange-yellow': '#ffaa20',
+			'puke-green': '#808814',
+			'dark-green': '#676d0b',
+			'bark': '#534432',
+			'cream': '#f8f2e0',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

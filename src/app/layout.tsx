@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { atkins } from "./fonts";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +20,16 @@ export default function RootLayout({
       <body
         className="" style={ atkins.style}
       >
-        {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
