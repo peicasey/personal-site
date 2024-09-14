@@ -1,4 +1,5 @@
 import { Social } from "@/lib/socials";
+import Link from "next/link";
 import React from "react";
 
 interface Props extends Social {}
@@ -9,15 +10,15 @@ const SocialButton = React.memo<Props>(function SectionButtonFunction({
   icon,
 }) {
   return (
-    <a
+    <Link
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="p-2 rounded-md hover:yellow-glow-sm hover:-translate-y-1 duration-200"
+      className="p-2 rounded-md dark:hover:yellow-glow-sm hover:-translate-y-1 duration-200"
       aria-label={platform}
     >
       {icon}
-    </a>
+    </Link>
   );
 });
 

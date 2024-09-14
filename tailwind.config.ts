@@ -9,13 +9,18 @@ const config: Config = {
   ],
   theme: {
 	  extend: {
-  		colors: {
-			'generic-yellow': '#ffc458',
+		  colors: {
+			'basically-orange': '#ed8500',
 			'orange-yellow': '#ffaa20',
+			'generic-yellow': '#ffc458',
 			'puke-green': '#808814',
 			'dark-green': '#676d0b',
-			'bark': '#534432',
-			'cream': '#f8f2e0',
+			'bark-50': '#534432',
+			'bark-100': '#3c3123',
+			'bark-200': '#272016',
+			'cream-50': '#f8f2e0',
+			'cream-100': '#e6dfc9',
+			'cream-200': '#cbc2a6',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

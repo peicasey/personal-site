@@ -16,7 +16,7 @@ const H1 = React.memo<Props>(function H1Function({ url, subtitle, children }) {
       <div className="flex gap-4">
         <a
           href={url}
-          className="text-md sm:text-2xl font-bold text-generic-yellow hover:text-orange-yellow absolute -translate-x-4 sm:-translate-x-6 md:-translate-x-8"
+          className="text-md sm:text-2xl font-bold text-orange-yellow hover:text-basically-orange dark:text-generic-yellow dark:hover:text-orange-yellow absolute -translate-x-4 sm:-translate-x-6 md:-translate-x-8"
           aria-label={"direct link to " + id}
         >
           #

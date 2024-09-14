@@ -26,9 +26,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-          <Header />
-          {children}
-          <Footer />
+          <div className="bg-cream-50 text-stone-950 dark:bg-stone-950 dark:text-white max-w-[100vw] overflow-hidden">
+            <Header />
+            {children}
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -57,8 +57,8 @@ export function Header() {
   return (
     <header className="fixed w-full flex items-center justify-between p-4 z-50">
       <a>O</a>
-      <div className="flex items-center gap-4">
-        <NavigationMenu className="bg-primary rounded-3xl border-[1px] border-black yellow-glow-md">
+      <div className="flex items-center gap-2">
+        <NavigationMenu className="bg-primary rounded-3xl border-[1px] border-black dark:border-white dark:yellow-glow-md">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="rounded-l-3xl">

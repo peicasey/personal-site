@@ -1,17 +1,18 @@
 import React from "react";
-import Link from "next/link";
 import { FaHeart } from "react-icons/fa";
 import { SOCIALS } from "@/lib/socials";
 import SocialButton from "./SocialButton";
-import { LINK_STYLE } from "@/lib/linkStyle";
+import StyledLink from "./StyledLink";
 
 const Footer = React.memo(function FooterFunction() {
   const heart: React.ReactElement = (
-    <div className="group">
+    <div className="group hover:cursor-pointer hover:-translate-y-[2px] duration-500">
       <span>
-        <FaHeart className="text-orange-yellow group-hover:hidden mx-2 yellow-glow-md" />
+        <FaHeart className="text-basically-orange dark:text-orange-yellow group-hover:hidden mx-2 dark:yellow-glow-md" />
       </span>
-      <span className="hidden group-hover:block mx-[0.31rem]">🫀</span>
+      <span className="hidden group-hover:block mx-[0.31rem] dark:pink-glow-md">
+        🫀
+      </span>
     </div>
   );
 
@@ -23,14 +24,9 @@ const Footer = React.memo(function FooterFunction() {
         </h2>
         <div className="">
           Feel free to reach out at{" "}
-          <Link
-            href="mailto:peicasey@gmail.com"
-            target="_blank"
-            referrerPolicy="no-referrer"
-            className={LINK_STYLE}
-          >
+          <StyledLink href="mailto:peicasey@gmail.com">
             peicasey@gmail.com
-          </Link>
+          </StyledLink>
           . Always down to chat! :D
         </div>
         <div className="flex gap-2">
