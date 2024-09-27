@@ -14,7 +14,7 @@ const SocialButton = React.memo<Props>(function SectionButtonFunction({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="p-2 rounded-md dark:hover:yellow-glow-sm hover:-translate-y-1 duration-200"
+      className="text-lg p-2 rounded-md dark:hover:yellow-glow-sm hover:-translate-y-1 duration-200"
       aria-label={platform}
     >
       {icon}

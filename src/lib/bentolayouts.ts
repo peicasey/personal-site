@@ -72,7 +72,7 @@ export const HOME_LAYOUT = {
       x: 4,
       y: 0,
       w: 2,
-      h: 1,
+      h: 4,
     },
     {
       i: "e",

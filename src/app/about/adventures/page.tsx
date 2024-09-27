@@ -1,62 +1,47 @@
-import BackButton from "@/components/BackButton";
-import adventures from "@/data/adventures.json";
-import Link from "next/link";
 import { jost } from "@/app/fonts";
+import YEARLY_ADVENTURES from "../../../../public/adventures.json";
+import Adventure from "@/components/about/adventures/adventure";
+import H1 from "@/components/H1";
+import Section from "@/components/Section";
+import Card from "@/components/Card";
+import BackButton from "@/components/BackButton";
 
 export default function Adventures() {
   return (
-    <div>
-      <div className="h-full dark:text-white duration-500">
-        <div className="p-4 pt-24 pb-24 md:p-24 md:pb-32">
-          <BackButton />
-          <div className="bg-stone-50 dark:bg-neutral-900 rounded-lg pt-4 sm:pt-8 px-4 sm:px-8 pb-16 border-[1px] border-black">
-            <div className="relative mb-2">
-              <div>
-                <h1 className="text-4xl sm:text-6xl dark:text-red-800 font-bold mr-2 duration-0">
-                  ADVENTURES
-                </h1>
-              </div>
-              <div className="absolute top-0 left-1 aria-hidden select-none">
-                <h1 className="text-4xl sm:text-6xl font-bold text-amber-500 text-stroke">
-                  ADVENTURES
-                </h1>
-              </div>
-            </div>
-            <p className="mb-4 text-neutral-500">
-              A more casual record of stuff I've been up to! (Oversharing).
-            </p>
-            <div>
-              <ul
-                role="list"
-                className="divide-y divide-neutral-100 dark:divide-neutral-800"
-              >
-                {adventures.map((adventure) => (
-                  <Link
-                    href={adventure.link}
-                    className="flex justify-between items-center gap-4 p-2 hover:rounded-md hover:cursor-pointer hover:bg-[#f4f2ec] dark:hover:bg-[#25241e]"
-                  >
-                    <div className="flex items-center flex-grow-0">
-                      <div className="aria-hidden select-none text-lg mr-2">
-                        {adventure.symbol}
-                      </div>
-                      <span className="text-sm sm:text-md lg:text-md lg:max-w-[40em] md:max-w-[20em] sm:max-w-[15em]">
-                        {adventure.desc}
-                      </span>
-                    </div>
-                    <div className="flex-grow h-[1px] min-w-[25px] bg-neutral-200 dark:bg-neutral-700"></div>
-                    <div
-                      className="text-sm sm:text-md font-bold min-w-[5em]"
-                      style={jost.style}
-                    >
-                      {adventure.date}
-                    </div>
-                  </Link>
-                ))}
-              </ul>
-            </div>
-          </div>
+    <main className="flex min-h-screen flex-col items-center">
+      <Section>
+        <div className="w-full">
+          <BackButton href="/about">back</BackButton>
         </div>
-      </div>
-    </div>
+        <H1 url="" subtitle="Casual record of stuff I've been up to!">
+          Adventures
+        </H1>
+        <Card>
+          <ul
+            role="list"
+            className="divide-y divide-neutral-100 dark:divide-neutral-800"
+          >
+            {YEARLY_ADVENTURES.map((yearlyAdventures, i) => (
+              <li className="mt-2" key={"yearAdventure" + i}>
+                <div className="flex gap-2 sm:gap-4 items-center justify-between w-full">
+                  <h2
+                    className="text-lg font-bold uppercase"
+                    style={jost.style}
+                  >
+                    {yearlyAdventures.year}
+                  </h2>
+                  <div className="w-full h-[1px] bg-stone-400"></div>
+                </div>
+                <ul>
+                  {yearlyAdventures.adventures.map((adventure, j) => (
+                    <Adventure {...adventure} key={"adventure" + j} />
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </Section>
+    </main>
   );
 }

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Adventures",
+    "description": "Casual record of what I've been up to.",
+    "url": "/about/adventures",
+    "pic": {
+      "type": "EMOJIS",
+      "color": "#ffc548",
+      "icons": "🛸🌠"
+    }
+  }
+]

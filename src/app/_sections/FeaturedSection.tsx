@@ -5,6 +5,7 @@ import Tag from "@/components/Tag";
 import Link from "next/link";
 import { jost } from "../fonts";
 import { LogInfo } from "@/lib/logs";
+import DecoratedCard from "@/components/DecoratedCard";
 
 interface Props extends LogInfo {}
 
@@ -18,40 +19,33 @@ const FeaturedSection = React.memo<Props>(function FeaturedSectionFunction({
       <H1 url="/#featured" subtitle="actually decent content">
         Featured
       </H1>
-      <div className="flex flex-col gap-4 items-end">
-        <div className="flex items-end justify-between">
-          <div className="flex flex-col sm:flex-row gap-6 w-full h-full border border-black dark:border-white dark:yellow-glow-md bg-accent dark:bg-accent rounded-md p-6">
-            <div className="w-full sm:w-[15rem] min-h-[10rem] h-full select-none text-2xl border border-black bg-generic-yellow rounded-md p-8 flex items-center justify-center">
-              ☀️🐊🍊
-            </div>
-            <div className="w-full flex flex-col justify-between">
-              <div className="flex flex-col gap-2">
-                <h2 className="text-xl font-bold" style={jost.style}>
-                  {title}
-                </h2>
-                <div className="flex gap-2">
-                  {topicTags.map((tag, i) => (
-                    <Tag {...tag} key={i} />
-                  ))}
-                </div>
-                <p>{text}</p>
-              </div>
-
-              <div className="w-full flex justify-end">
-                <Link
-                  href=""
-                  className="font-bold text-stone-500 lowercase"
-                  style={jost.style}
-                >
-                  Read More
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="translate-x-4 translate-y-7 select-none w-[1px] h-[60px] bg-basically-orange"></div>
+      <DecoratedCard>
+        <div className="w-full sm:w-[15rem] min-h-[10rem] h-full select-none text-2xl border border-black bg-generic-yellow rounded-md p-8 flex items-center justify-center">
+          ☀️🐊🍊
         </div>
-        <div className="translate-x-7 select-none w-[60px] h-[1px] bg-basically-orange"></div>
-      </div>
+        <div className="w-full flex flex-col justify-between">
+          <div className="flex flex-col gap-2">
+            <h2 className="text-xl font-bold" style={jost.style}>
+              {title}
+            </h2>
+            <div className="flex gap-2">
+              {topicTags.map((tag, i) => (
+                <Tag {...tag} key={i} />
+              ))}
+            </div>
+            <p>{text}</p>
+          </div>
+          <div className="w-full flex justify-end">
+            <Link
+              href=""
+              className="font-bold text-stone-500 lowercase"
+              style={jost.style}
+            >
+              Read More
+            </Link>
+          </div>
+        </div>
+      </DecoratedCard>
     </Section>
   );
 });
