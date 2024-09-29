@@ -15,7 +15,7 @@ const AdventureSection = React.memo<Props>(function AdventuresSectionFunction({
   adventures,
 }) {
   return (
-    <li className="mt-2" key={year}>
+    <li className="mt-2 border-none" key={year}>
       {!noYear && (
         <div className="flex gap-2 sm:gap-4 items-center justify-between w-full">
           <h2 className="text-lg font-bold uppercase" style={jost.style}>

@@ -68,7 +68,7 @@
         "link": "http://irl.cse.tamu.edu/courses/313/",
         "month": "May 2023",
         "symbol": "🥹",
-        "important": true
+        "important": false
       },
       {
         "description": "Became Vice President @ Aggie Coding Club",
@@ -82,7 +82,7 @@
         "link": "https://people.tamu.edu/~caseypei/#",
         "month": "May 2023",
         "symbol": "💸",
-        "important": true
+        "important": false
       },
       {
         "description": "Best in Sound @ TAGD Game Jam",
@@ -103,7 +103,7 @@
         "link": "https://tamuhack.org/th",
         "month": "Jan 2023",
         "symbol": "⚡",
-        "important": true
+        "important": false
       },
       {
         "description": "Saw my first Rainforest Cafe in San Antonio :O",
@@ -124,7 +124,7 @@
         "link": "https://csce312-final-project.readthedocs.io/en/main/index.html",
         "month": "Dec 2023",
         "symbol": "🥹",
-        "important": true
+        "important": false
       }
     ]
   },
@@ -143,7 +143,7 @@
         "link": "https://tamuhack.org/hh/",
         "month": "Oct 2022",
         "symbol": "⚡",
-        "important": true
+        "important": false
       },
       {
         "description": "Became Vice President @ ENGR TA Org",
@@ -204,7 +204,7 @@
         "link": "https://2021.tamudatathon.com/",
         "month": "Oct 2021",
         "symbol": "⚡",
-        "important": true
+        "important": false
       },
       {
         "description": "Started as an Honors Computer Science student @ Texas A&M!",

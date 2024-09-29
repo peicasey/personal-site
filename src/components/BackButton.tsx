@@ -14,7 +14,7 @@ const BackButton = React.memo<Props>(function BackButtonFunction({
   return (
     <Link
       href={href}
-      className="bg-accent dark:bg-accent group hover:gap-1 duration-200 w-min flex gap-2 items-center border px-2 rounded-full border-black dark:border-stone-500 dark:yellow-glow-sm"
+      className="bg-accent dark:bg-accent group hover:gap-1 duration-200 w-min flex gap-2 items-center border pl-2 pr-3 py-1 rounded-full border-black dark:border-stone-500 dark:yellow-glow-sm"
     >
       <GoArrowLeft className="group-hover:-translate-x-1 duration-200" />
       <span className="text-sm whitespace-nowrap">{children}</span>

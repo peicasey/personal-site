@@ -14,7 +14,7 @@ const FowardButton = React.memo<Props>(function FowardButtonFunction({
   return (
     <Link
       href={href}
-      className="bg-accent dark:bg-accent group hover:gap-1 duration-200 w-min flex gap-2 items-center border px-2 rounded-full border-black dark:border-stone-500 dark:yellow-glow-sm"
+      className="bg-accent dark:bg-accent group hover:gap-1 duration-200 w-min flex gap-2 items-center border pr-2 pl-3 py-1 rounded-full border-black dark:border-stone-500 dark:yellow-glow-sm"
     >
       <span className="text-sm whitespace-nowrap">{children}</span>
       <GoArrowRight className="group-hover:translate-x-1 duration-200" />
