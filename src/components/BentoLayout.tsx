@@ -34,10 +34,10 @@ export default function BentoLayout(this: any) {
   return (
     <div className="w-full px-8 sm:px-12 md:px-16 lg:px-28 xl:px-36">
       <ResponsiveReactGridLayout
-        rowHeight={30}
+        rowHeight={50}
         cols={{
-          lg: 10,
-          md: 10,
+          lg: 6,
+          md: 6,
           sm: 6,
           xs: 4,
           xxs: 2,
@@ -56,13 +56,13 @@ export default function BentoLayout(this: any) {
           w: 250,
         }}
       >
-        {KEYS.map((itm, i) => (
+        {layout.lg.map((itm, i) => (
           <div
-            key={i}
-            // data-grid={itm}
+            key={itm.i}
+            data-grid={itm}
             className="cursor-grab active:cursor-grabbing select-none border border-black dark:border-white bg-generic-yellow flex justify-center items-center rounded-md dark:yellow-glow-md"
           >
-            {itm}
+            {itm.i}
           </div>
         ))}
       </ResponsiveReactGridLayout>

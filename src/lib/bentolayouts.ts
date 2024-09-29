@@ -3,7 +3,7 @@ export const KEYS = ["a", "b", "c", "d", "e", "f"];
 export const HOME_LAYOUT = {
   lg: [
     {
-      i: "a",
+      i: KEYS[0],
       x: 0,
       y: 0,
       w: 1,
