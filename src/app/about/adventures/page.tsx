@@ -4,7 +4,7 @@ import YEARLY_ADVENTURES from "../../../../public/adventures.json";
 import H1 from "@/components/H1";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
-import BackButton from "@/components/BackButton";
+import BackButton from "@/components/arrow-buttons/BackButton";
 import AdventureSection from "@/components/about/adventures/AdventureSection";
 import { cn } from "@/lib/utils";
 import { useCallback, useState } from "react";
@@ -21,7 +21,7 @@ export default function Adventures() {
       <Section>
         <div className="w-full flex items-center">
           <div className="min-w-24">
-            <BackButton href="/about">back</BackButton>
+            <BackButton>back</BackButton>
           </div>
           <label className="border border-black dark:border-neutral-400 dark:yellow-glow-sm bg-white dark:bg-black rounded-full flex justify-between items-center group px-2 py-1 gap-2 text-sm">
             important only?

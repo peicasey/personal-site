@@ -7,7 +7,7 @@ import AdventureSection from "@/components/about/adventures/AdventureSection";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import H1 from "@/components/H1";
-import FowardButton from "@/components/ForwardButton";
+import FowardButton from "@/components/arrow-buttons/ForwardButton";
 
 const FEATURED_LOG: LogInfo = {
   title: "How I Became the Richest Man Alive",
@@ -34,8 +34,10 @@ export default function Home() {
           <ul>
             <AdventureSection {...YEARLY_ADVENTURES[0]} noYear={true} />
           </ul>
-          <div className="mt-4 flex justify-end">
-            <span className="text-neutral-500">Want to see everything?</span>
+          <div className="mt-4 flex justify-end items-center gap-2">
+            <span className="text-neutral-500 h-full">
+              Want to see everything?
+            </span>
             <div className="min-w-28 flex items-center justify-end h-full">
               <FowardButton href={"/about/adventures"}>see more</FowardButton>
             </div>

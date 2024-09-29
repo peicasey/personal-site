@@ -1,7 +1,7 @@
 import { MoreInfo } from "@/lib/moreInfo";
 import React from "react";
 import Card from "../Card";
-import ForwardButton from "../ForwardButton";
+import ForwardButton from "../arrow-buttons/ForwardButton";
 import Image from "next/image";
 
 interface Props extends MoreInfo {}
