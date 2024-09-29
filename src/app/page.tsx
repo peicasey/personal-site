@@ -1,7 +1,13 @@
+import YEARLY_ADVENTURES from "../../public/adventures.json";
 import LandingBox from "@/app/_sections/LandingBox";
 import FeaturedSection from "./_sections/FeaturedSection";
 import { LogInfo } from "@/lib/logs";
 import BentoLayout from "@/components/BentoLayout";
+import AdventureSection from "@/components/about/adventures/AdventureSection";
+import Section from "@/components/Section";
+import Card from "@/components/Card";
+import H1 from "@/components/H1";
+import FowardButton from "@/components/ForwardButton";
 
 const FEATURED_LOG: LogInfo = {
   title: "How I Became the Richest Man Alive",
@@ -20,6 +26,22 @@ export default function Home() {
       <LandingBox />
       <FeaturedSection {...FEATURED_LOG} />
       <BentoLayout />
+      <Section>
+        <H1 url="/#recent" subtitle="me lately">
+          Recent
+        </H1>
+        <Card>
+          <ul>
+            <AdventureSection {...YEARLY_ADVENTURES[0]} noYear={true} />
+          </ul>
+          <div className="mt-4 flex justify-end">
+            <span className="text-neutral-500">Want to see everything?</span>
+            <div className="min-w-28 flex items-center justify-end h-full">
+              <FowardButton href={"/about/adventures"}>see more</FowardButton>
+            </div>
+          </div>
+        </Card>
+      </Section>
     </main>
   );
 }
