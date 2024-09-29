@@ -16,9 +16,9 @@ const MoreCard = React.memo<Props>(function MoreCardFunction({
     <li>
       <Card className="p-0 sm:p-0 md:p-0 lg:p-0">
         <div className="border-b border-black dark:border-white rounded-t-md overflow-hidden">
-          {pic.type === "PICTURE" ? (
+          {pic.type === "PIC" ? (
             <Image src={pic.src} alt={""} height={400} width={400} />
-          ) : (
+          ) : pic.type === "EMOJIS" ? (
             <div
               className={`select-none flex p-4 text-xl h-full items-center justify-center whitespace-nowrap bg-[var(--color)] dark:bg-[var(--color)] `}
               style={
@@ -29,7 +29,7 @@ const MoreCard = React.memo<Props>(function MoreCardFunction({
             >
               {pic.icons}
             </div>
-          )}
+          ) : null}
         </div>
         <div className="p-4 sm:p-8">
           <p className="text-lg font-bold">{title}</p>

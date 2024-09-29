@@ -8,5 +8,14 @@
       "color": "#ffc548",
       "icons": "🛸🌠"
     }
+  },
+  {
+    "title": "Adventures",
+    "description": "Casual record of what I've been up to.",
+    "url": "/about/adventures",
+    "pic": {
+      "type": "PIC",
+      "src": "/me.jpg"
+    }
   }
 ]
