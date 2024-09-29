@@ -3,6 +3,7 @@ import { FaHeart } from "react-icons/fa";
 import { SOCIALS } from "@/lib/socials";
 import SocialButton from "./SocialButton";
 import StyledLink from "./StyledLink";
+import { jost } from "@/app/fonts";
 
 const Footer = React.memo(function FooterFunction() {
   const heart: React.ReactElement = (
@@ -19,7 +20,7 @@ const Footer = React.memo(function FooterFunction() {
   return (
     <footer className="flex flex-col gap-8 p-8 md:p-16 lg:px-28 xl:px-36 w-full">
       <div className="flex flex-col gap-2">
-        <h2 className="text-lg font-bold">
+        <h2 className="text-lg font-bold" style={jost.style}>
           Congrats on scrolling all the way down!
         </h2>
         <div className="">
