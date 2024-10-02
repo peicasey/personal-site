@@ -34,7 +34,7 @@ export default function Archive() {
           you are attending Texas A&M, I've included the course code so you can
           find it yourself if you're interested.
         </p>
-        <div className="w-full flex flex-col md:flex-row gap-6 sticky top-0">
+        <div className="w-full flex flex-col lg:flex-row gap-6 overflow-hidden">
           <Card>
             <ul
               role="list"
