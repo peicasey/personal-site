@@ -3,7 +3,7 @@ import LandingBox from "@/app/_sections/LandingBox";
 import FeaturedSection from "./_sections/FeaturedSection";
 import { LogInfo } from "@/lib/logs";
 import BentoLayout from "@/components/BentoLayout";
-import AdventureSection from "@/components/about/adventures/AdventureSection";
+import AdventureSection from "@/components/more/adventures/AdventureSection";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import H1 from "@/components/H1";
@@ -12,9 +12,9 @@ import FowardButton from "@/components/arrow-buttons/ForwardButton";
 const FEATURED_LOG: LogInfo = {
   title: "How I Became the Richest Man Alive",
   topicTags: [
-    { text: "wealth", color: "#959c2e" },
-    { text: "grindset", color: "#d4e212" },
-    { text: "alpha", color: "#ffaa20" },
+    { children: "wealth", color: "#959c2e" },
+    { children: "grindset", color: "#d4e212" },
+    { children: "alpha", color: "#ffaa20" },
   ],
   text:
     "It all started when I decided to invest in crocodile feet. As it turns out, it was a hugely untapped market in Croatia. Crocodile feet were known for their special abilities in both…",
@@ -39,7 +39,7 @@ export default function Home() {
               Want to see everything?
             </span>
             <div className="min-w-28 flex items-center justify-end h-full">
-              <FowardButton href={"/about/adventures"}>see more</FowardButton>
+              <FowardButton href={"/more/adventures"}>see more</FowardButton>
             </div>
           </div>
         </Card>

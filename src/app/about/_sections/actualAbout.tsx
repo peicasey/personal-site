@@ -6,15 +6,15 @@ import Image from "next/image";
 
 const PERSONAL_TAGS = [
   {
-    text: "she/her",
+    children: "she/her",
     color: "#e7d56e",
   },
   {
-    text: "casey pei",
+    children: "casey pei",
     color: "#d4e212",
   },
   {
-    text: "裴婷",
+    children: "裴婷",
     color: "#ffc548",
   },
 ];
@@ -41,6 +41,10 @@ export default function ActualAbout() {
               <Tag {...tag} key={i} />
             ))}
           </div>
+          <p>
+            Hi! My name is Casey Pei (as you may have guessed) and I am a
+            coder/programmer among other things.
+          </p>
         </DecoratedCard>
       </div>
     </Section>

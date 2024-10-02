@@ -1,4 +1,5 @@
 export type TagInfo = {
-  text: string;
+  children?: React.ReactNode;
   color: string;
+  clickable?: boolean;
 };

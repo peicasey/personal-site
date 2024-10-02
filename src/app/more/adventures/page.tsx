@@ -5,7 +5,7 @@ import H1 from "@/components/H1";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import BackButton from "@/components/arrow-buttons/BackButton";
-import AdventureSection from "@/components/about/adventures/AdventureSection";
+import AdventureSection from "@/components/more/adventures/AdventureSection";
 import { cn } from "@/lib/utils";
 import { useCallback, useState } from "react";
 

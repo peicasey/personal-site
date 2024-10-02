@@ -2,7 +2,7 @@
   {
     "title": "Adventures",
     "description": "Casual record of what I've been up to.",
-    "url": "/about/adventures",
+    "url": "/more/adventures",
     "pic": {
       "type": "EMOJIS",
       "color": "#ffc548",
@@ -10,12 +10,23 @@
     }
   },
   {
-    "title": "Adventures",
-    "description": "Casual record of what I've been up to.",
-    "url": "/about/adventures",
+    "title": "Links",
+    "description": "Some important links (me, bookmarks, etc.)",
+    "url": "/more/links",
     "pic": {
-      "type": "PIC",
-      "src": "/me.jpg"
+      "type": "EMOJIS",
+      "color": "#c8b757",
+      "icons": "🖇️🔗"
+    }
+  },
+  {
+    "title": "Archives",
+    "description": "Records from university.",
+    "url": "/more/archive",
+    "pic": {
+      "type": "EMOJIS",
+      "color": "#ffaa20",
+      "icons": "📜🧙‍♂️"
     }
   }
 ]

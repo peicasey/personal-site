@@ -1,0 +1,401 @@
+[
+  {
+    "year": "Freshman",
+    "semester": "Fall",
+    "courses": [
+      {
+        "code": "MATH 251",
+        "title": "Calc 3 / Multivariable Calculus",
+        "credit": 3,
+        "professor": "Dr. Jinmin Wang",
+        "description": "asdfasdfasd",
+        "symbol": "➗",
+        "purpose": "Pre-ETAM Required"
+      },
+      {
+        "code": "CHEM 107",
+        "title": "Chemistry 1 Lecture",
+        "credit": 3,
+        "professor": "Dr. Matthew Sheldon",
+        "description": "asdfasdfasd",
+        "symbol": "🧑‍🔬",
+        "purpose": "Pre-ETAM Required"
+      },
+      {
+        "code": "CHEM 117",
+        "title": "Chemistry 1 Lab",
+        "credit": 1,
+        "professor": "TA",
+        "description": "asdfasdfasd",
+        "symbol": "🧪",
+        "purpose": "Pre-ETAM Required"
+      },
+
+      {
+        "code": "ENDS 101H",
+        "title": "Design Process",
+        "credit": 3,
+        "professor": "Dr. Jorge Vanegas",
+        "description": "asdfasdfasd",
+        "symbol": "📐",
+        "purpose": "Core Curriculum"
+      },
+      {
+        "code": "ENGR 102H",
+        "title": "Engr. Lab I - Programming",
+        "credit": 2,
+        "professor": "Dr. Natela Ostrovskaya",
+        "description": "asdfasdfasd",
+        "symbol": "🐍",
+        "purpose": "Pre-ETAM Required"
+      },
+
+      {
+        "code": "ENGR 181H",
+        "title": "Engr. Honors Seminar",
+        "credit": 1,
+        "professor": "Dr. Samuel Falade",
+        "description": "asdfasdfasd",
+        "symbol": "👷"
+      },
+      {
+        "code": "CLEN 181",
+        "title": "Engr. First-Year Experience",
+        "credit": 0,
+        "professor": "Dr. DC Breeding",
+        "description": "asdfasdfasd",
+        "symbol": "💬",
+        "purpose": "Core Curriculum"
+      },
+      {
+        "code": "ENGR 399H",
+        "title": "Engr. High Impact Experience",
+        "credit": 0,
+        "professor": "SI Leader",
+        "description": "asdfasdfasd",
+        "symbol": "📕"
+      }
+    ]
+  },
+  {
+    "year": "Freshman",
+    "semester": "Spring",
+    "courses": [
+      {
+        "code": "CSCE 121",
+        "title": "Intro to Programming",
+        "credit": 4,
+        "professor": "Dr. Paul Taele",
+        "description": "asdfasdfasd",
+        "symbol": "☝️",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "CSCE 222H",
+        "title": "Discrete Math",
+        "credit": 3,
+        "professor": "Dr. Sing Hoi-Sze",
+        "description": "asdfasdfasd",
+        "symbol": "🧮",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "ENGR 216H",
+        "title": "Engr. Lab II - Physics",
+        "credit": 2,
+        "professor": "Dr. Niki Ritchey + TAs",
+        "description": "asdfasdfasd",
+        "symbol": "⚙️",
+        "purpose": "Pre-ETAM Required"
+      },
+
+      {
+        "code": "PHYS 206",
+        "title": "Physics I / Newtonian Mechanics",
+        "credit": 3,
+        "professor": "Dr. Tatiana Erukhimova",
+        "description": "asdfasdfasd",
+        "symbol": "🍎",
+        "purpose": "Pre-ETAM Required"
+      },
+
+      {
+        "code": "POLS 207",
+        "title": "Texas State Government",
+        "credit": 3,
+        "professor": "Dr. Megan Dyer",
+        "description": "asdfasdfasd",
+        "symbol": "⚖️",
+        "purpose": "Core Curriculum"
+      },
+      {
+        "code": "UGST 181",
+        "title": "Italy Study Abroad",
+        "credit": 0,
+        "professor": "Dr. Jonathan Kotinek",
+        "description": "asdfasdfasd",
+        "symbol": "🇮🇹"
+      },
+      {
+        "code": "ENGR 399H",
+        "title": "Engr. High Impact Experience",
+        "credit": 0,
+        "professor": "SI Leader",
+        "description": "asdfasdfasd",
+        "symbol": "👔"
+      }
+    ]
+  },
+  {
+    "year": "Sophomore",
+    "semester": "Fall",
+    "courses": [
+      {
+        "code": "CSCE 221",
+        "title": "Data Structures and Algorithms",
+        "credit": 4,
+        "professor": "Dr. Teresa Leyk",
+        "description": "asdfasdfasd",
+        "symbol": "🗺️",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "CSCE 312",
+        "title": "Computer Systems",
+        "credit": 4,
+        "professor": "Dr. EJ Kim",
+        "description": "asdfasdfasd",
+        "symbol": "💽",
+        "purpose": "CS Required"
+      },
+
+      {
+        "code": "CSCE 314",
+        "title": "Object Oriented Programming",
+        "credit": 3,
+        "professor": "Dr. Shawn Lupoli",
+        "description": "asdfasdfasd",
+        "symbol": "🧑‍🏫",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "STAT 211",
+        "title": "Statistics I",
+        "credit": 3,
+        "professor": "Dr. Scott Crawford",
+        "description": "asdfasdfasd",
+        "symbol": "📊",
+        "purpose": "Stat Minor / Emphasis Area"
+      },
+      {
+        "code": "CSCE 181",
+        "title": "Intro to Computing",
+        "credit": 1,
+        "professor": "Dr. Aakash Tyagi",
+        "description": "asdfasdfasd",
+        "symbol": "😎",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "ENGR 399H",
+        "title": "Engr. High Impact Experience",
+        "credit": 0,
+        "professor": "SI Leader",
+        "description": "asdfasdfasd",
+        "symbol": "📕"
+      }
+    ]
+  },
+  {
+    "year": "Sophomore",
+    "semester": "Spring",
+    "courses": [
+      {
+        "code": "CSCE 313H",
+        "title": "Distributed Systems",
+        "credit": 4,
+        "professor": "Dr. Dmitri Loguinov",
+        "description": "asdfasdfasd",
+        "symbol": "🌐",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "CSCE 315",
+        "title": "Software Engineering",
+        "credit": 3,
+        "professor": "Dr. Robert Lightfoot",
+        "description": "asdfasdfasd",
+        "symbol": "👥",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "MATH 304",
+        "title": "Linear Algebra",
+        "credit": 3,
+        "professor": "Dr. Yuliia Yershova",
+        "description": "asdfasdfasd",
+        "symbol": "📇",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "STAT 212",
+        "title": "Statistics II",
+        "credit": 3,
+        "professor": "Dr. Patricia Ning",
+        "description": "asdfasdfasd",
+        "symbol": "📉",
+        "purpose": "Stat Minor / Emphasis Area"
+      },
+      {
+        "code": "ENGR 399H",
+        "title": "Engr. High Impact Experience",
+        "credit": 0,
+        "professor": "SI Leader",
+        "description": "asdfasdfasd",
+        "symbol": "📕"
+      }
+    ]
+  },
+  {
+    "year": "Junior",
+    "semester": "Fall",
+    "courses": [
+      {
+        "code": "CSCE 411",
+        "title": "Design and Analysis of Algorithms",
+        "credit": 3,
+        "professor": "Dr. Tim Davis",
+        "description": "asdfasdfasd",
+        "symbol": "🌳",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "STAT 408",
+        "title": "Linear Models",
+        "credit": 3,
+        "professor": "Dr. Nilanjana Laha",
+        "description": "asdfasdfasd",
+        "symbol": "📈",
+        "purpose": "Stat Minor / Emphasis Area"
+      },
+      {
+        "code": "CSCE 481",
+        "title": "Computer Science Seminar",
+        "credit": 1,
+        "professor": "Dr. Pauline Wade",
+        "description": "asdfasdfasd",
+        "symbol": "👨‍💼",
+        "purpose": "CS Required"
+      },
+      {
+        "code": "DCED 202",
+        "title": "Dance Appreciation",
+        "credit": 3,
+        "professor": "Dr. Abigail Chin",
+        "description": "asdfasdfasd",
+        "symbol": "🕺"
+      },
+      {
+        "code": "PBSI 107",
+        "title": "Psychology I",
+        "credit": 3,
+        "professor": "Dr. Rachel Hull",
+        "description": "asdfasdfasd",
+        "symbol": "🧠"
+      }
+    ]
+  },
+  {
+    "year": "Junior",
+    "semester": "Spring",
+    "courses": [
+      {
+        "code": "CSCE 421",
+        "title": "Machine Learning",
+        "credit": 1,
+        "professor": "Zhale Nowroozilarki",
+        "description": "asdfasdfasd",
+        "symbol": "🦾",
+        "purpose": "CS Electives"
+      },
+      {
+        "code": "CSCE 420",
+        "title": "Artificial Intelligence",
+        "credit": 3,
+        "professor": "Dr. Guni Sharon",
+        "description": "asdfasdfasd",
+        "symbol": "🤖",
+        "purpose": "CS Electives"
+      },
+      {
+        "code": "CSCE 436H",
+        "title": "Human Computer Design",
+        "credit": 3,
+        "professor": "Dr. Jeeeun Kim",
+        "description": "asdfasdfasd",
+        "symbol": "🧑‍💻",
+        "purpose": "CS Electives"
+      },
+
+      {
+        "code": "CSCE 432*",
+        "title": "Accessible Computing",
+        "credit": 3,
+        "professor": "Dr. Michael Moore",
+        "description": "asdfasdfasd",
+        "symbol": "♿",
+        "purpose": "CS Electives"
+      },
+      {
+        "code": "STAT 446*",
+        "title": "Biostatistics",
+        "credit": 3,
+        "professor": "Dr. Yuchao Jiang",
+        "description": "asdfasdfasd",
+        "symbol": "🧬",
+        "purpose": "Stat Minor / Emphasis Area"
+      }
+    ]
+  },
+  {
+    "year": "Senior",
+    "semester": "Fall",
+    "courses": [
+      {
+        "code": "CSCE 491H",
+        "title": "Honors Research",
+        "credit": 3,
+        "professor": "Dr. Tim Davis",
+        "description": "asdfasdfasd",
+        "symbol": "📃"
+      },
+      {
+        "code": "CSCE 412H",
+        "title": "Cloud Computing",
+        "credit": 3,
+        "professor": "Dr. Robert Lightfoot",
+        "description": "asdfasdfasd",
+        "symbol": "☁️",
+        "purpose": "CS Electives"
+      },
+      {
+        "code": "STAT 414",
+        "title": "Math Stats I",
+        "credit": 3,
+        "professor": "Dr. Runmin Wang",
+        "description": "asdfasdfasd",
+        "symbol": "➕",
+        "purpose": "Stat Minor / Emphasis Area"
+      },
+
+      {
+        "code": "FINP 235",
+        "title": "Financial Planning",
+        "credit": 3,
+        "professor": "Dr. David Roach",
+        "description": "asdfasdfasd",
+        "symbol": "💸"
+      }
+    ]
+  }
+]
