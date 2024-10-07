@@ -138,6 +138,14 @@ body {
   will-change: transform;
 }
 
+.text-outline-black {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.text-outline-white {
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
 .react-grid-item {
   /* transition: transform 500ms ease 0s !important; */
   transition: visibility 500ms ease 0s;

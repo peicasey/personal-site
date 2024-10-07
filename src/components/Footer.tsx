@@ -19,26 +19,30 @@ const Footer = React.memo(function FooterFunction() {
 
   return (
     <footer className="flex flex-col gap-8 p-8 md:p-16 lg:px-28 xl:px-36 w-full">
-      <div className="flex flex-col gap-2">
-        <h2 className="text-lg font-bold" style={jost.style}>
-          Congrats on scrolling all the way down!
-        </h2>
-        <div className="">
-          Feel free to reach out at{" "}
-          <StyledLink href="mailto:peicasey@gmail.com">
-            peicasey@gmail.com
-          </StyledLink>
-          . Always down to chat! :D
+      <div className="flex gap-8 justify-between">
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-2">
+            <h2 className="text-xl font-bold" style={jost.style}>
+              Congrats on scrolling all the way down!
+            </h2>
+            <div className="">
+              Feel free to reach out at{" "}
+              <StyledLink href="mailto:peicasey@gmail.com">
+                peicasey@gmail.com
+              </StyledLink>
+              . Always down to chat! :D
+            </div>
+          </div>
+          <div className="flex items-center">
+            Made with {heart}
+            by Casey Pei
+          </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-col gap-2">
           {Object.values(SOCIALS).map((social, i) => (
-            <SocialButton key={i} {...social} />
+            <SocialButton key={i} {...social} importantOnly={true} />
           ))}
         </div>
-      </div>
-      <div className="flex items-center">
-        Made with {heart}
-        by Casey Pei
       </div>
     </footer>
   );

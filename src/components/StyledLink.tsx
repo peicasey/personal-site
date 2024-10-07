@@ -12,7 +12,7 @@ const StyledLink = React.memo<Props>(function StyledLinkFunction({
   return (
     <Link
       {...props}
-      className="decoration-dashed underline text-basically-orange hover:text-orange-yellow dark:text-orange-yellow dark:hover:text-generic-yellow"
+      className="decoration-dashed underline text-dark-orange hover:text-basically-orange dark:text-orange-yellow dark:hover:text-generic-yellow"
     >
       {children}
     </Link>

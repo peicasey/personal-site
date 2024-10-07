@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
 	  extend: {
 		  colors: {
+			'dark-orange': '#d36d00',
 			'basically-orange': '#ed8500',
 			'orange-yellow': '#ffaa20',
 			'generic-yellow': '#ffc458',

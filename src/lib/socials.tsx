@@ -8,6 +8,7 @@ export type Social = {
   platform: string;
   link: string;
   icon: React.ReactNode;
+  important?: boolean;
 };
 
 export const SOCIALS = {
@@ -15,16 +16,19 @@ export const SOCIALS = {
     platform: "Resume",
     link: "/404",
     icon: <MdContactPage />,
+    important: true,
   },
   LINKEDIN: {
     platform: "LinkedIn",
     link: "https://linkedin.com/in/caseypei",
     icon: <BiLogoLinkedinSquare />,
+    important: true,
   },
   GITHUB: {
     platform: "Github",
     link: "https://github.com/peicasey",
     icon: <TbBrandGithubFilled />,
+    important: true,
   },
   ITCHIO: {
     platform: "Itch.io",
