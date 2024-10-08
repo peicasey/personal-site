@@ -3,18 +3,22 @@ import React from "react";
 import Card from "../Card";
 import ForwardButton from "../arrow-buttons/ForwardButton";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-interface Props extends MoreInfo {}
+interface Props extends MoreInfo {
+  className?: string;
+}
 
 const MoreCard = React.memo<Props>(function MoreCardFunction({
   title,
   description,
   url,
   pic,
+  className,
 }) {
   return (
     <li>
-      <Card className="p-0 sm:p-0 md:p-0 lg:p-0">
+      <Card className={cn("p-0 sm:p-0 md:p-0 lg:p-0", className)}>
         <div className="border-b border-black dark:border-white rounded-t-md overflow-hidden">
           {pic.type === "PIC" ? (
             <Image src={pic.src} alt={""} height={400} width={400} />

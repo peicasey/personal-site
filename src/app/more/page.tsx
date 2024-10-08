@@ -20,7 +20,7 @@ export default function More() {
       </div>
       <ul className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8">
         {MORE_ITEMS.map((more_item, i) => (
-          <MoreCard key={i} {...more_item} />
+          <MoreCard key={i} {...more_item} className="h-full" />
         ))}
       </ul>
     </Section>

@@ -6,6 +6,7 @@ import StyledLink from "@/components/StyledLink";
 import Tag from "@/components/Tag";
 import { SOCIALS } from "@/lib/socials";
 import Image from "next/image";
+import Link from "next/link";
 
 const PERSONAL_TAGS = [
   {
@@ -66,7 +67,7 @@ export default function ActualAbout() {
             Outside of stereotypical CS major activities, I am an enjoyer of
             Nightwing and other superheroes, partaker in digital art and
             animation, and loyal watcher of the{" "}
-            <StyledLink href="https://youtube.com/@technoblade">
+            <StyledLink target="_blank" href="https://youtube.com/@technoblade">
               Technoblade youtube channel
             </StyledLink>
             . You will often find me studying (taking a nap) in the Zachry

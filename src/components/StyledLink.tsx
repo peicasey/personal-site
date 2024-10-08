@@ -1,7 +1,12 @@
 import Link, { LinkProps } from "next/link";
-import React from "react";
+import React, {
+  HTMLAttributeAnchorTarget,
+  HTMLAttributeReferrerPolicy,
+} from "react";
 
 interface Props extends LinkProps {
+  target?: HTMLAttributeAnchorTarget | undefined;
+  referrerPolicy?: HTMLAttributeReferrerPolicy | undefined;
   children: React.ReactNode;
 }
 
