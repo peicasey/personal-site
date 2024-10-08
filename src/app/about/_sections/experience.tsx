@@ -3,6 +3,7 @@ import H1 from "@/components/H1";
 import Section from "@/components/Section";
 import { jost } from "@/app/fonts";
 import StyledLink from "@/components/StyledLink";
+import Card from "@/components/Card";
 
 export default function Experience() {
   return (
@@ -10,7 +11,7 @@ export default function Experience() {
       <H1 url="/about/#experience" subtitle="doing / have done">
         Experience
       </H1>
-      <div className="w-full flex flex-col gap-6 sm:gap-4">
+      <Card className="w-full flex flex-col gap-6 sm:gap-4">
         <div>
           <h2 className="font-bold text-lg mb-2 sm:mb-0" style={jost.style}>
             Currently:
@@ -89,7 +90,7 @@ export default function Experience() {
           </h2>
           <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0">
             <li>
-              👾 Create games with my team (
+              👾 Creating games with my team (
               <StyledLink
                 target="_blank"
                 href="https://tagdigda.wixsite.com/gamedev"
@@ -99,14 +100,14 @@ export default function Experience() {
               )
             </li>
             <li>
-              🧑‍💻 Organize competitive coding contests (
+              🧑‍💻 Organizing competitive coding contests (
               <StyledLink target="_blank" href="https://tx.ag/acpcwebsite">
                 @Aggie Competitive Coding Club
               </StyledLink>
               )
             </li>
             <li>
-              ⚙️ Hold exam reviews for the freshmen engineering class (
+              ⚙️ Held exam reviews for the freshmen engineering class (
               <StyledLink target="_blank" href="https://engrtao.tech">
                 @Engineering TA Organization
               </StyledLink>
@@ -128,7 +129,7 @@ export default function Experience() {
             </li>
           </ul>
         </div>
-      </div>
+      </Card>
     </Section>
   );
 }
