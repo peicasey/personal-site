@@ -10,12 +10,12 @@ export default function Experience() {
       <H1 url="/about/#experience" subtitle="doing / have done">
         Experience
       </H1>
-      <div className="w-full flex flex-col gap-4">
+      <div className="w-full flex flex-col gap-6 sm:gap-4">
         <div>
-          <h2 className="font-bold text-lg" style={jost.style}>
+          <h2 className="font-bold text-lg mb-2 sm:mb-0" style={jost.style}>
             Currently:
           </h2>
-          <ul className="ml-4 list-disc">
+          <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0">
             <li>
               🎓 Pursuing an Honors Computer Science degree with a Minor in
               Statistics (
@@ -48,10 +48,10 @@ export default function Experience() {
           </ul>
         </div>
         <div>
-          <h2 className="font-bold text-lg" style={jost.style}>
+          <h2 className="font-bold text-lg mb-2 sm:mb-0" style={jost.style}>
             Previously:
           </h2>
-          <ul className="ml-4 list-disc">
+          <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0">
             <li>
               🤖 Streamlined no-code LLM chatbot creation workflows (
               <StyledLink target="_blank" href="https://palantir.com">
@@ -60,7 +60,7 @@ export default function Experience() {
               )
             </li>
             <li>
-              🚀 increasing diversity and inclusion in AI/ML (
+              🚀 Increased diversity and inclusion in AI/ML (
               <StyledLink target="_blank" href="https://ai-4-all.org/">
                 @AI4ALL
               </StyledLink>
@@ -84,10 +84,10 @@ export default function Experience() {
           </ul>
         </div>
         <div>
-          <h2 className="font-bold text-lg" style={jost.style}>
+          <h2 className="font-bold text-lg mb-2 sm:mb-0" style={jost.style}>
             At University:
           </h2>
-          <ul className="ml-4 list-disc">
+          <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0">
             <li>
               👾 Create games with my team (
               <StyledLink
