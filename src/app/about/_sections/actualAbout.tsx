@@ -26,7 +26,7 @@ const PERSONAL_TAGS = [
 export default function ActualAbout() {
   return (
     <Section>
-      <H1 url="/about/#about" subtitle="hint: casey">
+      <H1 url="/about/#about" subtitle="longer description of me by me">
         About
       </H1>
       <div className="w-full flex flex-col sm:flex-row gap-4 sm:gap-8">
@@ -73,6 +73,17 @@ export default function ActualAbout() {
             . You will often find me studying (taking a nap) in the Zachry
             Engineering Building, binging a new 3-hour video essay, and sending
             oddly specific online personality quizzes to friends.
+          </p>
+          <p>
+            I can be reached at{" "}
+            <StyledLink href="mailto:peicasey@gmail.com">
+              peicasey@gmail.com
+            </StyledLink>{" "}
+            or via{" "}
+            <StyledLink target="_blank" href="https://linkedin.com/in/caseypei">
+              Linkedin
+            </StyledLink>
+            . Always down to chat! :D
           </p>
         </DecoratedCard>
       </div>

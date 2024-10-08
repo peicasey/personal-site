@@ -13,7 +13,7 @@ import Tag from "@/components/Tag";
 import React from "react";
 import LegendItem from "@/components/more/archives/LegendItem";
 
-export default function Archive() {
+export default function Archives() {
   const SEMESTERLY_COURSES = SEMESTERLY_COURSES_RAW as YearlyCourses[];
 
   return (
