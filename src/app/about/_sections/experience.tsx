@@ -4,6 +4,7 @@ import Section from "@/components/Section";
 import { jost } from "@/app/fonts";
 import StyledLink from "@/components/StyledLink";
 import Card from "@/components/Card";
+import { COMMON_LINKS } from "@/lib/commonLinks";
 
 export default function Experience() {
   return (
@@ -20,7 +21,7 @@ export default function Experience() {
             <li>
               🎓 Pursuing an Honors Computer Science degree with a Minor in
               Statistics (
-              <StyledLink target="_blank" href="https://www.tamu.edu/">
+              <StyledLink target="_blank" href={COMMON_LINKS.TAMU}>
                 @Texas A&M University
               </StyledLink>
               )
@@ -28,20 +29,14 @@ export default function Experience() {
             <li>
               🕸️ Applying sparse linear algebra to create performant graph
               algorithms (
-              <StyledLink
-                target="_blank"
-                href="https://people.engr.tamu.edu/davis/welcome.html"
-              >
+              <StyledLink target="_blank" href={COMMON_LINKS.DAVIS}>
                 @Dr. Tim Davis
               </StyledLink>
               )
             </li>
             <li>
               🧬 Analyzing biostatistics data (
-              <StyledLink
-                target="_blank"
-                href="https://ibt.tamu.edu/faculty/kurt-zhang.html"
-              >
+              <StyledLink target="_blank" href={COMMON_LINKS.ZHANG}>
                 @Dr. Kurt Zhang
               </StyledLink>
               )
@@ -55,21 +50,21 @@ export default function Experience() {
           <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0">
             <li>
               🤖 Streamlined no-code LLM chatbot creation workflows (
-              <StyledLink target="_blank" href="https://palantir.com">
+              <StyledLink target="_blank" href={COMMON_LINKS.PALANTIR}>
                 @Palantir Technologies
               </StyledLink>
               )
             </li>
             <li>
               🚀 Increased diversity and inclusion in AI/ML (
-              <StyledLink target="_blank" href="https://ai-4-all.org/">
+              <StyledLink target="_blank" href={COMMON_LINKS.AI4ALL}>
                 @AI4ALL
               </StyledLink>
               )
             </li>
             <li>
               ⚛️ Created C# and Electron desktop apps at (
-              <StyledLink target="_blank" href="https://arbin.com">
+              <StyledLink target="_blank" href={COMMON_LINKS.ARBIN}>
                 @Arbin Instruments
               </StyledLink>
               )
@@ -77,7 +72,7 @@ export default function Experience() {
             <li>
               🧑‍🔬 Applied island-clustering algorithms in breast cancer
               detection (
-              <StyledLink target="_blank" href="https://ibt.tamu.edu">
+              <StyledLink target="_blank" href={COMMON_LINKS.IBT}>
                 @Institute of Biosciences and Technologies
               </StyledLink>
               )
@@ -91,38 +86,35 @@ export default function Experience() {
           <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0">
             <li>
               👾 Creating games with my team (
-              <StyledLink
-                target="_blank"
-                href="https://tagdigda.wixsite.com/gamedev"
-              >
+              <StyledLink target="_blank" href={COMMON_LINKS.TAGD}>
                 @Texas A&M Game Developers
               </StyledLink>
               )
             </li>
             <li>
               🧑‍💻 Organizing competitive coding contests (
-              <StyledLink target="_blank" href="https://tx.ag/acpcwebsite">
+              <StyledLink target="_blank" href={COMMON_LINKS.ACPC}>
                 @Aggie Competitive Coding Club
               </StyledLink>
               )
             </li>
             <li>
               ⚙️ Held exam reviews for the freshmen engineering class (
-              <StyledLink target="_blank" href="https://engrtao.tech">
+              <StyledLink target="_blank" href={COMMON_LINKS.TAO}>
                 @Engineering TA Organization
               </StyledLink>
               )
             </li>
             <li>
               💻 Ordered 200 pizzas for project presentations (
-              <StyledLink target="_blank" href="https://aggiecodingclub.com">
+              <StyledLink target="_blank" href={COMMON_LINKS.ACC}>
                 @Aggie Coding Club
               </StyledLink>
               )
             </li>
             <li>
               👷‍♀️ Advocated for women in STEM fields (
-              <StyledLink target="_blank" href="https://www.swetamu.com/">
+              <StyledLink target="_blank" href={COMMON_LINKS.SWE}>
                 @Society of Women Engineers
               </StyledLink>
               )

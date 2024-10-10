@@ -1,3 +1,5 @@
+import { COMMON_LINKS } from "./commonLinks";
+
 export type AdventureInfo = {
   description: string;
   link: string;
@@ -11,3 +13,243 @@ export type YearlyAdventures = {
   year: number;
   adventures: AdventureInfo[];
 };
+
+export const YEARLY_ADVENTURES = [
+  {
+    year: 2024,
+    adventures: [
+      {
+        description: "Hole in one @ Yuqian's B-day",
+        link: "",
+        month: "Sep 2024",
+        symbol: "⛳",
+        important: false,
+      },
+      {
+        description: "Became Webmaster @ ACPC",
+        link: COMMON_LINKS.ACPC,
+        month: "Aug 2024",
+        symbol: "🧑‍💻",
+        important: true,
+      },
+      {
+        description: "Saw Hamilton on Broadway!!!",
+        link: "https://hamiltonmusical.com/new-york/",
+        month: "Aug 2024",
+        symbol: "🎶",
+        important: false,
+      },
+      {
+        description: "SWE Intern @ Palantir Technologies",
+        link: COMMON_LINKS.PALANTIR,
+        month: "May 2024",
+        symbol: "💼",
+        important: true,
+      },
+      {
+        description: "Got addicted to Genshin on Ps5 won @ Chillenium",
+        link: "https://pengso0o.itch.io/plugged-in",
+        month: "Feb 2024",
+        symbol: "🎮",
+        important: false,
+      },
+      {
+        description: "Best Overall @ Chillenium",
+        link: "https://pengso0o.itch.io/plugged-in",
+        month: "Feb 2024",
+        symbol: "🏆",
+        important: true,
+      },
+      {
+        description: "Became President @ ENGR TA Org",
+        link: COMMON_LINKS.TAO,
+        month: "Feb 2024",
+        symbol: "🧑‍💻",
+        important: true,
+      },
+    ],
+  },
+  {
+    year: 2023,
+    adventures: [
+      {
+        description: "SWE Intern @ Arbin Instruments",
+        link: COMMON_LINKS.ARBIN,
+        month: "May 2023",
+        symbol: "💼",
+        important: true,
+      },
+      {
+        description: "Survived CSCE 313H.",
+        link: "http://irl.cse.tamu.edu/courses/313/",
+        month: "May 2023",
+        symbol: "🥹",
+        important: false,
+      },
+      {
+        description: "Became Vice President @ Aggie Coding Club",
+        link: COMMON_LINKS.ACC,
+        month: "May 2023",
+        symbol: "🧑‍💻",
+        important: true,
+      },
+      {
+        description: "Won 20$ for best site in my CSCE 315 class",
+        link: "https://people.tamu.edu/~caseypei/#",
+        month: "May 2023",
+        symbol: "💸",
+        important: false,
+      },
+      {
+        description: "Best in Sound @ TAGD Game Jam",
+        link: "https://tagdigda.wixsite.com/gamedev/copy-of-fall-2022",
+        month: "May 2023",
+        symbol: "🏆",
+        important: true,
+      },
+      {
+        description: "Best in Visuals @ Chillenium Game Jam",
+        link: "https://chillennium.com/chillenium2023.html",
+        month: "Feb 2023",
+        symbol: "🏆",
+        important: true,
+      },
+      {
+        description: "Ruined my sleep schedule @ TAMUHack",
+        link: "https://tamuhack.org/th",
+        month: "Jan 2023",
+        symbol: "⚡",
+        important: false,
+      },
+      {
+        description: "Saw my first Rainforest Cafe in San Antonio :O",
+        link:
+          "https://www.rainforestcafe.com/location/rainforest-cafe-san-antonio-tx/",
+        month: "Jan 2023",
+        symbol: "🦜",
+        important: false,
+      },
+      {
+        description: "Added a Statistics minor o-o",
+        link:
+          "https://catalog.tamu.edu/undergraduate/arts-and-sciences/statistics/minor/#text",
+        month: "Jan 2023",
+        symbol: "📚",
+        important: true,
+      },
+      {
+        description: "Made a virtual sequential processor (I cried)",
+        link: "https://csce312-final-project.readthedocs.io/en/main/index.html",
+        month: "Dec 2023",
+        symbol: "🥹",
+        important: false,
+      },
+    ],
+  },
+  {
+    year: 2022,
+    adventures: [
+      {
+        description: "Became Projects Chair @ Aggie Coding Club",
+        link: COMMON_LINKS.ACC,
+        month: "Dec 2022",
+        symbol: "🧑‍💻",
+        important: true,
+      },
+      {
+        description: "Met Ryankbr",
+        link: "https://youtube.com/@ryankbr",
+        month: "Nov 2022",
+        symbol: "🐯",
+        important: false,
+      },
+      {
+        description: "Witness Jad's scooter break @ HowdyHack",
+        link: "https://tamuhack.org/hh/",
+        month: "Oct 2022",
+        symbol: "⚡",
+        important: false,
+      },
+      {
+        description: "Became Vice President @ ENGR TA Org",
+        link: COMMON_LINKS.TAO,
+        month: "Oct 2022",
+        symbol: "🧑‍💻",
+        important: true,
+      },
+      {
+        description:
+          "Hamill Research Intern @ Institute of Bioscience & Technology",
+        link:
+          "https://ibt.tamu.edu/education/biotech-graduate-track/summer-research-program.html",
+        month: "May 2022",
+        symbol: "💼",
+        important: true,
+      },
+      {
+        description: "1st Overall and Best in Design @ TAGD Game Jam",
+        link: "https://tagdigda.wixsite.com/gamedev/copy-of-fall-2021",
+        month: "May 2022",
+        symbol: "🏆",
+        important: true,
+      },
+      {
+        description:
+          "Started breast cancer research using biostatistics w/ Dr. Zhang :D",
+        link: COMMON_LINKS.ZHANG,
+        month: "Apr 2022",
+        symbol: "🧬",
+        important: true,
+      },
+      {
+        description: "Ate lots of pasta",
+        link: COMMON_LINKS.CONWAY,
+        month: "Mar 2022",
+        symbol: "🇮🇹",
+        important: false,
+      },
+    ],
+  },
+  {
+    year: 2021,
+    adventures: [
+      {
+        description: "Best in Programming @ TAGD Game Jam",
+        link: "https://itch.io/jam/tagd-fall-2021-semester-game-jam",
+        month: "Dec 2021",
+        symbol: "🏆",
+        important: true,
+      },
+      {
+        description: "Became Projects Officer @ Aggie Coding Club",
+        link: COMMON_LINKS.ACC,
+        month: "Nov 2021",
+        symbol: "🧑‍💻",
+        important: true,
+      },
+      {
+        description: "Watched epic yo-yo tricks @ TAMU Datathon",
+        link: "https://2021.tamudatathon.com/",
+        month: "Oct 2021",
+        symbol: "⚡",
+        important: false,
+      },
+      {
+        description:
+          "Started as an Honors Computer Science student @ Texas A&M!",
+        link: COMMON_LINKS.TAMU,
+        month: "Aug 2021",
+        symbol: "📚",
+        important: true,
+      },
+      {
+        description: "Graduated Valedictorian from HS! >:)",
+        link:
+          "https://www.aps.edu/schools/graduation/class-of-2021/la-cueva-high-school",
+        month: "May 2021",
+        symbol: "🎓",
+        important: true,
+      },
+    ],
+  },
+];

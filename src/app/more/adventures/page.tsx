@@ -1,6 +1,5 @@
 "use client";
 
-import YEARLY_ADVENTURES from "../../../../public/adventures.json";
 import H1 from "@/components/H1";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
@@ -8,6 +7,7 @@ import BackButton from "@/components/arrow-buttons/BackButton";
 import AdventureSection from "@/components/more/adventures/AdventureSection";
 import { cn } from "@/lib/utils";
 import { useCallback, useState } from "react";
+import { YEARLY_ADVENTURES } from "@/lib/adventures";
 
 export default function Adventures() {
   const [importantOnly, setImportantOnly] = useState(false);

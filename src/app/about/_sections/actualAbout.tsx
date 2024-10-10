@@ -76,12 +76,12 @@ export default function ActualAbout() {
           </p>
           <p>
             I can be reached at{" "}
-            <StyledLink href="mailto:peicasey@gmail.com">
-              peicasey@gmail.com
+            <StyledLink href={SOCIALS.EMAIL_FULL.link}>
+              {SOCIALS.EMAIL_FULL.platform}
             </StyledLink>{" "}
             or via{" "}
-            <StyledLink target="_blank" href="https://linkedin.com/in/caseypei">
-              Linkedin
+            <StyledLink target="_blank" href={SOCIALS.LINKEDIN.link}>
+              {SOCIALS.LINKEDIN.platform}
             </StyledLink>
             . Always down to chat! :D
           </p>

@@ -1,0 +1,15 @@
+export const COMMON_LINKS = {
+  PALANTIR: "https://palantir.com",
+  AI4ALL: "https://ai-4-all.org/",
+  ARBIN: "https://arbin.com/about-us/",
+  IBT: "https://ibt.tamu.edu",
+  ACC: "https://tx.ag/acpcwebsite",
+  ACPC: "https://aggiecodingclub.com/",
+  SWE: "https://www.swetamu.com/",
+  TAO: "https://engrtao.tech",
+  TAGD: "https://tagdigda.wixsite.com/gamedev",
+  CONWAY: "https://conway-fitzhugh.tamu.edu/",
+  TAMU: "https://engineering.tamu.edu/cse/academics/index.html",
+  DAVIS: "https://people.engr.tamu.edu/davis/welcome.html",
+  ZHANG: "https://ibt.tamu.edu/faculty/kurt-zhang.html",
+} as const;

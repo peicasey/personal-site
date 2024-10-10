@@ -1,4 +1,3 @@
-import YEARLY_ADVENTURES from "../../public/adventures.json";
 import LandingBox from "@/app/_sections/LandingBox";
 import FeaturedSection from "./_sections/FeaturedSection";
 import { LogInfo } from "@/lib/logs";
@@ -8,6 +7,7 @@ import Section from "@/components/Section";
 import Card from "@/components/Card";
 import H1 from "@/components/H1";
 import FowardButton from "@/components/arrow-buttons/ForwardButton";
+import { YEARLY_ADVENTURES } from "@/lib/adventures";
 
 const FEATURED_LOG: LogInfo = {
   title: "How I Became the Richest Man Alive",

@@ -3,6 +3,7 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { MdContactPage } from "react-icons/md";
 import { FaItchIo } from "react-icons/fa6";
 import { SiDevpost } from "react-icons/si";
+import { IoMail } from "react-icons/io5";
 
 export type Social = {
   platform: string;
@@ -16,6 +17,18 @@ export const SOCIALS = {
     platform: "Resume",
     link: "/404",
     icon: <MdContactPage />,
+    important: true,
+  },
+  EMAIL: {
+    platform: "Email",
+    link: "mailto:peicasey@gmai.com",
+    icon: <IoMail />,
+    important: true,
+  },
+  EMAIL_FULL: {
+    platform: "peicasey@gmail.com",
+    link: "mailto:peicasey@gmai.com",
+    icon: <IoMail />,
     important: true,
   },
   LINKEDIN: {
