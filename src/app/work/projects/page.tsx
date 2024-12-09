@@ -1,9 +1,10 @@
 import H1 from "@/components/H1";
+import Page from "@/components/Page";
 import Section from "@/components/Section";
 
 export default function Projects() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <Page>
       <Section>
         <H1
           url="/projects/#projects"
@@ -19,6 +20,6 @@ export default function Projects() {
           </span>
         </div>
       </Section>
-    </main>
+    </Page>
   );
 }

@@ -12,12 +12,13 @@ import { jost } from "@/app/fonts";
 import Tag from "@/components/Tag";
 import React from "react";
 import LegendItem from "@/components/more/archives/LegendItem";
+import Page from "@/components/Page";
 
 export default function Archives() {
   const SEMESTERLY_COURSES = SEMESTERLY_COURSES_RAW as YearlyCourses[];
 
   return (
-    <main className="flex min-h-screen flex-col items-center w-full">
+    <Page>
       <Section>
         <div className="w-full flex items-center">
           <div className="min-w-24">
@@ -72,6 +73,6 @@ export default function Archives() {
           </div>
         </div>
       </Section>
-    </main>
+    </Page>
   );
 }

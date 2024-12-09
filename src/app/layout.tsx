@@ -26,7 +26,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-          <div className="bg-cream-50 text-stone-950 dark:bg-stone-950 dark:text-white max-w-[100vw] overflow-hidden">
+          <div className="bg-cream-50 text-stone-950 dark:bg-stone-950 dark:text-white max-w-[100vw] min-h-[100vh] flex flex-col justify-between overflow-hidden">
             <Header />
             {children}
             <Footer />

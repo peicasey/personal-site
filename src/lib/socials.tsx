@@ -29,7 +29,7 @@ export const SOCIALS = {
     platform: "peicasey@gmail.com",
     link: "mailto:peicasey@gmai.com",
     icon: <IoMail />,
-    important: true,
+    important: false,
   },
   LINKEDIN: {
     platform: "LinkedIn",

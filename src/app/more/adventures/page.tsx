@@ -8,6 +8,7 @@ import AdventureSection from "@/components/more/adventures/AdventureSection";
 import { cn } from "@/lib/utils";
 import { useCallback, useState } from "react";
 import { YEARLY_ADVENTURES } from "@/lib/adventures";
+import Page from "@/components/Page";
 
 export default function Adventures() {
   const [importantOnly, setImportantOnly] = useState(false);
@@ -17,7 +18,7 @@ export default function Adventures() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center w-full">
+    <Page>
       <Section>
         <div className="w-full flex items-center">
           <div className="min-w-24">
@@ -56,6 +57,6 @@ export default function Adventures() {
           </ul>
         </Card>
       </Section>
-    </main>
+    </Page>
   );
 }
