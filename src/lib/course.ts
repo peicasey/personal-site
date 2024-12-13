@@ -16,6 +16,14 @@ export enum CoursePurposeColors {
   DEFAULT = "#d1cdc9",
 }
 
+export enum Year {
+  ALL = "All",
+  FRESHMAN = "Freshman",
+  SOPHOMORE = "Sophomore",
+  JUNIOR = "Junior",
+  SENIOR = "Senior",
+}
+
 export const COURSE_COLOR_KEY = {
   [CoursePurpose.ETAM]: CoursePurposeColors.ETAM,
   [CoursePurpose.CS]: CoursePurposeColors.CS,
@@ -45,7 +53,7 @@ export type CourseInfo = {
 };
 
 export type YearlyCourses = {
-  year: "Freshman" | "Sophomore" | "Junior" | "Senior";
+  year: Year.FRESHMAN | Year.SOPHOMORE | Year.JUNIOR | Year.SENIOR;
   semester: "Fall" | "Spring";
   courses: CourseInfo[];
 };

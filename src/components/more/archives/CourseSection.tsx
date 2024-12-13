@@ -11,7 +11,7 @@ const CourseSection = React.memo<Props>(function CourseSectionFunction({
   courses,
 }) {
   return (
-    <li className="mt-4 border-none" key={year + semester}>
+    <div className="mt-4 border-none">
       <div className="flex gap-4 sm:gap-6 items-center justify-between w-full">
         <h2
           className="whitespace-nowrap text-lg font-bold uppercase"
@@ -26,7 +26,7 @@ const CourseSection = React.memo<Props>(function CourseSectionFunction({
           <Course {...course} key={"course" + j} />
         ))}
       </ul>
-    </li>
+    </div>
   );
 });
 
