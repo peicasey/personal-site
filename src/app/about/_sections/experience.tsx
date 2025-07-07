@@ -19,25 +19,9 @@ export default function Experience() {
           </h2>
           <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0">
             <li>
-              🎓 Pursuing an Honors Computer Science degree with a Minor in
-              Statistics (
-              <StyledLink target="_blank" href={COMMON_LINKS.TAMU}>
-                @Texas A&M University
-              </StyledLink>
-              )
-            </li>
-            <li>
-              🕸️ Applying sparse linear algebra to create performant graph
-              algorithms (
-              <StyledLink target="_blank" href={COMMON_LINKS.DAVIS}>
-                @Dr. Tim Davis
-              </StyledLink>
-              )
-            </li>
-            <li>
-              🧬 Analyzing biostatistics data (
-              <StyledLink target="_blank" href={COMMON_LINKS.ZHANG}>
-                @Dr. Kurt Zhang
+              👷 Working (
+              <StyledLink target="_blank" href={COMMON_LINKS.PALANTIR}>
+                @Palantir Technologies
               </StyledLink>
               )
             </li>
@@ -70,8 +54,8 @@ export default function Experience() {
               )
             </li>
             <li>
-              🧑‍🔬 Applied island-clustering algorithms in breast cancer
-              detection (
+              🧑‍🔬 Applied island-clustering algorithms in breast cancer detection
+              (
               <StyledLink target="_blank" href={COMMON_LINKS.IBT}>
                 @Institute of Biosciences and Technologies
               </StyledLink>
@@ -85,39 +69,72 @@ export default function Experience() {
           </h2>
           <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0">
             <li>
-              👾 Creating games with my team (
-              <StyledLink target="_blank" href={COMMON_LINKS.TAGD}>
-                @Texas A&M Game Developers
+              🎓 Graduated magna cum laude with an Honors Computer Science
+              degree with a Minor in Statistics (
+              <StyledLink target="_blank" href={COMMON_LINKS.TAMU}>
+                @Texas A&M University
               </StyledLink>
-              )
+              )!
             </li>
             <li>
-              🧑‍💻 Organizing competitive coding contests (
-              <StyledLink target="_blank" href={COMMON_LINKS.ACPC}>
-                @Aggie Competitive Coding Club
-              </StyledLink>
-              )
+              <h3 className="font-bold">Did some research:</h3>
+              <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0 text-stone-500">
+                <li>
+                  🕸️ Applied sparse linear algebra to create performant graph
+                  algorithms (
+                  <StyledLink target="_blank" href={COMMON_LINKS.DAVIS}>
+                    @Dr. Tim Davis
+                  </StyledLink>
+                  )
+                </li>
+                <li>
+                  🧬 Analyzed biostatistics data (
+                  <StyledLink target="_blank" href={COMMON_LINKS.ZHANG}>
+                    @Dr. Kurt Zhang
+                  </StyledLink>
+                  )
+                </li>
+              </ul>
             </li>
             <li>
-              ⚙️ Held exam reviews for the freshmen engineering class (
-              <StyledLink target="_blank" href={COMMON_LINKS.TAO}>
-                @Engineering TA Organization
-              </StyledLink>
-              )
-            </li>
-            <li>
-              💻 Ordered 200 pizzas for project presentations (
-              <StyledLink target="_blank" href={COMMON_LINKS.ACC}>
-                @Aggie Coding Club
-              </StyledLink>
-              )
-            </li>
-            <li>
-              👷‍♀️ Advocated for women in STEM fields (
-              <StyledLink target="_blank" href={COMMON_LINKS.SWE}>
-                @Society of Women Engineers
-              </StyledLink>
-              )
+              <h3 className="font-bold">Joined some orgs:</h3>
+              <ul className="ml-4 list-disc flex flex-col gap-3 sm:gap-0 text-stone-500">
+                <li>
+                  👾 Created games with my team (
+                  <StyledLink target="_blank" href={COMMON_LINKS.TAGD}>
+                    @Texas A&M Game Developers
+                  </StyledLink>
+                  )
+                </li>
+                <li>
+                  🧑‍💻 Organized competitive coding contests (
+                  <StyledLink target="_blank" href={COMMON_LINKS.ACPC}>
+                    @Aggie Competitive Coding Club
+                  </StyledLink>
+                  )
+                </li>
+                <li>
+                  ⚙️ Held exam reviews for the freshmen engineering class (
+                  <StyledLink target="_blank" href={COMMON_LINKS.TAO}>
+                    @Engineering TA Organization
+                  </StyledLink>
+                  )
+                </li>
+                <li>
+                  💻 Ordered 200 pizzas for project presentations (
+                  <StyledLink target="_blank" href={COMMON_LINKS.ACC}>
+                    @Aggie Coding Club
+                  </StyledLink>
+                  )
+                </li>
+                <li>
+                  👷‍♀️ Advocated for women in STEM fields (
+                  <StyledLink target="_blank" href={COMMON_LINKS.SWE}>
+                    @Society of Women Engineers
+                  </StyledLink>
+                  )
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

@@ -60,8 +60,8 @@ export default function ActualAbout() {
           <p>
             I love making interesting projects that are either entertaining or
             helpful and occassionally both -- combining accessible, aesthetic
-            and intuitive design with an application of AI. As of now, I love
-            frontend web dev and am working on becoming a React perf pro ⚡.
+            and intuitive design with technology. As of now, I love frontend web
+            dev and am working on becoming a React perf pro ⚡.
           </p>
           <p>
             Outside of stereotypical CS major activities, I am an enjoyer of
@@ -70,18 +70,14 @@ export default function ActualAbout() {
             <StyledLink target="_blank" href="https://youtube.com/@technoblade">
               Technoblade youtube channel
             </StyledLink>
-            . You will often find me studying (taking a nap) in the Zachry
-            Engineering Building, binging a new 3-hour video essay, and sending
-            oddly specific online personality quizzes to friends.
+            . You will often find me playing every NYT game aside from Wordle,
+            binging a 3-hour video essays, and sending oddly specific online
+            personality quizzes to friends.
           </p>
           <p>
             I can be reached at{" "}
             <StyledLink href={SOCIALS.EMAIL_FULL.link}>
               {SOCIALS.EMAIL_FULL.platform}
-            </StyledLink>{" "}
-            or via{" "}
-            <StyledLink target="_blank" href={SOCIALS.LINKEDIN.link}>
-              {SOCIALS.LINKEDIN.platform}
             </StyledLink>
             . Always down to chat! :D
           </p>

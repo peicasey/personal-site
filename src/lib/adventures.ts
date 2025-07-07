@@ -16,6 +16,61 @@ export type YearlyAdventures = {
 
 export const YEARLY_ADVENTURES = [
   {
+    year: 2025,
+    adventures: [
+      {
+        description: "SWE @ Palantir Technologies",
+        link: COMMON_LINKS.PALANTIR,
+        month: "Aug 2025",
+        symbol: "💼",
+        important: true,
+      },
+      {
+        description: "Senior Trip :D",
+        link: "",
+        month: "Aug 2025",
+        symbol: "🇯🇵🇰🇷",
+        important: false,
+      },
+      {
+        description: "Graduated Magna Cum Laude from Texas A&M",
+        link: "https://www.linkedin.com/in/caseypei/overlay/1748571048089/single-media-viewer/?profileId=ACoAADdrCdEB5aJp4TVWGbVtG3T30tMAfa6ZfbY",
+        month: "May 2025",
+        symbol: "🎓",
+        important: true,
+      },
+      {
+        description:
+          "'Edge Betweenness in GraphBLAS' @ Undergrad Research Scholar Thesis",
+        link: "https://oaktrust.library.tamu.edu/items/9e6b2748-2140-429e-9996-ba313c346e53",
+        month: "Apr 2025",
+        symbol: "📜",
+        important: true,
+      },
+      {
+        description: "1st in CS @ Engineering Project Showcase",
+        link: "https://drive.google.com/file/d/1y0_CGZwh8fRJDrCwsS0w3F-BePDUcO98/view?usp=sharing",
+        month: "Apr 2025",
+        symbol: "🏆",
+        important: true,
+      },
+      {
+        description: "Won a pickleball set @ ACPC Spring Programming Contest",
+        link: "https://spring25.tamuacpc.org/",
+        month: "Apr 2025",
+        symbol: "🏓",
+        important: false,
+      },
+      {
+        description: "Slept with plushies @ TAMUHack",
+        link: "https://th25.tamuhack.org/",
+        month: "Feb 2025",
+        symbol: "⚡",
+        important: false,
+      },
+    ],
+  },
+  {
     year: 2024,
     adventures: [
       {
@@ -48,7 +103,7 @@ export const YEARLY_ADVENTURES = [
       },
       {
         description: "Got addicted to Genshin on Ps5 won @ Chillenium",
-        link: "https://pengso0o.itch.io/plugged-in",
+        link: "",
         month: "Feb 2024",
         symbol: "🎮",
         important: false,
@@ -123,16 +178,14 @@ export const YEARLY_ADVENTURES = [
       },
       {
         description: "Saw my first Rainforest Cafe in San Antonio :O",
-        link:
-          "https://www.rainforestcafe.com/location/rainforest-cafe-san-antonio-tx/",
+        link: "https://www.rainforestcafe.com/location/rainforest-cafe-san-antonio-tx/",
         month: "Jan 2023",
         symbol: "🦜",
         important: false,
       },
       {
         description: "Added a Statistics minor o-o",
-        link:
-          "https://catalog.tamu.edu/undergraduate/arts-and-sciences/statistics/minor/#text",
+        link: "https://catalog.tamu.edu/undergraduate/arts-and-sciences/statistics/minor/#text",
         month: "Jan 2023",
         symbol: "📚",
         important: true,
@@ -180,8 +233,7 @@ export const YEARLY_ADVENTURES = [
       {
         description:
           "Hamill Research Intern @ Institute of Bioscience & Technology",
-        link:
-          "https://ibt.tamu.edu/education/biotech-graduate-track/summer-research-program.html",
+        link: "https://ibt.tamu.edu/education/biotech-graduate-track/summer-research-program.html",
         month: "May 2022",
         symbol: "💼",
         important: true,
@@ -244,8 +296,7 @@ export const YEARLY_ADVENTURES = [
       },
       {
         description: "Graduated Valedictorian from HS! >:)",
-        link:
-          "https://www.aps.edu/schools/graduation/class-of-2021/la-cueva-high-school",
+        link: "https://www.aps.edu/schools/graduation/class-of-2021/la-cueva-high-school",
         month: "May 2021",
         symbol: "🎓",
         important: true,

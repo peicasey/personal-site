@@ -78,7 +78,13 @@ const LandingBox = React.memo(function LandingBoxFunction() {
             className="font-bold uppercase text-7xl lg:text-8xl text-orange-yellow dark:text-white text-outline-black"
             style={jost.style}
           >
-            Casey Pei
+            Consistently coding,
+          </h1>
+          <h1
+            className="font-bold uppercase text-7xl lg:text-8xl text-orange-yellow dark:text-white text-outline-black"
+            style={jost.style}
+          >
+            Occasionally good.
           </h1>
           <div className="flex flex-wrap gap-1 items-center">
             {introText1_split.map((word1, i1) => (

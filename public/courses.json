@@ -397,5 +397,46 @@
         "symbol": "💸"
       }
     ]
+  },
+  {
+    "year": "Senior",
+    "semester": "Spring",
+    "courses": [
+      {
+        "code": "CSCE 491H",
+        "title": "Honors Research",
+        "credit": 3,
+        "professor": "Dr. Tim Davis",
+        "description": "asdfasdfasd",
+        "symbol": "📃"
+      },
+      {
+        "code": "CSCE 430H",
+        "title": "Problem Solving",
+        "credit": 3,
+        "professor": "Dr. John Keyser",
+        "description": "asdfasdfasd",
+        "symbol": "🧠",
+        "purpose": "CS Electives"
+      },
+      {
+        "code": "PHIL 282",
+        "title": "Ethics in a Digital Age",
+        "credit": 3,
+        "professor": "Dr. Erich Reisman",
+        "description": "asdfasdfasd",
+        "symbol": "🤖",
+        "purpose": "Core Curriculum"
+      },
+
+      {
+        "code": "CSCE 482",
+        "title": "Senior Capstone",
+        "credit": 3,
+        "professor": "Dr. Shawna Thomas",
+        "description": "asdfasdfasd",
+        "symbol": "🖥️"
+      }
+    ]
   }
 ]

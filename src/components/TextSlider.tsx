@@ -43,7 +43,7 @@ const TextSlider = React.memo<Props>(function TextSliderFunction({ items }) {
   return (
     <div className="flex gap-[6px] items-center">
       <button
-        className="rounded-lg py-[2px] border border-black text-black bg-yellow-400
+        className="rounded-lg py-[2px] border border-black text-black bg-orange-yellow
                 text-xs md:text-sm
                 hover:bg-yellow-300"
         onClick={scrollNext}

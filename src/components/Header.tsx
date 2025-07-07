@@ -93,7 +93,9 @@ export function Header() {
                           "cursor-pointer h-full outline border border-stone-300 dark:border-stone-500 bg-stone-100 dark:bg-stone-900 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-stone-200 focus:bg-stone-200 focus:text-stone-200 dark:hover:bg-stone-800 dark:focus:bg-stone-800 dark:focus:text-stone-800"
                         )}
                       >
-                        <div className="text-md leading-none">More</div>
+                        <div className="text-md leading-none text-black">
+                          More
+                        </div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           adventures, archives, links
                         </p>

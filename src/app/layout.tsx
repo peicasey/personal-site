@@ -17,16 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className="" style={ atkins.style}
-      >
+      <body className="" style={atkins.style}>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
         >
           <div className="bg-cream-50 text-stone-950 dark:bg-stone-950 dark:text-white max-w-[100vw] min-h-[100vh] flex flex-col justify-between overflow-hidden">
+            <div className="left-2 sm:left-4 lg:left-8 fixed bg-orange-yellow w-[1px] h-[100vh]"></div>
+            <div className="top-2 sm:top-4 lg:top-8 absolute bg-orange-yellow w-[100vw] h-[1px]"></div>
             <Header />
             {children}
             <Footer />
