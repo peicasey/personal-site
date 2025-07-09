@@ -6,6 +6,7 @@ import Link from "next/link";
 import { jost } from "../fonts";
 import { LogInfo } from "@/lib/logs";
 import DecoratedCard from "@/components/DecoratedCard";
+import FowardButton from "@/components/arrow-buttons/ForwardButton";
 
 interface Props extends LogInfo {}
 
@@ -36,13 +37,7 @@ const FeaturedSection = React.memo<Props>(function FeaturedSectionFunction({
             <p>{text}</p>
           </div>
           <div className="w-full flex justify-end">
-            <Link
-              href=""
-              className="font-bold text-stone-500 lowercase"
-              style={jost.style}
-            >
-              Read More
-            </Link>
+            <FowardButton href={"/more/adventures"}>read more</FowardButton>
           </div>
         </div>
       </DecoratedCard>
