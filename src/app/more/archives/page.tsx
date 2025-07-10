@@ -5,7 +5,6 @@ import H1 from "@/components/H1";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import BackButton from "@/components/arrow-buttons/BackButton";
-import { cn } from "@/lib/utils";
 import CourseSection from "@/components/more/archives/CourseSection";
 import { COURSE_COLOR_KEY, YearlyCourses } from "@/lib/course";
 import { jost } from "@/app/fonts";
@@ -89,11 +88,7 @@ export default function Archives() {
                   <li key={i}>
                     <LegendItem
                       item={
-                        <Tag
-                          color={color}
-                          children={" :) "}
-                          clickable={false}
-                        />
+                        <Tag color={color} text={" :) "} clickable={false} />
                       }
                       description={purpose}
                     />

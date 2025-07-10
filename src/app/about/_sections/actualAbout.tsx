@@ -5,23 +5,8 @@ import SocialButton from "@/components/SocialButton";
 import StyledLink from "@/components/StyledLink";
 import Tag from "@/components/Tag";
 import { SOCIALS } from "@/lib/socials";
+import { PERSONAL_TAGS } from "@/lib/tags";
 import Image from "next/image";
-import Link from "next/link";
-
-const PERSONAL_TAGS = [
-  {
-    children: "she/her",
-    color: "#e7d56e",
-  },
-  {
-    children: "casey pei",
-    color: "#d4e212",
-  },
-  {
-    children: "裴婷",
-    color: "#ffc548",
-  },
-];
 
 export default function ActualAbout() {
   return (

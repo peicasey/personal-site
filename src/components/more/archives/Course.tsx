@@ -17,9 +17,11 @@ const Course = React.memo<Props>(function TagFunction({
     <li className="p-2 hover:rounded-md hover:bg-[#f4f2ec] dark:hover:bg-[#25241e]">
       <div className="flex justify-between items-center gap-4">
         <div className="flex items-center flex-grow-0 gap-1 sm:gap-2">
-          <Tag color={getCourseColor(purpose)} clickable={false}>
-            {symbol} {code}
-          </Tag>
+          <Tag
+            text={`${symbol} ${code}`}
+            color={getCourseColor(purpose)}
+            clickable={false}
+          ></Tag>
           <span
             className="font-bold whitespace-nowrap text-md overflow-hidden truncate max-w-[15em] lg:max-w-[40em] md:max-w-[20em] sm:max-w-[15em]"
             style={jost.style}

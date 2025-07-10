@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 interface Props extends TagInfo {}
 
 const Tag = React.memo<Props>(function TagFunction({
-  children,
+  text,
   color,
   clickable = true,
 }) {
@@ -25,10 +25,10 @@ const Tag = React.memo<Props>(function TagFunction({
     >
       {clickable ? (
         <Link href="" className={cn(!clickable && "cursor-default")}>
-          {children}
+          {text}
         </Link>
       ) : (
-        children
+        text
       )}
     </div>
   );
