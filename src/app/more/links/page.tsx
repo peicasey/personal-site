@@ -1,4 +1,3 @@
-import MoreCard from "@/components/more/moreCard";
 import H1 from "@/components/H1";
 import Section from "@/components/Section";
 import Page from "@/components/Page";

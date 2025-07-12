@@ -10,7 +10,6 @@ import Link from "next/link";
 import {
   Angry,
   Annoyed,
-  ArrowUpRight,
   Frown,
   Laugh,
   Meh,
@@ -18,10 +17,6 @@ import {
   Smile,
 } from "lucide-react";
 import { GoArrowRight } from "react-icons/go";
-
-// CREDIT: https://codesandbox.io/p/sandbox/react-jq5y4?file=%2Fsrc%2FApp.js%3A72%2C18
-// heavily based this code off of this user ^ so much so that I've left the helpful
-// comments they made :]
 
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 const layouts = HOME_LAYOUT;
@@ -141,6 +136,7 @@ export default function BentoLayout() {
             className={cn(
               "cursor-grab active:cursor-grabbing select-none border bg-white dark:bg-black border-black dark:border-orange-900 flex justify-center items-center rounded-md dark:yellow-glow-md"
             )}
+            // f is the last element which is coincidentally white/black so this is so it can have a different color for light/dark mode
             style={{
               background: `${
                 itm.i != "f" ? HOME_LAYOUT_COLORS[itm.i as KEYS] : null

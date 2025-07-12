@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface Props {
   url: string;
-  subtitle: string;
+  subtitle?: string;
   children: React.ReactNode;
 }
 
@@ -31,9 +31,11 @@ const H1 = React.memo<Props>(function H1Function({ url, subtitle, children }) {
         </h1>
       </div>
       <div className="w-full h-[2px] bg-stone-400"></div>
-      <div className="hidden md:block flex-shrink-0 min-w-0 w-fit md:max-w-[250px] lg:max-w-[300px] overflow-hidden text-ellipsis text-stone-400">
-        <span className="truncate">{subtitle}</span>
-      </div>
+      {subtitle && (
+        <div className="hidden md:block flex-shrink-0 min-w-0 w-fit md:max-w-[250px] lg:max-w-[300px] overflow-hidden text-ellipsis text-stone-400">
+          <span className="truncate">{subtitle}</span>
+        </div>
+      )}
     </div>
   );
 });
