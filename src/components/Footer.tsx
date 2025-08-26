@@ -18,7 +18,7 @@ const Footer = React.memo(function FooterFunction() {
   );
 
   return (
-    <footer className="flex flex-col gap-8 p-8 md:p-16 lg:px-28 xl:px-36 w-full">
+    <footer className="flex flex-col gap-8 p-8 md:p-16 lg:px-36 xl:px-48 w-full">
       <div className="flex gap-8 justify-between">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">

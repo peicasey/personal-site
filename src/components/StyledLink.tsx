@@ -8,6 +8,7 @@ import React, {
 interface Props extends LinkProps {
   className?: string;
   target?: HTMLAttributeAnchorTarget | undefined;
+  rel?: string;
   referrerPolicy?: HTMLAttributeReferrerPolicy | undefined;
   children: React.ReactNode;
 }

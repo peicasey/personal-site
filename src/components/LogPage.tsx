@@ -10,13 +10,14 @@ import { jost } from "@/app/fonts";
 import Tag from "./Tag";
 
 interface Props extends LogInfo {
+  topPara?: ReactNode;
   children?: ReactNode;
 }
 
 export default function LogPage({
+  topPara,
   children,
   title,
-  date,
   topicTags,
   text,
   link,
@@ -38,6 +39,7 @@ export default function LogPage({
           >
             {title}
           </h1>
+          <span className="text-stone-500 italic">{text}</span>
         </div>
         {!coverIsImage ? (
           <div className="w-full h-[20rem] select-none text-9xl border border-black bg-generic-yellow rounded-md p-8 flex items-center justify-center">
@@ -51,14 +53,16 @@ export default function LogPage({
             )}
           ></div>
         )}
-        <div className="flex flex-col-reverse sm:flex-row gap-4 w-full justify-between ">
-          <div className="w-full">{text}</div>
-          <div className="flex flex-col gap-4 w-full sm:max-w-[30%]">
-            <div className="flex gap-2 flex-wrap">
-              <span className="font-bold">Tags:</span>
-              {topicTags.map((topicTag, i) => (
-                <Tag {...topicTag} key={`tag${i}`} />
-              ))}
+        <div className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-16 w-full justify-between ">
+          <div className="w-full flex flex-col gap-4">{topPara}</div>
+          <div className="flex flex-col gap-4 w-full sm:max-w-[250px]">
+            <div>
+              <span className="font-bold">Tags</span>
+              <div className="flex gap-2 flex-wrap">
+                {topicTags.map((topicTag, i) => (
+                  <Tag {...topicTag} key={`tag${i}`} />
+                ))}
+              </div>
             </div>
             {Object.keys(details).map((detail, i) => (
               <span>
@@ -69,7 +73,7 @@ export default function LogPage({
             ))}
           </div>
         </div>
-        <div className="w-full">{children}</div>
+        <div className="w-full flex flex-col gap-4">{children}</div>
       </Section>
     </Page>
   );

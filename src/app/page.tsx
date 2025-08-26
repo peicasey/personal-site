@@ -12,12 +12,18 @@ import { YEARLY_ADVENTURES } from "@/lib/adventures";
 const FEATURED_LOG: LogInfo = {
   title: "How I Became the Richest Man Alive",
   topicTags: [
-    { children: "wealth", color: "#959c2e" },
-    { children: "grindset", color: "#d4e212" },
-    { children: "alpha", color: "#ffaa20" },
+    { text: "wealth", color: "#959c2e" },
+    { text: "grindset", color: "#d4e212" },
+    { text: "alpha", color: "#ffaa20" },
   ],
-  text:
-    "It all started when I decided to invest in crocodile feet. As it turns out, it was a hugely untapped market in Croatia. Crocodile feet were known for their special abilities in both…",
+  text: "It all started when I decided to invest in crocodile feet. As it turns out, it was a hugely untapped market in Croatia. Crocodile feet were known for their special abilities in both…",
+  cover: "asdf",
+  link: "ad",
+  details: {
+    dates: "1.2.3",
+    clientPurpose: "fbekf",
+    roles: "fd",
+  },
 };
 
 export default function Home() {

@@ -119,7 +119,7 @@ export default function BentoLayout() {
   };
 
   return (
-    <div className="w-full pb-8 px-8 sm:px-12 md:px-16 lg:px-28 xl:px-36">
+    <div className="w-full pb-8 px-8 sm:px-12 md:px-16 lg:px-36 xl:px-48">
       <ResponsiveReactGridLayout
         rowHeight={50}
         cols={cols}

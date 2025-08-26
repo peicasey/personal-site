@@ -23,7 +23,6 @@ export type LogDetails = ProjDetails | Details;
 
 export type LogInfo = {
   title: string;
-  date: string;
   topicTags: TagInfo[];
   text: string;
   link: string;
@@ -35,9 +34,7 @@ export type LogInfo = {
 // TODO: make this like the moreInfo ojbect? idk
 export const LOGS: Record<string, LogInfo> = {
   WebsiteRefactor: {
-    title:
-      "Remaking my website blablablalalblablalbalbalblablablalblablablalalblablalbalbalalblablalbalbalblablablalalblablalbalbal",
-    date: "7.25.25",
+    title: "Remaking my website",
     topicTags: [TAGS.nextjs, TAGS.webdev],
     text: "I decided to refactor my website for some reason.",
     link: "website-refactor",
@@ -48,11 +45,10 @@ export const LOGS: Record<string, LogInfo> = {
       roles: "Lead Developer",
     },
   },
-  WebsiteRefactor2: {
-    title: "Remaking my website",
-    date: "7.25.25",
+  WebsitePlagiarism: {
+    title: "That time my website was plagiarized",
     topicTags: [TAGS.nextjs, TAGS.webdev],
-    text: "I decided to refactor my website for some reason.",
+    text: "Someone copied my website. This is that saga.",
     link: "website-refactor",
     cover: "url(/me.jpg)",
     coverIsImage: true,
